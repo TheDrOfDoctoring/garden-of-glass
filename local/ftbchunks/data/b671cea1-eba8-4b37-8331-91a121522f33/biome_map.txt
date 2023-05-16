@@ -1,9 +1,0 @@
-#618 minecraft:basalt_deltas
-#570 minecraft:crimson_forest
-#77D infernalexp:glowstone_canyon
-#153 incendium:infernal_dunes
-#653 minecraft:nether_wastes
-#692 incendium:quartz_flats
-#5FF minecraft:river
-#310 incendium:toxic_heap
-#646 incendium:withered_forest

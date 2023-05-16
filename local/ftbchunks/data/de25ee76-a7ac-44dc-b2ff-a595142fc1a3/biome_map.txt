@@ -1,8 +1,0 @@
-#618 minecraft:basalt_deltas
-#570 minecraft:crimson_forest
-#153 incendium:infernal_dunes
-#653 minecraft:nether_wastes
-#692 incendium:quartz_flats
-#5FF minecraft:river
-#721 minecraft:soul_sand_valley
-#628 minecraft:warped_forest

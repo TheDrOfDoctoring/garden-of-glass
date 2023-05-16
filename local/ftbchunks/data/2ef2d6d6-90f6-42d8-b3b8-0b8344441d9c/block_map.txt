@@ -1,4 +1,0 @@
-#52B53D minecraft:air
-#E2D601 minecraft:composter
-#E3886A minecraft:oak_planks
-#72BC63 minecraft:oak_stairs
