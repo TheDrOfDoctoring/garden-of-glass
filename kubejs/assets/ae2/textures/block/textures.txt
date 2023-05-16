@@ -1,0 +1,4 @@
+Retextured from Applied Energistics 2 Cell Textures and Botania Livingwood Texture
+They are the original owners of the assets.
+https://github.com/AppliedEnergistics/Applied-Energistics-2
+https://github.com/VazkiiMods/Botania

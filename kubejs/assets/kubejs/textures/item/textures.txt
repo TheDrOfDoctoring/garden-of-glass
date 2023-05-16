@@ -1,0 +1,6 @@
+Textures taken from Botania, Ars Nouveau, Applied Energistics 2 and Storage Drawers, then recoloured slightly.
+They are the original owners of the assets.
+https://github.com/AppliedEnergistics/Applied-Energistics-2
+https://github.com/VazkiiMods/Botania
+https://github.com/baileyholl/Ars-Nouveau
+https://github.com/jaquadro/StorageDrawers

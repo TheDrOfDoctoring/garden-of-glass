@@ -1,0 +1,1161 @@
+{
+	quest_links: [ ]
+	default_hide_dependency_lines: false
+	group: ""
+	id: "51BFACF463409F9F"
+	filename: "an_entrance_to_runic_magic"
+	default_quest_shape: ""
+	icon: "botania:runic_altar"
+	title: "&cAn Expedition into Runic Magic"
+	order_index: 1
+	quests: [
+		{
+			size: 2.0d
+			description: [
+				"The &6Rod of the Seas &fwill allow you to create water by &6Right-clicking &fon any block, as long as you have some kind of &6Mana &fstorage item in your inventory, such as a &6Mana Tablet&f."
+				""
+				"Check recipes for &6Cobblestone -> Gravel &fand &6Gravel -> Sand &ffor how to get the glass required for the bottle."
+			]
+			id: "069E800E2C36FE9C"
+			x: -3.5d
+			y: -2.5d
+			title: "&9Liquid Life"
+			rewards: [{
+				id: "00F020F2F6947E30"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+			dependencies: ["6AE0D0434399320C"]
+			tasks: [{
+				id: "167C23B47DF1CAF5"
+				type: "item"
+				item: "botania:water_rod"
+			}]
+		}
+		{
+			size: 1.5d
+			id: "1B4E38C18ECBCF42"
+			x: -3.5d
+			y: -0.5d
+			rewards: [{
+				id: "713784E391C49502"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 64
+			}]
+			dependencies: ["069E800E2C36FE9C"]
+			tasks: [{
+				id: "0EF7A1360A2B1B7B"
+				type: "item"
+				item: "botania:dirt_rod"
+			}]
+		}
+		{
+			size: 1.5d
+			id: "0A91229B249FA1CE"
+			x: -3.5d
+			y: -4.5d
+			rewards: [{
+				id: "7B46B9B6359B0C73"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64
+			}]
+			subtitle: "The Rocky Start Finished"
+			dependencies: ["069E800E2C36FE9C"]
+			tasks: [{
+				id: "3331A2C7273973D2"
+				type: "item"
+				item: "botania:cobble_rod"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["&6Archwood Planks &f can acquired from these trees. They will allow access into &6Ars Nouveau &fwhich will be used in complement with &6Botania &fto have a truly generic experience."]
+			id: "6619D81F2CED3D7B"
+			x: -1.0d
+			y: -2.5d
+			title: "More Magical Mahogany"
+			rewards: [{
+				id: "18BB7E27380A0FC1"
+				type: "item"
+				item: "kubejs:manaelectrum_ingot"
+				count: 4
+			}]
+			subtitle: "Definitely not The Hist"
+			dependencies: ["069E800E2C36FE9C"]
+			tasks: [{
+				id: "084636DA9D6DF9CF"
+				type: "item"
+				title: "Any #ars_nouveau:archwood"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "ars_nouveau:archwood"
+					}
+				}
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["You can use this table to create new spells, which cost some materials and XP. Once you use the spell, you have it permanently learned and can use it in your spellbooks forever."]
+			id: "0BC93642952F6326"
+			x: 0.5d
+			y: -0.5d
+			title: "Learning to Cast"
+			rewards: [{
+				id: "142E3F5B81D99C84"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Not Mana and Artifice"
+			dependencies: ["6619D81F2CED3D7B"]
+			tasks: [{
+				id: "3773B3CBF0E892B4"
+				type: "item"
+				item: "ars_nouveau:scribes_table"
+			}]
+		}
+		{
+			size: 1.5d
+			description: [
+				"If you place a &6Cocoon of Caprice &fon the ground and give it some time, it will eventually turn into a random animal, or potentially other things..."
+				""
+				"This is essential for items such as feathers, which are used in the &6Rune of Air&f."
+			]
+			id: "187C36C8CC9A75AD"
+			x: -1.0d
+			y: -4.5d
+			title: "Agricultural Advents"
+			rewards: [{
+				id: "7D5E94AFB1024A92"
+				type: "item"
+				item: "minecraft:wheat"
+				count: 8
+			}]
+			dependencies: ["069E800E2C36FE9C"]
+			tasks: [{
+				id: "193E31647E125696"
+				type: "item"
+				item: "botania:cocoon"
+			}]
+		}
+		{
+			size: 1.5d
+			description: [
+				"Firstly, place a &6Mana Gem &finside the &6Imbuement Chamber &fin order to have it slowly turned into a &6Source Gem&f. Once you have that, you will want to create some &6Arcane Pedestals&f. With these, you can create various essences in the &6Imbuement Chamber &fby placing the required items ontop of them&f."
+				""
+				"In order to speed up the creation of various items in the &6Imbuement Chamber &fyou need to use &6Source&f. &6Source &fis a more refined version of &6Mana. &fIt can be obtained by transferring &6Mana &finto a &6Source Jar &fusing a &6Mana Spreader&f."
+			]
+			id: "0E4BA55EA5D7F334"
+			x: 2.0d
+			y: -2.5d
+			title: "Essential Essences"
+			rewards: [{
+				id: "54FF97E51056DBE7"
+				type: "item"
+				item: "botania:rune_mana"
+				count: 2
+			}]
+			subtitle: "Alliteration Always"
+			dependencies: ["6619D81F2CED3D7B"]
+			tasks: [
+				{
+					id: "3060CC285E99B2B4"
+					type: "item"
+					item: "ars_nouveau:imbuement_chamber"
+				}
+				{
+					id: "2298AA4D62D723E0"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+					count: 3L
+				}
+			]
+		}
+		{
+			size: 1.5d
+			description: ["One of the most important &6Glyphs&f, it can be used to turn some things into more useable forms, while the glyph itself can be used in the creation of a couple of blocks."]
+			id: "0122CB4E96C2C6D7"
+			x: 3.0d
+			y: -0.5d
+			title: "Manual Crushing"
+			rewards: [{
+				id: "37CA4F97EB555316"
+				type: "item"
+				item: "ars_nouveau:source_berry_roll"
+				count: 8
+			}]
+			dependencies: ["0BC93642952F6326"]
+			tasks: [{
+				id: "46E7F08BF3F6BDA4"
+				type: "item"
+				item: "ars_nouveau:glyph_crush"
+			}]
+		}
+		{
+			size: 1.5d
+			description: [
+				"The apparatus requires an &6Arcane Core &fdirectly below it and a &6Source Jar &fdirectly above it to pull &6Source &ffrom."
+				""
+				""
+				"This works in a similar fashion to the &6Imbuement Chamber &fexcept the &6Source &fis required to create the item, it doesn't just speed up the crafting time."
+			]
+			id: "6D9ED9BBA69C625C"
+			x: 2.0d
+			y: -4.5d
+			title: "Enchanting Nouveau"
+			rewards: [{
+				id: "725E02E63729488E"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 6228517130675413038L
+			}]
+			dependencies: [
+				"0E4BA55EA5D7F334"
+				"05C167823F295FE1"
+			]
+			tasks: [
+				{
+					id: "0BA0B2CC2E7D4985"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+				}
+				{
+					id: "30BC2BFD43CE26FE"
+					type: "item"
+					item: "ars_nouveau:arcane_core"
+				}
+			]
+		}
+		{
+			tasks: [
+				{
+					id: "12084CF0D316ACAB"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2D4330C6613A1113"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1A537C558996BD52"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4BE01B43864DBE56"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			description: ["In this pack, the &6Ars Nouveau &fmagical armours have been modified. The more expensive armours provide better max mana and mana regen."]
+			id: "3B486DCF8CB47739"
+			x: 0.5d
+			y: -6.5d
+			title: "Arcanist's Attire"
+			rewards: [{
+				id: "769F5B6D6ED40738"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "ars_nouveau:mana_regen_potion_strong"
+					}
+				}
+				count: 3
+			}]
+			dependencies: ["6D9ED9BBA69C625C"]
+		}
+		{
+			tasks: [
+				{
+					id: "7477D0F6648051C1"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6D8F5231F64EFFA1"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "12862319148A2284"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "03335453A43FF75D"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			description: ["In this pack, the &6Ars Nouveau &fmagical armours have been modified. The more expensive armours provide better max mana and mana regen."]
+			id: "4258225BF847DA06"
+			x: 0.0d
+			y: -5.5d
+			title: "Sorcerer's Robes"
+			rewards: [{
+				id: "0B628E7337FEE64C"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "ars_nouveau:mana_regen_potion_strong"
+					}
+				}
+			}]
+			dependencies: ["6D9ED9BBA69C625C"]
+		}
+		{
+			tasks: [
+				{
+					id: "306A4C2CCD9AF097"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5727BC14971BC3A7"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3E21A2DD1145B35A"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "750698E6CDBAE0B0"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			description: ["In this pack, the &6Ars Nouveau &fmagical armours have been modified. The more expensive armours provide better max mana and mana regen."]
+			id: "1211553E84881838"
+			x: 1.5d
+			y: -6.75d
+			title: "Battlemage's Armour"
+			rewards: [{
+				id: "462BD98C374F7A15"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "ars_nouveau:mana_regen_potion_strong"
+					}
+				}
+				count: 5
+			}]
+			dependencies: ["6D9ED9BBA69C625C"]
+		}
+		{
+			size: 1.5d
+			description: ["The &6Terrestrial Aglomeration Plate &fis a way to channel a large amount of &6Mana &finto the creation of one thing, such as &6Terrasteel&f. The creation of &6Terrasteel &fcan lead into some very useful things."]
+			id: "2F0AB2F2474F9B03"
+			x: 4.5d
+			y: -2.5d
+			rewards: [
+				{
+					id: "38C23244F4D3937F"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 18951675626636805L
+				}
+				{
+					id: "340153EB64D6C6E9"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 6943663066194960901L
+				}
+				{
+					id: "7244B0C71D29A15C"
+					type: "item"
+					item: "botania:overgrowth_seed"
+					count: 2
+				}
+			]
+			dependencies: [
+				"6D9ED9BBA69C625C"
+				"0E4BA55EA5D7F334"
+			]
+			tasks: [{
+				id: "3A74AA6843B3244E"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["A &6Terrasteel Ingot &frequires half of a full pool mana to craft. This is transferred by having linked &6Sparks &fover both the Mana Pool and the &6Terrestrial Aglomeration Plate&f. After that, the required items can be dropped and the crafting process will begin. "]
+			id: "60F38CA8C067FE57"
+			x: 8.5d
+			y: -2.5d
+			rewards: [
+				{
+					id: "7403516B77D9E549"
+					type: "item"
+					item: "botania:blacker_lotus"
+				}
+				{
+					id: "57AA8868E88CADE2"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 3
+				}
+			]
+			dependencies: ["2F0AB2F2474F9B03"]
+			tasks: [{
+				id: "1EC7FFC21DED7A8A"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			size: 1.25d
+			description: ["The &6Source Jar &fis more than just a jar. It filter &6Mana &finto a more refined version, known as &6Source&f, through the Mana-Glass. This filtering is achieved by linking a &6Mana Spreader &ffrom a &6Mana Pool &fto the &6Source Jar."]
+			id: "05C167823F295FE1"
+			x: 0.5d
+			y: -3.5d
+			title: "A Source for Source"
+			rewards: [{
+				id: "10D90324FDABC830"
+				type: "xp"
+				xp: 100
+			}]
+			dependencies: ["6619D81F2CED3D7B"]
+			tasks: [{
+				id: "3E4763239C8788FC"
+				type: "item"
+				item: "ars_nouveau:source_jar"
+			}]
+		}
+		{
+			size: 1.25d
+			description: [
+				"The &6Enchanting Apparatus &fis a primitive way to make a variety of gears."
+				"As you advance, you may find more efficient way to make gears than the apparatus."
+			]
+			id: "19FCFE5F0AD14680"
+			x: 4.5d
+			y: -5.5d
+			rewards: [{
+				id: "2C632CC37DC28AEC"
+				type: "xp"
+				xp: 100
+			}]
+			dependencies: ["6D9ED9BBA69C625C"]
+			tasks: [{
+				id: "5891545407C84691"
+				type: "item"
+				item: "kubejs:manasteel_gear"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["When placed next to trees, can extract various liquids from them which can be further processed."]
+			id: "29D38D05B6690E4A"
+			x: 6.5d
+			y: -5.5d
+			rewards: [{
+				id: "6BA66374BD4A4528"
+				type: "xp"
+				xp: 100
+			}]
+			dependencies: ["19FCFE5F0AD14680"]
+			tasks: [{
+				id: "395D191FFCC0B71F"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+		}
+		{
+			size: 1.25d
+			description: ["You may want to consider making some &6Deepslate &fas it will increase your chances of getting ores like Diamond in the &6Orechid &fwhen compared to regular Stone's chances."]
+			id: "2BAFB309936D3172"
+			x: -6.0d
+			y: -2.5d
+			title: "Specific Stone"
+			rewards: [{
+				id: "05CC2FBFA9561A02"
+				type: "item"
+				item: "minecraft:deepslate"
+				count: 16
+			}]
+			dependencies: ["069E800E2C36FE9C"]
+			tasks: [{
+				id: "25DB4BED69D38520"
+				type: "item"
+				item: "minecraft:deepslate"
+			}]
+		}
+		{
+			size: 2.0d
+			description: ["Allows you to create various Elven materials. Check the &6Lexica Botanica &ffor more information on how to create the portal!"]
+			id: "2BDBCD64ECA09FE7"
+			x: 11.5d
+			y: -2.5d
+			title: "&6World Calling"
+			rewards: [
+				{
+					id: "61C2729A88A4D3F4"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6943663066194960901L
+				}
+				{
+					id: "405A4CF43B5D1C3E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1857703300642923985L
+				}
+				{
+					id: "530C521DBA9634A4"
+					type: "item"
+					item: "botania:blacker_lotus"
+				}
+			]
+			subtitle: "Oblivion Gate"
+			dependencies: ["60F38CA8C067FE57"]
+			tasks: [{
+				id: "300AFC58041A9759"
+				type: "advancement"
+				advancement: "botania:main/elf_portal_open"
+				criterion: ""
+			}]
+		}
+		{
+			size: 1.25d
+			description: ["This altar allows you to summon some entities and create some more advanced items which may be of use. "]
+			id: "4353BAF77E29DAAB"
+			x: 14.375d
+			y: -3.75d
+			rewards: [{
+				id: "4E39BC9AECC046EF"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 6943663066194960901L
+			}]
+			dependencies: ["2BDBCD64ECA09FE7"]
+			tasks: [{
+				id: "268E84EF137C555B"
+				type: "item"
+				item: "summoningrituals:altar"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Allows for some special crystallising recipes when placed under the &6Mana Pool&f."]
+			id: "5A03DD1CFCE80524"
+			x: 9.75d
+			y: -3.75d
+			rewards: [{
+				id: "1FADC6948C77E53E"
+				type: "xp"
+				xp: 100
+			}]
+			dependencies: ["60F38CA8C067FE57"]
+			tasks: [{
+				id: "00B88F45AF534D33"
+				type: "item"
+				item: "kubejs:crystalliser"
+			}]
+		}
+		{
+			size: 1.25d
+			description: ["&6Pretty Pipes &fis a method of transporting items, good for short ranges. There are a number of upgrades you can apply to the pipes such as the &6Round Robin &fupgrade which will split items equally."]
+			id: "7A96A8E89B9B3C9B"
+			x: -5.0d
+			y: -3.75d
+			title: "Pretty Pipes"
+			rewards: [{
+				id: "63C34B3534DF82BA"
+				type: "item"
+				item: "prettypipes:blank_module"
+				count: 4
+			}]
+			subtitle: "Beauty is in the eye of the beholder"
+			dependencies: ["069E800E2C36FE9C"]
+			tasks: [{
+				id: "4CA855AC82B4CC87"
+				type: "item"
+				item: "prettypipes:pipe"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["&6Rosin &fcan be made by extracting and bucketing &6Resin &ffrom trees, then quickly turning that bucket of resin into &6Hot Resin &fand throwing it in a &6Mana Pool&f."]
+			id: "6072228BD42F40FD"
+			x: 8.5d
+			y: -5.5d
+			rewards: [{
+				id: "105D08EDCAA2C89F"
+				type: "item"
+				item: "kubejs:hot_resin"
+			}]
+			dependencies: ["29D38D05B6690E4A"]
+			tasks: [{
+				id: "300387E81B14517C"
+				type: "item"
+				item: "thermal:rosin"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["&6Brass Crystals &fare a magical creation that can be useful in &6Imbuement Recipes&f. It will allow you to create the more useful &6Brass Ingots &fas well as the &6Vitric Cactus&f."]
+			id: "3FEC7BE2CAA475A4"
+			x: 10.5d
+			y: -5.5d
+			rewards: [{
+				id: "508E483CA379E804"
+				type: "item"
+				item: "kubejs:brass_crystal"
+				count: 2
+			}]
+			dependencies: [
+				"5A03DD1CFCE80524"
+				"6072228BD42F40FD"
+			]
+			tasks: [{
+				id: "2A9A935613C6FC5D"
+				type: "item"
+				item: "kubejs:brass_crystal"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Zinc is a magically transformed version of &6Manaelectrum&f. It has a number of uses in Manaengineering and creation of even more useful alloys."]
+			id: "29C4841B7DA93398"
+			x: 12.75d
+			y: -0.75d
+			rewards: [{
+				id: "4F29B4DB67F1289E"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1857703300642923985L
+			}]
+			dependencies: ["2BDBCD64ECA09FE7"]
+			tasks: [{
+				id: "2CE5A8D06B85BC23"
+				type: "item"
+				item: "create:zinc_ingot"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["The &6Conjuration Catalyst &fcan essentially duplicate some items, although with a significant &6Mana &fcost. Simply place it underneath your &6Mana Pool &fto allow it to use recipes from this block."]
+			id: "7880884C0E9D3FC9"
+			x: 10.0d
+			y: -0.75d
+			rewards: [{
+				id: "140402B9C2F99599"
+				type: "item"
+				item: "botania:black_lotus"
+				count: 2
+			}]
+			dependencies: ["2BDBCD64ECA09FE7"]
+			tasks: [{
+				id: "2FB2A4E09874819E"
+				type: "item"
+				item: "botania:conjuration_catalyst"
+			}]
+			hide: false
+		}
+		{
+			size: 1.5d
+			description: [
+				"Can be duplicated by &6Conjuration Catalyst&f."
+				""
+				"This is a more useful form of &6Zinc&f. It can be used in various mechanical usages, however it is special in that compared to traditional methods the Mana-infused &6Andesite Alloy &fiscapable of significantly increasing the speed compared to a regular mechanical contraption."
+			]
+			id: "3AE18811D491D287"
+			x: 11.25d
+			y: 0.75d
+			rewards: [{
+				id: "2DDFC9F0B2BF4D81"
+				type: "item"
+				item: "create:zinc_ingot"
+				count: 8
+			}]
+			dependencies: [
+				"7880884C0E9D3FC9"
+				"29C4841B7DA93398"
+			]
+			tasks: [{
+				id: "0939E57D06D3D807"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Yes, it's Create time. If you playtesters get up to this point please tell me how I can improve it without ripping out Create. I am considering making rotation required a consistent stream of mana to function but other than that I have basically no ideas"]
+			id: "4FCC910AD8BB3CD8"
+			x: 9.75d
+			y: 2.25d
+			title: "Mixing Magic"
+			rewards: [{
+				id: "7BE5C78C29E1B593"
+				type: "item"
+				item: "create:gearbox"
+				count: 4
+			}]
+			subtitle: "Your Favourite Mod!"
+			dependencies: ["3AE18811D491D287"]
+			tasks: [
+				{
+					id: "69FD294A57685498"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "0A038E07B8708DB4"
+					type: "item"
+					item: "create:water_wheel"
+				}
+			]
+		}
+		{
+			size: 1.5d
+			description: ["&7Certus is a material with Mana-conducting properties that make it excellent for certain uses such as Manacircuits. "]
+			id: "3E3140C846464ED4"
+			x: 11.5d
+			y: -4.5d
+			title: "Crystallising Certus"
+			rewards: [{
+				id: "3D9086D9610AE264"
+				type: "xp"
+				xp: 100
+			}]
+			dependencies: [
+				"5A03DD1CFCE80524"
+				"2BDBCD64ECA09FE7"
+			]
+			tasks: [{
+				id: "5F5AB9038FDB56A1"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["To capture a &6blaze &fwith the burner, simply right click on one. It allows for excessive heating of certain items which will prove useful in mixing."]
+			id: "0161EDF2EDB61E75"
+			x: 13.5d
+			y: 0.75d
+			title: "Blaze Burner"
+			rewards: [{
+				id: "1EC2D07747EC0185"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+			dependencies: ["3AE18811D491D287"]
+			tasks: [{
+				id: "37B418AB547E05E9"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["&7Allows for the creation of very compact Mana-machines. One of the most useful alloys in the world of Manaengineering."]
+			id: "0FF9C59411EFA79D"
+			x: 12.75d
+			y: 2.25d
+			rewards: [
+				{
+					id: "2173CD02DEBE21ED"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1857703300642923985L
+				}
+				{
+					id: "591240CF5C42620D"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 6943663066194960901L
+				}
+			]
+			dependencies: [
+				"0161EDF2EDB61E75"
+				"4FCC910AD8BB3CD8"
+			]
+			tasks: [{
+				id: "3CBC7532E879DACC"
+				type: "item"
+				item: "thermal:invar_ingot"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Allows you to turn &6Mana &finto a completely different form for use in Manaengineering machines."]
+			id: "3E8CA208782559B3"
+			x: 11.0d
+			y: 4.0d
+			dependencies: ["0FF9C59411EFA79D"]
+			tasks: [{
+				id: "56FFC69F51A0FD59"
+				type: "item"
+				item: "botania:mana_fluxfield"
+			}]
+		}
+		{
+			size: 1.75d
+			description: [
+				"This is the base for a number of Manaengineering machines. They will consume a specific type of &6Mana &fwhich is only created by pouring &6Mana &finto &6Flux Fields&f."
+				""
+				"Highly recommended that you make a &6Flux Cell &fas soon as possible."
+			]
+			id: "01F3ED970AEC73FC"
+			x: 15.5d
+			y: 2.25d
+			rewards: [{
+				id: "27596974F5998588"
+				type: "item"
+				item: "botania:black_lotus"
+				count: 5
+			}]
+			dependencies: ["0FF9C59411EFA79D"]
+			tasks: [{
+				id: "609990B634E31B19"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["This flower is a custom addition for the pack that allows you to burn fuels such as &6Refined Fuel, &6Creosote Oil &fand &6Tree Oil &ffor &6Mana&f. The amount produced from each fuel, from greatest to smallest, is the same as the order they are listed here. "]
+			id: "2C56A5CDD7FFAC00"
+			x: 12.75d
+			y: 4.5d
+			rewards: [{
+				id: "36BB3A8FBD4577AA"
+				type: "item"
+				item: "kubejs:creosote_bucket"
+			}]
+			dependencies: ["0FF9C59411EFA79D"]
+			tasks: [{
+				id: "7B526ADB79965590"
+				type: "item"
+				item: "genericbotaniapacktweaker:dieselotus"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Can be smelted into &6Glass Spines &fwhich are used in the creation of &6Vitric Diamonds&f. These will allow you to create more powerful &6Runes&f."]
+			id: "0D185D2CDE6E1256"
+			x: 10.5d
+			y: -7.5d
+			rewards: [{
+				id: "4F7EC647B94429F0"
+				type: "item"
+				item: "moreminecarts:glass_spines"
+				count: 6
+			}]
+			dependencies: ["3FEC7BE2CAA475A4"]
+			tasks: [{
+				id: "58269C3B845DBA22"
+				type: "item"
+				item: "moreminecarts:glass_cactus"
+			}]
+		}
+		{
+			size: 1.25d
+			description: [
+				"This will allow you to quickly generate &6Cobblestone&f. It can be upgraded in the &6Smithing Table&f."
+				""
+				"Try placing some form of storage ontop of the block."
+			]
+			id: "2129490B244442FA"
+			x: -5.0d
+			y: -1.0d
+			title: "Better Cobble Gen"
+			dependencies: ["069E800E2C36FE9C"]
+			tasks: [{
+				id: "581788A40DA6D4AD"
+				type: "item"
+				item: "cobblefordays:tier_2"
+			}]
+		}
+		{
+			tasks: [{
+				id: "2DAA6825BFB71F17"
+				type: "item"
+				item: "ars_nouveau:basic_spell_turret"
+			}]
+			description: [
+				"&6Spell Turrets &fcan automatically cast spells for you, provided they have &6Source &favailable to them from a nearby &6Source Jar&f. In order to determine what spell is cast, you must use &6Spell Parchment&f."
+				""
+				"This is done by placing the parchment on a &6Scribe's Table &fand shift-right clicking it with your &6Spell Book &fwith the spell you want selected."
+			]
+			id: "2BEF744F2B6E1E8F"
+			x: 0.5d
+			y: -1.75d
+			rewards: [{
+				id: "5140AEF18606C819"
+				type: "item"
+				item: "ars_nouveau:blank_parchment"
+			}]
+			dependencies: ["0E4BA55EA5D7F334"]
+		}
+		{
+			tasks: [{
+				id: "0702C711E072F9E7"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+			}]
+			description: ["A special crop that grows into magical fibres which can be used for various magical applications."]
+			id: "3B7A5EF5BB2851D3"
+			x: 3.0d
+			y: -6.5d
+			rewards: [{
+				id: "47993FB13C87CC2D"
+				type: "xp"
+				xp: 100
+			}]
+			dependencies: ["6D9ED9BBA69C625C"]
+		}
+		{
+			size: 1.5d
+			description: ["This machine allows you to create even more alloys with varying usages. One of the most important ones is &6Constantan &fwhich while possible to make without an &6Induction Smelter&f, it is significantly cheaper using one."]
+			id: "72C3030E3A83D3C9"
+			x: 15.5d
+			y: 0.0d
+			rewards: [{
+				id: "71DD5C36E7B5AAD7"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1857703300642923985L
+			}]
+			dependencies: ["01F3ED970AEC73FC"]
+			tasks: [{
+				id: "7D6D38D52F935D6B"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			size: 2.5d
+			description: ["Although expensive, these blocks when placed correctly (Use the &6Lexica Botania&f) will allow you to summon the &4Gaia Guardian&f. However difficult, the fight will yield some major rewards."]
+			id: "1EA3144D38F82615"
+			x: 17.5d
+			y: -2.625d
+			shape: "rsquare"
+			title: "&4Gaia Preparation"
+			rewards: [
+				{
+					id: "6B116BDFE4BCB67D"
+					type: "item"
+					item: "botania:blacker_lotus"
+					count: 2
+				}
+				{
+					id: "34B579C85646267C"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+					count: 3
+				}
+			]
+			dependencies: [
+				"2BDBCD64ECA09FE7"
+				"4353BAF77E29DAAB"
+				"706CF61C7F96DB82"
+				"2238F03AA6B33E48"
+				"245B2362F599BC2C"
+			]
+			tasks: [
+				{
+					id: "41465961F2086AD6"
+					type: "item"
+					item: "botania:gaia_pylon"
+					count: 4L
+				}
+				{
+					id: "3DB99AE15AC4F74A"
+					type: "item"
+					item: "minecraft:beacon"
+				}
+			]
+		}
+		{
+			size: 1.25d
+			id: "245B2362F599BC2C"
+			x: 17.5d
+			y: 2.5d
+			rewards: [{
+				id: "42937F80F1D66CEA"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1857703300642923985L
+			}]
+			dependencies: ["01F3ED970AEC73FC"]
+			tasks: [{
+				id: "66DA3332E6BD4F5D"
+				type: "item"
+				item: "ae2:calculation_processor"
+			}]
+		}
+		{
+			size: 1.25d
+			id: "706CF61C7F96DB82"
+			x: 17.5d
+			y: 1.25d
+			rewards: [{
+				id: "2F48DDB70DEC10CB"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1857703300642923985L
+			}]
+			dependencies: [
+				"01F3ED970AEC73FC"
+				"72C3030E3A83D3C9"
+			]
+			tasks: [{
+				id: "48F5F67A4C4FD989"
+				type: "item"
+				item: "ae2:engineering_processor"
+			}]
+		}
+		{
+			size: 1.25d
+			id: "2238F03AA6B33E48"
+			x: 17.5d
+			y: 3.75d
+			rewards: [{
+				id: "4014B372B9BE2D3F"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1857703300642923985L
+			}]
+			dependencies: ["01F3ED970AEC73FC"]
+			tasks: [{
+				id: "3155BE5721585222"
+				type: "item"
+				item: "ae2:logic_processor"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Cut trees in one trop! Use an &6AOE glyph &fto increase the size of the tree you can cut!"]
+			id: "3C727FC736089180"
+			x: 0.5d
+			y: 1.5d
+			rewards: [{
+				id: "08B1F13CF7680757"
+				type: "item"
+				item: "ars_nouveau:source_berry_roll"
+				count: 8
+			}]
+			dependencies: ["0BC93642952F6326"]
+			tasks: [{
+				type: "item"
+				match_nbt: true
+				weak_nbt_match: true
+				id: "3DC7CD403B630986"
+				item: "ars_nouveau:glyph_fell"
+			}]
+		}
+		{
+			tasks: [{
+				id: "5E311CB88D784B8F"
+				type: "item"
+				item: "kubejs:fiery_coal"
+			}]
+			description: ["Burns longer than regular coal, making it significantly more useful in an &6Endoflame&f."]
+			dependencies: ["069E800E2C36FE9C"]
+			id: "2CA2967FAD281742"
+			y: -1.0d
+			x: -1.5d
+		}
+		{
+			tasks: [{
+				id: "207589EC82C33A4D"
+				type: "item"
+				item: "minecraft:comparator"
+			}]
+			description: ["&6Imbuement Chambers &fhave been modified so that when one is in the process of crafting a recipe it will provide a redstone signal strength of 15 through a &6comparator&f."]
+			id: "1127C3C5426AC1C7"
+			x: 2.0d
+			y: -1.25d
+			title: "Imbuement Changes"
+			dependencies: ["0E4BA55EA5D7F334"]
+		}
+	]
+}

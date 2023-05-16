@@ -1,0 +1,10 @@
+{
+	rewards: [
+		{ item: "kubejs:clay_gear", count: 12 }
+		{ item: "botania:manaweave_cloth", count: 6 }
+	]
+	loot_size: 1
+	order_index: 4
+	id: "567023548B57E02E"
+	title: "appartusloot"
+}

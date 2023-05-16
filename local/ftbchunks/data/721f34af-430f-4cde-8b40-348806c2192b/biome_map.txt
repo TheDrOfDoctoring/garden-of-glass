@@ -1,0 +1,14 @@
+#61E incendium:ash_barrens
+#618 minecraft:basalt_deltas
+#570 minecraft:crimson_forest
+#153 incendium:infernal_dunes
+#1C3 incendium:inverted_forest
+#653 minecraft:nether_wastes
+#692 incendium:quartz_flats
+#5FF minecraft:river
+#721 minecraft:soul_sand_valley
+#310 incendium:toxic_heap
+#61F incendium:volcanic_deltas
+#628 minecraft:warped_forest
+#031 incendium:weeping_valley
+#646 incendium:withered_forest

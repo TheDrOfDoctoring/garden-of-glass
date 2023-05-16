@@ -1,0 +1,7 @@
+{
+	"type": "minecraft:stronghold",
+	"biomes": "minecraft:savanna",
+	"step": "strongholds",
+	"spawn_overrides": {},
+	"terrain_adaptation": "none"
+}

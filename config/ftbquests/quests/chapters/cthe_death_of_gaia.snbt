@@ -1,0 +1,62 @@
+{
+	quest_links: [ ]
+	default_hide_dependency_lines: false
+	group: ""
+	id: "41EB143760F32457"
+	filename: "cthe_death_of_gaia"
+	default_quest_shape: ""
+	icon: "botania:gaia_head"
+	title: "&4The Death of Gaia"
+	order_index: 2
+	quests: [
+		{
+			size: 3.0d
+			description: ["You have killed the weaker form of &4Gaia&f. In order to kill the more powerful version, you must use a &6Gaia Spirit Ingot &finstead of a &6Terrasteel Ingot &fin the ritual."]
+			id: "1C97E024ED0439C5"
+			x: -2.0d
+			y: -0.5d
+			shape: "hexagon"
+			title: "&4The Death of Gaia"
+			rewards: [
+				{
+					id: "012E2F6BDB72B1D6"
+					type: "item"
+					item: "botania:blacker_lotus"
+					count: 3
+				}
+				{
+					id: "4ADE3D310F1A2AF4"
+					type: "item"
+					item: "botania:overgrowth_seed"
+					count: 5
+				}
+			]
+			dependencies: ["1EA3144D38F82615"]
+			tasks: [{
+				id: "796A94AA22606317"
+				type: "advancement"
+				advancement: "botania:main/gaia_guardian_kill"
+				criterion: ""
+			}]
+		}
+		{
+			size: 5.0d
+			x: 10.0d
+			id: "5CBD8975441CE9C6"
+			y: 0.0d
+			shape: "gear"
+			title: "&6The Everlasting Guilty Pool"
+			rewards: [{
+				id: "34A7F51DE32430DB"
+				type: "xp"
+				xp: 1
+			}]
+			dependencies: ["1C97E024ED0439C5"]
+			tasks: [{
+				id: "71844889B905CF8E"
+				type: "item"
+				item: "botania:creative_pool"
+			}]
+		}
+	]
+}

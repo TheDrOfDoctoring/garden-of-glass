@@ -1,0 +1,26 @@
+[
+  {
+    "dimension": "minecraft:overworld",
+    "mod": "ars_nouveau",
+    "mob": "ars_nouveau:whirlisprig",
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mod": "ars_nouveau",
+    "mob": "ars_nouveau:gift_starby",
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mod": "ars_nouveau",
+    "mob": "ars_nouveau:drygmy",
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mod": "ars_nouveau",
+    "mob": "ars_nouveau:starbuncle",
+    "result": "deny"
+  }
+]

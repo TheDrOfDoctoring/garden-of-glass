@@ -1,0 +1,87 @@
+{
+	quest_links: [ ]
+	default_hide_dependency_lines: false
+	group: ""
+	id: "4EF5835B8052F002"
+	filename: "atips_and_hints"
+	default_quest_shape: ""
+	icon: "minecraft:book"
+	title: "&aTips and Hints"
+	order_index: 3
+	quests: [
+		{
+			size: 1.5d
+			description: ["These seeds can be made and grown for an easy way to automate &6String&f."]
+			id: "3777508D93740037"
+			y: -1.0d
+			x: -0.5d
+			tasks: [{
+				id: "635EF15B6AF1FF42"
+				type: "item"
+				item: "supplementaries:flax_seeds"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Doubles the amount of &6Mana &fa burst carries. Useful for transferring &6Mana &finto &6Source Jars &for &6Flux Fields &fquickly."]
+			id: "0E7C2AFB6AF814CE"
+			y: -1.0d
+			x: 1.0d
+			tasks: [{
+				id: "1FF30A146FB9C498"
+				type: "item"
+				item: "botania:lens_power"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["A faster way of growing crops like &6Sugar Cane&f."]
+			id: "62B947DFCB21102F"
+			y: -1.0d
+			x: 2.5d
+			tasks: [{
+				id: "2E1AD6419C6C2C37"
+				type: "item"
+				item: "snad:snad"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Uses half the &6Source &fcost as a regular spell turret to cast spells."]
+			id: "78C2E246D9B0B211"
+			y: -1.0d
+			x: -2.0d
+			tasks: [{
+				id: "63F25C3A69AA58F9"
+				type: "item"
+				item: "ars_nouveau:spell_turret"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Various paths and similar blocks have been given a speed increase when you walk on them. Useful to move around your base faster as it expands!"]
+			id: "3E78FDA888B1D701"
+			x: -3.5d
+			y: -1.0d
+			title: "Paving Paths"
+			dependencies: ["1136836816EB0BA6"]
+			tasks: [{
+				id: "6DDA921432269333"
+				type: "item"
+				item: "mcwpaths:oak_planks_path"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Speeds up growth rate for most plants."]
+			id: "0575489F79D32C0E"
+			y: -1.0d
+			x: -5.0d
+			tasks: [{
+				id: "2BF6DF994B5A761E"
+				type: "item"
+				item: "farmersdelight:rich_soil"
+			}]
+		}
+	]
+}

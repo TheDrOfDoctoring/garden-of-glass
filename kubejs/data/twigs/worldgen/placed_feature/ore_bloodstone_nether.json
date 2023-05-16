@@ -1,0 +1,9 @@
+{
+	"feature": "twigs:ore_bloodstone_nether",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		}
+	]
+}

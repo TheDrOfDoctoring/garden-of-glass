@@ -1,0 +1,8 @@
+#52B53D minecraft:air
+#E9A8F5 minecraft:crying_obsidian
+#3F84B7 minecraft:grass_block
+#83CED3 minecraft:lava
+#DE9468 minecraft:magma_block
+#454322 minecraft:netherrack
+#4A5E4E minecraft:obsidian
+#87BAF4 minecraft:tuff

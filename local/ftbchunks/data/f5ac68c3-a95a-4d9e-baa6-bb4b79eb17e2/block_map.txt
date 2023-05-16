@@ -1,0 +1,8 @@
+#52B53D minecraft:air
+#BD3E81 ars_nouveau:arcane_pedestal
+#F888C9 minecraft:comparator
+#80497A minecraft:dirt
+#3F84B7 minecraft:grass_block
+#52BBB1 ars_nouveau:imbuement_chamber
+#721B63 minecraft:redstone_wire
+#64F88A minecraft:spruce_slab

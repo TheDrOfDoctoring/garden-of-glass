@@ -1,0 +1,9 @@
+[18:35:00] [INFO ] Loaded script startup_scripts:custom/brewing.js in 0.325 s
+[18:35:00] [INFO ] Loaded script startup_scripts:custom/ender_air.js in 0.028 s
+[18:35:00] [INFO ] Loaded script startup_scripts:custom/introsceptre.js in 0.004 s
+[18:35:00] [INFO ] Loaded script startup_scripts:custom/script.js in 0.007 s
+[18:35:00] [INFO ] Loaded script startup_scripts:misc/fractured.js in 0.001 s
+[18:35:00] [INFO ] Loaded script startup_scripts:worldgen/worldgen.js in 0.009 s
+[18:35:00] [INFO ] Loaded 6/6 KubeJS startup scripts in 1.705 s
+[18:35:19] [INFO ] startup_scripts:custom/brewing.js:3: Removed potion brewing recipe: minecraft:awkward + {"item":"minecraft:magma_cream"} -> minecraft:fire_resistance
+[18:35:19] [INFO ] startup_scripts:custom/brewing.js:4: Removed potion brewing recipe: minecraft:fire_resistance + {"item":"minecraft:redstone"} -> minecraft:long_fire_resistance

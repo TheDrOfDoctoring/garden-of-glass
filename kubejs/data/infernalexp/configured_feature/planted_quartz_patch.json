@@ -1,0 +1,9 @@
+{
+	"type": "infernalexp:planted_quartz_patch",
+	"config": {
+		"size": 0,
+		"discard_chance_on_air_exposure": 1,
+		"targets": []
+	}
+}
+
