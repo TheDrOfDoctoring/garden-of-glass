@@ -503,6 +503,12 @@ runicInfusion("minecraft:blaze_powder", "botania:rune_fire")
   ]
  )
  event.shapeless(
+  Item.of('kubejs:runic_ingot', 9), 
+[ 
+  'kubejs:runic_block'
+]
+)
+ event.shapeless(
   Item.of('kubejs:hot_resin', 1), 
 [ 
   'thermal:resin_bucket'
@@ -680,6 +686,7 @@ event.shaped(
     A: 'infernalexp:glowsilk',  
   }
 )
+
 event.shaped(
   Item.of('kubejs:bloodstone_block', 1), 
   [ 
@@ -694,14 +701,13 @@ event.shaped(
 event.shaped(
   Item.of('botania:creative_pool', 1), 
   [ 
-    'BDB', 
+    'DDD', 
     'DAD', 
-    'BDB'  
+    'DDD'  
   ],
   {
-    A: 'botanicadds:gaiasteel_block',  
-    B: 'thermal:enderium_block',
-    D: 'ae2:cell_component_256k'
+    D: 'kubejs:runic_block',
+    A: 'botania:mana_pool',  
   }
 )
 event.shaped(
@@ -1297,6 +1303,17 @@ event.shaped(
     C: 'ars_nouveau:earth_essence',
     D: 'ars_nouveau:source_gem_block',
     X: 'botania:spark',
+  }
+)
+event.shaped(
+  Item.of('kubejs:runic_block', 1), 
+  [ 
+    'AAA', 
+    'AAA',
+    'AAA'  
+  ],
+  {
+    A: 'kubejs:runic_ingot',  
   }
 )
 event.shaped(

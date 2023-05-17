@@ -53,6 +53,86 @@ ServerEvents.recipes(event => {
   event.remove({id: 'thermal:earth_charge/ender_pearl_dust_from_ender_pearl'})
   event.remove({id: 'thermal:machines/pulverizer/pulverizer_ender_pearl'})
   event.custom({
+    "type": "create:mechanical_crafting",
+    "acceptMirrored": false,
+    "key": {
+      "A": {
+        "item": "botania:rune_fire"
+      },
+      "B": {
+        "item": "botania:rune_earth"
+      },
+      "C": {
+        "item": "botania:rune_air"
+      },
+      "D": {
+        "item": "botania:rune_water"
+      },
+      "E": {
+        "item": "botania:rune_summer"
+      },
+      "F": {
+        "item": "botania:rune_winter"
+      },
+      "G": {
+        "item": "botania:rune_autumn"
+      },
+      "H": {
+        "item": "botania:rune_spring"
+      },
+      "M": {
+        "item": 'botania:rune_mana'
+      },
+      "N": {
+        "item": "botania:rune_sloth"
+      },
+      "O": {
+        "item": "botania:rune_greed"
+      },
+      "P": {
+        "item": "botania:rune_wrath"
+      },
+      "Q": {
+        "item": "botania:rune_lust"
+      },
+      "R": {
+        "item": "botania:rune_gluttony"
+      },
+      "V": {
+        "item": "botania:rune_sloth"
+      },
+      "T": {
+        "item": "botania:rune_pride"
+      },
+      "M": {
+        "item": 'botania:rune_mana'
+      },
+      "X": {
+        "item": "kubejs:rune_calculation"
+      },
+      "Y": {
+        "item": "kubejs:rune_engineering"
+      },
+      "Z": {
+        "item": 'kubejs:rune_logic'
+      },
+      "S": {
+        "item": "botanicadds:gaiasteel_ingot"
+      }
+    },
+    "pattern": [
+      " NXYZN ",
+      "TMEAFMT",
+      "VMBSCMR",
+      "OMGDHMO",
+      " PXYZQ "
+    ],
+    "result": {
+      "count": 1,
+      "item": "kubejs:runic_ingot"
+    }
+  })
+  event.custom({
     "type": "thermal:pyrolyzer",
   "ingredient": {
     "tag": "minecraft:logs"
