@@ -1746,6 +1746,42 @@ ServerEvents.recipes(event => {
     "type": "ars_nouveau:enchanting_apparatus",
     "keepNbtOfReagent": false,
     "output": {
+      "count": 1,
+      "item": "create:creative_blaze_cake"
+    },
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "create:blaze_cake"
+        }
+      },
+      {
+        "item": {
+          "item": "create:blaze_cake"
+        }
+      },
+      {
+        "item": {
+          "item": "create:blaze_cake"
+        }
+      },
+      {
+        "item": {
+          "item": "create:blaze_cake"
+        }
+      }
+    ],
+    "reagent": [
+      {
+        "item": "botanicadds:gaiasteel_ingot"
+      }
+    ],
+    "sourceCost": 0
+  })
+  event.custom({
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
       "count": 4,
       "item": "kubejs:bloodstone_block"
     },
@@ -1966,6 +2002,7 @@ event.custom({
       }
     ]
   })
+
   event.custom({
     "type": "ars_nouveau:crush",
     "input": {
@@ -2723,6 +2760,42 @@ event.custom({
 }
 ],
 "sourceCost": 1000
+})
+event.custom({
+  "type": "ars_nouveau:enchanting_apparatus",
+"keepNbtOfReagent": true,
+"output": {
+"count": 1,
+"item": "minecraft:blaze_rod"
+},  
+"pedestalItems": [
+{
+  "item": {
+    "item": "ars_nouveau:fire_essence"
+  }
+},
+{
+  "item": {
+    "item": "ars_nouveau:fire_essence"
+  }
+},
+{
+  "item": {
+    "item": "ars_nouveau:fire_essence"
+  }
+},
+{
+  "item": {
+    "item": "ars_nouveau:fire_essence"
+  }
+}
+],
+"reagent": [
+{
+  "item": "botania:livingwood_twig"
+}
+],
+"sourceCost": 2500
 })
 event.custom({
   "type": "ars_nouveau:enchanting_apparatus",

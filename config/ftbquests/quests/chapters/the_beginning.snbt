@@ -96,7 +96,11 @@
 		}
 		{
 			size: 1.5d
-			description: ["Hold &6Shift Right-click&f on Grass Blocks in order to get &6Pebbles &fwhich can be crafted into &6Cobblestone&f."]
+			description: [
+				"Hold &6Shift Right-click&f on Grass Blocks in order to get &6Pebbles &fwhich can be crafted into &6Cobblestone&f."
+				""
+				"A quicker way to get pebbles might be to use the &6Pebblespawn &fspell you are given by default, it must be aimed at a &6Grass Block&f."
+			]
 			id: "0007563A33E18050"
 			x: 1.5d
 			y: 3.0d
@@ -676,6 +680,33 @@
 			tasks: [{
 				id: "09DFB00C77AE6C3B"
 				type: "checkmark"
+			}]
+		}
+		{
+			size: 1.25d
+			description: ["Slabs are a cheaper way to create a large platform."]
+			id: "405A9C1E2C88EFF6"
+			x: 5.5d
+			y: 0.0d
+			title: "Slab Superiority"
+			dependencies: ["1136836816EB0BA6"]
+			tasks: [{
+				id: "0160CF3FA6A186A2"
+				type: "item"
+				item: "minecraft:oak_slab"
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["A risky way to get some extra dirt, or related blocks, as &6Rocky Dirt &fcan be turned into 4 dirt."]
+			id: "18373FB900336E27"
+			x: 19.0d
+			y: -2.5d
+			dependencies: ["295ADAC4384BB2C6"]
+			tasks: [{
+				id: "107BD82304AAC76A"
+				type: "item"
+				item: "kubejs:dirty_dirt"
 			}]
 		}
 	]

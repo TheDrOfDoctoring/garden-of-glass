@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
   event.remove({id: 'botania:orechid/lapis_ore'})
   event.remove({id: 'botania:orechid/deepslate_lapis_ore'})
+
+  //dirt gambling
     event.custom({
         "type": "botania:orechid",
         "input": {
@@ -38,6 +40,8 @@ ServerEvents.recipes(event => {
         },
         "weight": 883
     })
+
+    //deepslate changes
     event.custom({
       "type": "botania:orechid",
       "input": {
@@ -99,6 +103,8 @@ ServerEvents.recipes(event => {
       "weight": 2078
     })
 
+    //sulfur addition
+
 
     event.custom({
       "type": "botania:orechid_ignem",
@@ -112,7 +118,8 @@ ServerEvents.recipes(event => {
       },
       "weight": 1882
     })
-  
+    
+    //andesite
     event.custom({
       "type": "botania:orechid",
       "input": {
@@ -161,6 +168,65 @@ ServerEvents.recipes(event => {
       },
       "weight": 2698
     })
-
-
+    //bloodstone
+    event.custom({
+      "type": "botania:orechid_ignem",
+      "input": {
+        "type": "block",
+        "block": "twigs:bloodstone"
+      },
+      "output": {
+        "type": "block",
+        "block": "minecraft:netherrack"
+      },
+      "weight": 501
+    })
+    event.custom({
+      "type": "botania:orechid_ignem",
+      "input": {
+        "type": "block",
+        "block": "twigs:bloodstone"
+      },
+      "output": {
+        "type": "block",
+        "block": "minecraft:deepslate_diamond_ore"
+      },
+      "weight": 101
+    })
+    event.custom({
+      "type": "botania:orechid_ignem",
+      "input": {
+        "type": "block",
+        "block": "twigs:bloodstone"
+      },
+      "output": {
+        "type": "block",
+        "block": "minecraft:deepslate_nickel_ore"
+      },
+      "weight": 101
+    })
+    event.custom({
+      "type": "botania:orechid_ignem",
+      "input": {
+        "type": "block",
+        "block": "twigs:bloodstone"
+      },
+      "output": {
+        "type": "block",
+        "block": "minecraft:nether_quartz_ore"
+      },
+      "weight": 303
+    })
+    event.custom({
+      "type": "botania:orechid_ignem",
+      "input": {
+        "type": "block",
+        "block": "twigs:bloodstone"
+      },
+      "output": {
+        "type": "block",
+        "block": "minecraft:cobbled_deepslate"
+      },
+      "weight": 205
+    })
 })

@@ -41,7 +41,7 @@
         "botanicadds:flowers/glaciflora": true,
         "botanicadds:elven_lapis_block_1": true,
         "botanicadds:recipe_tweaks/mana_fluxfield": true,
-        "botanicadds:mana_tesseract": true,
+        "botanicadds:mana_tesseract": false,
         "botanicadds:gaiasteel_block": true,
         "botanicadds:gaiasteel_ingots_from_block": true,
         "botanicadds:gaiasteel_nugget": true

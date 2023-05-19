@@ -3,14 +3,12 @@
 
 ServerEvents.recipes(event => {
 	//TODO:
-  //creative mana pool as endgame??
   //organisation
   //mana dynamo?
   //3 new fuels for the endoflame
   //orechid rework
   //exoblast for stone, maybe oil sand and assorted other block blasting stuff
   //continue triplet (energy, time, material) design method for automation heavy items
-  //disable magebloom bonemeal
 	event.remove({output: 'ars_nouveau:blue_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:purple_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:red_archwood_sapling'})
@@ -137,6 +135,7 @@ ServerEvents.recipes(event => {
   event.remove({id: 'computercraft:pocket_computer_advanced'})
   event.remove({id: 'computercraft:pocket_computer_advanced_upgrade'})
   event.remove({id: 'computercraft:turtle_normal'})
+  event.remove({id: 'create:compat/ae2/milling/certus_quartz'})
   event.remove({id: 'computercraft:turtle_advanced_upgrade'})
   event.remove({id: 'computercraft:turtle_advanced'})
   event.remove({id: 'ae2:materials/formationcore'})
@@ -212,6 +211,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({mod: 'everycomp', output: (/.*trim.*/)}, 'minecraft:stick', 'botania:livingwood_twig')
 	event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
 	event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_nugget', 'kubejs:manaelectrum_nugget')
+  event.replaceInput({mod: 'create', input: '#minecraft:planks'}, '#minecraft:planks', 'botania:livingwood')
 	event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:diamond', 'botania:mana_diamond')
 	event.replaceInput({mod: 'storagedrawers'}, 'minecraft:stick', 'botania:livingwood_twig')
 	event.replaceInput({id: 'storagedrawers:obsidian_storage_upgrade'}, 'minecraft:obsidian', 'minecraft:iron_ingot')
@@ -280,6 +280,8 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'botania:red_string'}, 'minecraft:string', 'ars_nouveau:blaze_fiber')
   event.remove({id: 'thermal:fire_charge/enderium_ingot_2'})
   event.remove({id: 'botania:red_string_alt'})
+  event.remove({id: 'create:mixing/andesite_alloy'})
+  event.remove({id: 'create:mixing/andesite_alloy_from_zinc'})
   event.remove({id: 'thermal:bronze_dust_4'})
   event.remove({id: 'thermal:machines/smelter/smelter_alloy_bronze'})
   event.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', 'botania:manasteel_ingot')
@@ -488,6 +490,7 @@ let crushItUp = (input, output, mana) => {
    })
 }
 crushItUp('kubejs:bloodstone_block', 'kubejs:blood_drop', 5000)
+crushItUp('ae2:certus_quartz_crystal', 'ae2:certus_quartz_dust', 5000)
 runicInfusion("minecraft:ice", "botania:rune_water")
 runicInfusion("minecraft:hay_block", "botania:rune_earth")
 runicInfusion("minecraft:feather", "botania:rune_air")
@@ -1723,7 +1726,7 @@ event.custom({
     {
       "chance": 1.0,
       "count": 1,
-      "item": "create:brass_plate"
+      "item": "create:brass_sheet"
     }
   ]
 })

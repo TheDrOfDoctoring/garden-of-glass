@@ -432,6 +432,7 @@
 			id: "2F0AB2F2474F9B03"
 			x: 4.5d
 			y: -2.5d
+			title: "&2Terrasteel Forgery"
 			rewards: [
 				{
 					id: "38C23244F4D3937F"
@@ -468,6 +469,7 @@
 			id: "60F38CA8C067FE57"
 			x: 8.5d
 			y: -2.5d
+			title: "&aTerrasteel Ingot"
 			rewards: [
 				{
 					id: "7403516B77D9E549"
@@ -790,6 +792,11 @@
 					type: "item"
 					item: "create:water_wheel"
 				}
+				{
+					id: "1CC5A512E57CE92F"
+					type: "item"
+					item: "create:basin"
+				}
 			]
 		}
 		{
@@ -816,7 +823,7 @@
 		}
 		{
 			size: 1.5d
-			description: ["To capture a &6blaze &fwith the burner, simply right click on one. It allows for excessive heating of certain items which will prove useful in mixing."]
+			description: ["To capture a &6Blaze &fwith the burner, simply right click on one. It allows for excessive heating of certain items which will prove useful in mixing."]
 			id: "0161EDF2EDB61E75"
 			x: 13.5d
 			y: 0.75d
@@ -1131,18 +1138,6 @@
 				id: "3DC7CD403B630986"
 				item: "ars_nouveau:glyph_fell"
 			}]
-		}
-		{
-			tasks: [{
-				id: "5E311CB88D784B8F"
-				type: "item"
-				item: "kubejs:fiery_coal"
-			}]
-			description: ["Burns longer than regular coal, making it significantly more useful in an &6Endoflame&f."]
-			dependencies: ["069E800E2C36FE9C"]
-			id: "2CA2967FAD281742"
-			y: -1.0d
-			x: -1.5d
 		}
 		{
 			tasks: [{
