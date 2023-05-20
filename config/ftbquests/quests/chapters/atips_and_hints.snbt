@@ -95,5 +95,17 @@
 				item: "kubejs:fiery_coal"
 			}]
 		}
+		{
+			size: 1.5d
+			description: ["Can be used by an &6Orechid&f, gives you chances of acquiring ores like &6Niter &fand &6Apetite&f."]
+			id: "68D257E806756E56"
+			y: -1.0d
+			x: -6.5d
+			tasks: [{
+				id: "1E00AFF5BDDAC6B6"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+		}
 	]
 }

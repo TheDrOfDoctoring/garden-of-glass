@@ -76,8 +76,9 @@ ServerEvents.recipes(event => {
   event.remove({id: 'create:crafting/kinetics/empty_blaze_burner'})
   event.remove({id: 'supplementaries:bellows'})
   event.remove({id: 'create:crafting/materials/electron_tube'})
-    event.remove({id: 'botanicadds:elven_fluxfield'})
-    event.remove({id: 'botanicadds:flowers/energizera'})
+  event.remove({id: 'botania:elven_trade/dragonstone'})
+  event.remove({id: 'botanicadds:elven_fluxfield'})
+  event.remove({id: 'botanicadds:flowers/energizera'})
   event.remove({id: 'create:mechanical_crafting/crushing_wheel'})
   event.remove({id: 'thermal:electrum_dust_2'})
   event.remove({id: 'thermal:fire_charge/electrum_ingot_2'})
@@ -460,6 +461,17 @@ let crushItUp = (input, output, mana) => {
         }
       ]
   })
+	event.custom({
+  "type": "botania:mana_infusion",
+  "input": {
+    "item": "thermal:cinnabar"
+  },
+  "output": {
+    "item": "kubejs:mana_gem",
+    "count": 4
+  },
+  "mana": 5000
+   })
   event.custom({
     "type": "create:crushing",
     "ingredients": [
@@ -506,11 +518,25 @@ runicInfusion("minecraft:blaze_powder", "botania:rune_fire")
   ]
  )
  event.shapeless(
+  Item.of('kubejs:ender_sap', 1), 
+[ 
+  'kubejs:sap',
+  'ae2:ender_dust',
+  'ars_nouveau:air_essence'
+]
+)
+ event.shapeless(
   Item.of('kubejs:runic_ingot', 9), 
 [ 
   'kubejs:runic_block'
 ]
 )
+event.shapeless(
+  Item.of('kubejs:sap', 4), 
+[ 
+  'thermal:sap_bucket'
+]
+).replaceIngredient('thermal:sap_bucket', 'minecraft:bucket')
  event.shapeless(
   Item.of('kubejs:hot_resin', 1), 
 [ 
@@ -1829,6 +1855,20 @@ event.custom({
   },
   "weight": 75
 })*/
+event.custom({
+  "type": "botania:elven_trade",
+  "ingredients": [
+    {
+      "item": "ars_nouveau:source_gem"
+    }
+  ],
+  "output": [
+    {
+      "item": "botania:dragonstone"
+    }
+  ]
+}).id("kubejs:botania/dragonstone")
+
 event.custom({
   "type": "botania:elven_trade",
   "ingredients": [

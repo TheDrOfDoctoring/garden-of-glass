@@ -1133,6 +1133,71 @@ ServerEvents.recipes(event => {
     }
   })
   event.custom({
+      "type": "thermal:chiller",
+      "ingredients": [
+        {
+          "fluid": "thermal:sap",
+          "amount": 1000
+        }
+      ],
+      "result": [
+        {
+          "item": "kubejs:sap",
+          "count": 4
+        }
+      ],
+      "energy": 4000
+  })
+  event.custom({
+      "type": "thermal:crucible",
+      "ingredient": {
+        "item": "kubejs:ender_sap"
+      },
+      "result": [
+        {
+          "fluid": "thermal:ender",
+          "amount": 1000
+        }
+      ],
+      "energy": 35000
+    })
+    
+  event.custom({
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": true,
+    "output": {
+      "item": "minecraft:ender_pearl"
+    },
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "ars_nouveau:air_essence"
+        }
+      },
+      {
+        "item": {
+          "item": "ars_nouveau:source_berry"
+        }
+      },
+      {
+        "item": {
+          "item": "kubejs:sap"
+        }
+      },
+      {
+        "item": {
+          "item": "ae2:fluix_dust"
+        }
+      }
+    ],
+    "reagent": [
+      {
+        "item": "botania:mana_powder"
+      }
+    ],
+    "sourceCost": 1250
+  })
+  event.custom({
     "type": "ars_nouveau:enchanting_apparatus",
     "keepNbtOfReagent": true,
     "output": {

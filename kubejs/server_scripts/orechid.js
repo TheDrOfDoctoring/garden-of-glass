@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
       },
       "output": {
         "type": "block",
-        "block": "minecraft:deepslate_nickel_ore"
+        "block": 'thermal:deepslate_nickel_ore'
       },
       "weight": 101
     })

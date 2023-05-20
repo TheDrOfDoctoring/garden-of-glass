@@ -1152,5 +1152,24 @@
 			title: "Imbuement Changes"
 			dependencies: ["0E4BA55EA5D7F334"]
 		}
+		{
+			tasks: [{
+				id: "1A5C023672311F34"
+				type: "checkmark"
+				title: "Ore Enchantment"
+			}]
+			description: [
+				"The &6Enchanting Apparatus &fprovides an alternative way to get ores. Whilst it is costly, it may allow you to get some of the rare ores you're low on, such as diamond."
+				""
+				"Search for the recipes for ores like diamond in &6JEI&f. For some ores, there'll be an ore enchanting recipe, such as for &6Diamond&f."
+				""
+				"&7Full List of Ores: Ancient Debris, Nether Quartz, Netherrack Sulfur, Diamond, Gold, Cinnabar, Redstone"
+			]
+			icon: "minecraft:diamond_ore"
+			id: "1E9D22EBB45D80F6"
+			x: 4.5d
+			y: -4.0d
+			dependencies: ["6D9ED9BBA69C625C"]
+		}
 	]
 }

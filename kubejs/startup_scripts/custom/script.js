@@ -32,6 +32,8 @@ StartupEvents.registry('item', event => {
 	event.create('crystallised_blood').displayName('Crystallised Blood')
 	event.create('runic_ingot').displayName('Runic Ingot')
 	event.create('blooded_source').displayName('Blooded Source Gem')
+	event.create('sap').displayName('Sap')
+	event.create('ender_sap').displayName('Ender Sap')
 })
 StartupEvents.registry('block', event => {
 	event.create('fractured_obsidian')
