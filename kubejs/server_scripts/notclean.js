@@ -1649,6 +1649,32 @@ ServerEvents.recipes(event => {
     ],
     "source": 100
   })
+  event.custom({
+    "type": "ars_nouveau:imbuement",
+    "count": 4,
+    "input": {
+      "item": "minecraft:stone"
+    },
+    "output": "minecraft:dripstone_block",
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "ars_nouveau:water_essence"
+        }
+      },
+      {
+        "item": {
+          "item": "ars_nouveau:water_essence"
+        }
+      },
+      {
+        "item": {
+          "item": "ars_nouveau:earth_essence"
+        }
+      }
+    ],
+    "source": 100
+  })
 
   event.custom({
     "type": "ars_nouveau:imbuement",
