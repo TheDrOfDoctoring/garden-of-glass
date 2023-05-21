@@ -780,17 +780,12 @@
 				count: 4
 			}]
 			subtitle: "Your Favourite Mod!"
-			dependencies: ["3AE18811D491D287"]
+			dependencies: ["554361CF3AEB81A0"]
 			tasks: [
 				{
 					id: "69FD294A57685498"
 					type: "item"
 					item: "create:mechanical_mixer"
-				}
-				{
-					id: "0A038E07B8708DB4"
-					type: "item"
-					item: "create:water_wheel"
 				}
 				{
 					id: "1CC5A512E57CE92F"
@@ -988,7 +983,11 @@
 				type: "item"
 				item: "ars_nouveau:magebloom_crop"
 			}]
-			description: ["A special crop that grows into magical fibres which can be used for various magical applications."]
+			description: [
+				"A special crop that grows into magical fibres which can be used for various magical applications."
+				""
+				"&6This crop cannot be bonemealed."
+			]
 			id: "3B7A5EF5BB2851D3"
 			x: 3.0d
 			y: -6.5d
@@ -1153,11 +1152,7 @@
 			dependencies: ["0E4BA55EA5D7F334"]
 		}
 		{
-			tasks: [{
-				id: "1A5C023672311F34"
-				type: "checkmark"
-				title: "Ore Enchantment"
-			}]
+			size: 1.25d
 			description: [
 				"The &6Enchanting Apparatus &fprovides an alternative way to get ores. Whilst it is costly, it may allow you to get some of the rare ores you're low on, such as diamond."
 				""
@@ -1170,6 +1165,47 @@
 			x: 4.5d
 			y: -4.0d
 			dependencies: ["6D9ED9BBA69C625C"]
+			tasks: [{
+				id: "1A5C023672311F34"
+				type: "checkmark"
+				title: "Ore Enchantment"
+			}]
+		}
+		{
+			size: 1.5d
+			description: [
+				"In this pack, &6Create &fhas been quite heavily changed."
+				""
+				"&6Water Wheels&f, &6Wind Mills &fand &6Steam Engines &fhave been removed."
+				"Instead, to automatically create &6RPM &fyou need to use a &6Mana Motor &fand &6Spinerettes&f."
+				""
+				"The way this works is that the soil the flower is placed on determines the &6RPM &f(Where the &6RPM &fproduced by the &6Mana Motor &fis all of the flowers combined). In order from most to least productive soils, in ascending order of productivity they are:"
+				"&71 - Any Block Not Mentioned, 2 - Rooted Dirt, 3 - Rich Soil, 4 - Imbued Dirt and 5 - Enchanted Soil&f."
+				""
+				"Better soils will also give you more &6Stress Units &fto work with."
+			]
+			id: "554361CF3AEB81A0"
+			x: 8.5d
+			y: 0.75d
+			title: "&3Waterwheels Be Gone!"
+			rewards: [{
+				id: "510E60D7032D2880"
+				type: "item"
+				item: "botania:overgrowth_seed"
+			}]
+			dependencies: ["3AE18811D491D287"]
+			tasks: [
+				{
+					id: "5DE241DFCE96BDF7"
+					type: "item"
+					item: "genericbotaniapacktweaker:spinerette"
+				}
+				{
+					id: "4B351AB17550A42A"
+					type: "item"
+					item: "genericbotaniapacktweaker:mana_motor"
+				}
+			]
 		}
 	]
 }

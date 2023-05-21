@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
   //orechid rework
   //exoblast for stone, maybe oil sand and assorted other block blasting stuff
   //continue triplet (energy, time, material) design method for automation heavy items
+  //RPM flower
 	event.remove({output: 'ars_nouveau:blue_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:purple_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:red_archwood_sapling'})
@@ -296,6 +297,9 @@ ServerEvents.recipes(event => {
   event.remove({output: 'thermal:silver_gear'})
   event.remove({output: 'thermal:silver_block'})
   event.remove({output: 'thermal:silver_nugget'})
+  event.remove({id: 'create:crafting/kinetics/water_wheel'})
+  event.remove({id: 'create:crafting/kinetics/wind_mill_bearing'})
+  event.remove({id: 'create:crafting/kinetics/steam_engine'})
   event.recipes.thermal.insolator('2x moreminecarts:glass_cactus', 'moreminecarts:glass_cactus').water(400)
   event.recipes.thermal.press('kubejs:zinc_plate', 'create:zinc_ingot')
   event.recipes.thermal.press('create:brass_sheet', 'create:brass_ingot')
@@ -472,6 +476,17 @@ let crushItUp = (input, output, mana) => {
   },
   "mana": 5000
    })
+   event.custom({
+    "type": "botania:mana_infusion",
+    "input": {
+      "item": "botania:mana_diamond"
+    },
+    "output": {
+      "item": "kubejs:mana_gem",
+      "count": 2
+    },
+    "mana": 5000
+     })
   event.custom({
     "type": "create:crushing",
     "ingredients": [
@@ -1882,18 +1897,6 @@ event.custom({
     }
   ]
 }).id("kubejs:botania/zinc_ingot")
-
-event.custom({
-  "type": "ars_nouveau:imbuement",
-  "count": 2,
-  "input": {
-    "item": "botania:mana_diamond"
-  },
-  "output": "ars_nouveau:source_gem",
-  "pedestalItems": [],
-  "source": 500
-
-})
 
 event.custom({
   "type": "ars_nouveau:imbuement",

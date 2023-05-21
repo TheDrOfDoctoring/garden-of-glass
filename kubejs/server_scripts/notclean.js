@@ -1061,6 +1061,38 @@ ServerEvents.recipes(event => {
     "type": "botania:petal_apothecary",
     "ingredients": [
       {
+        "tag": "botania:petals/blue"
+      },
+      {
+        "tag": "botania:petals/blue"
+      },
+      {
+        "tag": "botania:petals/yellow"
+      },
+      {
+        "tag": "botania:petals/yellow"
+      },
+      {
+        "item": "botania:rune_mana"
+      },
+      {
+        "item": "botania:rune_air"
+      },
+      {
+        "item": "botania:redstone_root"
+      }
+    ],
+    "output": {
+      "item": "genericbotaniapacktweaker:spinerette"
+    },
+    "reagent": {
+      "tag": "botania:seed_apothecary_reagent"
+    }
+  })
+  event.custom({
+    "type": "botania:petal_apothecary",
+    "ingredients": [
+      {
         "tag": "botania:petals/red"
       },
       {
@@ -1161,7 +1193,71 @@ ServerEvents.recipes(event => {
       ],
       "energy": 35000
     })
-    
+    event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
+      "keepNbtOfReagent": true,
+      "output": {
+        "item": "genericbotaniapacktweaker:imbued_dirt"
+      },
+      "pedestalItems": [
+        {
+          "item": {
+            "item": "botania:rune_earth"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_spring"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_earth"
+          }
+        }
+      ],
+      "reagent": [
+        {
+          "item": "farmersdelight:rich_soil"
+        }
+      ],
+      "sourceCost": 2500
+    })
+    event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
+      "keepNbtOfReagent": true,
+      "output": {
+        "item": "genericbotaniapacktweaker:mana_motor"
+      },
+      "pedestalItems": [
+        {
+          "item": {
+            "item": "ars_nouveau:air_essence"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_sloth"
+          }
+        },
+        {
+          "item": {
+            "item": "create:andesite_alloy"
+          }
+        },
+        {
+          "item": {
+            "item": "create:andesite_alloy"
+          }
+        }
+      ],
+      "reagent": [
+        {
+          "item": "botania:manasteel_block"
+        }
+      ],
+      "sourceCost": 2500
+    })
   event.custom({
     "type": "ars_nouveau:enchanting_apparatus",
     "keepNbtOfReagent": true,

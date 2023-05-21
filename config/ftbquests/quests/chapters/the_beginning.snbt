@@ -280,6 +280,7 @@
 			id: "677D93896490CD67"
 			x: 15.0d
 			y: 2.25d
+			title: "Manipulating Mana"
 			dependencies: [
 				"4442BC9566E520FD"
 				"70AC54339C085D39"

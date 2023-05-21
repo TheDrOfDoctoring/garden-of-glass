@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         "keepNbtOfReagent": true,
         "output": {
           "item": "thermal:cinnabar_ore",
-          "count": 2
+          "count": 3
         },
         "pedestalItems": [
           {
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
         "keepNbtOfReagent": true,
         "output": {
           "item": "minecraft:gold_ore",
-          "count": 3
+          "count": 4
         },
         "pedestalItems": [
           {
@@ -111,7 +111,8 @@ ServerEvents.recipes(event => {
         "type": "ars_nouveau:enchanting_apparatus",
         "keepNbtOfReagent": true,
         "output": {
-          "item": "minecraft:diamond_ore"
+          "item": "minecraft:diamond_ore",
+          "count": 3
         },
         "pedestalItems": [
           {
@@ -147,7 +148,7 @@ ServerEvents.recipes(event => {
         "keepNbtOfReagent": true,
         "output": {
           "item": "kubejs:sulfur_ore",
-          "count": 2
+          "count": 3
         },
         "pedestalItems": [
           {
@@ -219,7 +220,7 @@ ServerEvents.recipes(event => {
         "keepNbtOfReagent": true,
         "output": {
           "item": "minecraft:ancient_debris",
-          "count": 2
+          "count": 3
         },
         "pedestalItems": [
           {
