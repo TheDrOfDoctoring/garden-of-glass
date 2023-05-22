@@ -1038,7 +1038,7 @@ ServerEvents.recipes(event => {
     "heatRequirement": "superheated",
     "ingredients": [
       {
-        "item": "botania:rune_fire"
+        "item": "kubejs:scorching_sulfur"
       },
       {
         "item": "thermal:nickel_ingot"
@@ -1222,6 +1222,41 @@ ServerEvents.recipes(event => {
         }
       ],
       "sourceCost": 2500
+    })
+    event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
+      "keepNbtOfReagent": true,
+      "output": {
+        "item": "kubejs:source_timber"
+      },
+      "pedestalItems": [
+        {
+          "item": {
+            "item": "thermal:sawdust_block"
+          }
+        },
+        {
+          "item": {
+            "item": "thermal:sawdust_block"
+          }
+        },
+        {
+          "item": {
+            "item": "thermal:sawdust_block"
+          }
+        },
+        {
+          "item": {
+            "item": "thermal:sawdust_block"
+          }
+        }
+      ],
+      "reagent": [
+        {
+          "item": "minecraft:slime_ball"
+        }
+      ],
+      "sourceCost": 100
     })
     event.custom({
       "type": "ars_nouveau:enchanting_apparatus",
@@ -2308,6 +2343,26 @@ event.custom({
   })
   event.custom({
     "type": "create:mixing",
+    "heatRequirement": "heated",
+    "ingredients": [
+      {
+        "item": "create:zinc_ingot"
+      },
+      {
+        "item": "create:zinc_ingot"
+      },
+      {
+        "item": "botania:rune_water"
+      }
+    ],
+    "results": [
+      {
+        "item": "thermal:tin_ingot"
+      }
+    ]
+  })
+  event.custom({
+    "type": "create:mixing",
     "ingredients": [
       {
         "item": "ae2:silicon"
@@ -2356,7 +2411,7 @@ event.custom({
     "results": [
       {
         "item": "minecraft:phantom_membrane",
-        "count": 1
+        "count": 2
       }
     ]
   
@@ -2697,6 +2752,32 @@ event.custom({
       }
     ],
     "sourceCost": 2500
+  })
+  event.custom({
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
+      "item": "kubejs:scorching_sulfur",
+      "count": 3
+    },
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "botania:rune_fire"
+        }
+      },
+      {
+        "item": {
+          "item": "botania:rune_fire"
+        }
+      }
+    ],
+    "reagent": [
+      {
+        "item": "thermal:sulfur_block"
+      }
+    ],
+    "sourceCost": 0
   })
   event.custom({
     "type": "ars_nouveau:enchanting_apparatus",

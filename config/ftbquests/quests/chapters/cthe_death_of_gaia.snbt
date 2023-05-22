@@ -70,7 +70,7 @@
 					item: "storagedrawers:creative_storage_upgrade"
 				}
 			]
-			subtitle: "&4To this place, where destiny is made."
+			subtitle: "&4In this place, where destiny is made."
 			dependencies: ["4C3BC450ACE9579D"]
 			tasks: [{
 				id: "71844889B905CF8E"
@@ -84,6 +84,7 @@
 			id: "4C3BC450ACE9579D"
 			x: 4.5d
 			y: -0.5d
+			title: "&5Runic Ingot"
 			dependencies: ["3393FFE9FF49FDDD"]
 			tasks: [{
 				id: "2BC71D4769977400"
@@ -100,6 +101,7 @@
 			id: "3393FFE9FF49FDDD"
 			x: 1.0d
 			y: -0.5d
+			title: "&cGaiasteel"
 			dependencies: ["1C97E024ED0439C5"]
 			tasks: [{
 				id: "3AF5863953100E46"

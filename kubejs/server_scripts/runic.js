@@ -108,10 +108,10 @@ ServerEvents.recipes(event => {
             "item": "botania:rune_lust"
           },
           {
-            "item": "create:zinc_ingot"
+            "item": "kubejs:source_timber"
           },
           {
-            "item": "create:zinc_ingot"
+            "item": "kubejs:source_timber"
           },
           {
             "item": "minecraft:redstone_block"

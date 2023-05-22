@@ -34,6 +34,9 @@ StartupEvents.registry('item', event => {
 	event.create('blooded_source').displayName('Blooded Source Gem')
 	event.create('sap').displayName('Sap')
 	event.create('ender_sap').displayName('Ender Sap')
+	event.create('scorching_sulfur').displayName('Scorching Sulfur')
+	event.create('source_timber').displayName('Source Timber')
+	event.create('runic_flux_circuit').displayName('Runic Flux Circuit')
 })
 StartupEvents.registry('block', event => {
 	event.create('fractured_obsidian')

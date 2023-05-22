@@ -4,12 +4,11 @@
 ServerEvents.recipes(event => {
 	//TODO:
   //organisation
-  //mana dynamo?
   //3 new fuels for the endoflame
   //orechid rework
   //exoblast for stone, maybe oil sand and assorted other block blasting stuff
+  //potentially make source timber the ingredient for andesite casing and rename to source casing, though source timber may deserve an additional recipe prior to that
   //continue triplet (energy, time, material) design method for automation heavy items
-  //RPM flower
 	event.remove({output: 'ars_nouveau:blue_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:purple_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:red_archwood_sapling'})
@@ -46,6 +45,8 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'ars_nouveau:archmage_spell_book_upgrade'})
 	event.remove({mod: 'cobblefordays'})
 	event.remove({id: 'ars_nouveau:sourcestone'})
+  event.remove({id: 'create:filling/blaze_cake'})
+  event.remove({id: 'thermal:compat/create/bottler_create_blaze_cake'})
 	event.remove({id: 'ae2:network/blocks/controller'})
 	event.remove({id: 'twigs:ender_mesh'})
 	event.remove({id: 'ars_nouveau:potion_flask'})
@@ -54,6 +55,7 @@ ServerEvents.recipes(event => {
   event.remove({type: 'ae2:entropy'})
 	event.remove({id: 'create:crafting/materials/andesite_alloy'})
 	event.remove({id: 'create:crafting/materials/andesite_alloy_from_zinc'})
+  event.remove({id: 'create:crafing/kinetics/hand_crank'})
 	event.remove({id: 'supplementaries:rope'})
 	event.remove({id: 'quark:building/crafting/rope'})
 	event.remove({id: 'quark:oddities/crafting/crate'})
@@ -173,6 +175,7 @@ ServerEvents.recipes(event => {
   event.remove({id: 'thermal:enderium_dust_2'})
   event.remove({id: 'thermal:machines/pyrolyzer/pyrolyzer_coal'})
   event.remove({id: 'botanicadds:elven_fluxfield'})
+  event.remove({id: 'botania:alfheim_portal'})
   event.replaceInput({input: (/ae2:item.*/)}, ('minecraft:iron_ingot'), 'botania:manasteel_ingot')
   event.replaceInput({id: 'ae2:decorative/quartz_glass'}, '#forge:glass', 'botania:elf_glass')
   event.replaceInput({id: 'ars_nouveau:source_jar'}, '#forge:glass', 'botania:mana_glass')
@@ -280,6 +283,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'ars_artifice:spell_storing_amulet'}, 'minecraft:diamond', 'botania:mana_diamond')
   event.replaceInput({id: 'ars_artifice:spell_storing_ring'}, 'minecraft:diamond', 'botania:mana_diamond')
   event.replaceInput({id: 'botania:red_string'}, 'minecraft:string', 'ars_nouveau:blaze_fiber')
+  event.replaceInput({input: 'thermal:rf_coil'}, 'thermal:rf_coil', 'kubejs:runic_flux_circuit')
   event.remove({id: 'thermal:fire_charge/enderium_ingot_2'})
   event.remove({id: 'botania:red_string_alt'})
   event.remove({id: 'create:mixing/andesite_alloy'})
@@ -830,6 +834,19 @@ event.shaped(
   }
 )
 event.shaped(
+  Item.of('botania:alfheim_portal', 1), 
+  [ 
+    'CBC', 
+    'ABA',
+    'CBC'  
+  ],
+  {
+    B: 'botania:terrasteel_nugget',  
+	  A: 'kubejs:source_timber',
+    C: '#botania:livingwood_logs'
+  }
+)
+event.shaped(
   Item.of('easy_mob_farm:steel_mob_farm_template', 1), 
   [ 
     'CAC', 
@@ -852,6 +869,46 @@ event.shaped(
   {
     A: 'minecraft:clay',  
 	  B: 'minecraft:slime_ball',
+  }
+)
+event.shaped(
+  Item.of('kubejs:runic_flux_circuit', 1), 
+  [ 
+    ' A ', 
+    'ABA',
+    ' A '  
+  ],
+  {
+    A: 'thermal:rf_coil',  
+	  B: '#kubejs:computation_rune',
+  }
+)
+event.shaped(
+  Item.of('thermal:rf_coil', 1), 
+  [ 
+    '  C', 
+    'ABA',
+    'D '  
+  ],
+  {
+    A: 'minecraft:redstone',  
+	  B: 'kubejs:manaelectrum_ingot',
+    C: 'botania:rune_winter',
+    D: 'botania:rune_summer'
+  }
+)
+event.shaped(
+  Item.of('thermal:rf_coil', 1), 
+  [ 
+    '  C', 
+    'ABA',
+    'D '  
+  ],
+  {
+    A: 'minecraft:redstone',  
+	  B: 'kubejs:manaelectrum_ingot',
+    C: 'botania:rune_autumn',
+    D: 'botania:rune_spring'
   }
 )
 event.shaped(
@@ -1062,6 +1119,18 @@ event.shaped(
   {
     A: 'botania:mana_glass',  
 	  B: 'botania:rune_mana',
+  }
+)
+event.shaped(
+  Item.of('create:hand_crank', 1), 
+  [ 
+    '   ', 
+    'AA ',
+    ' B '  
+  ],
+  {
+    A: 'kubejs:source_timber',  
+	  B: 'create:andesite_alloy',
   }
 )
 event.shaped(
@@ -2180,6 +2249,16 @@ event.custom({
 })
 event.custom({
   "type": "botania:mana_infusion",
+  "input": {
+    "tag": "minecraft:logs"
+  },
+  "output": {
+    "item": "thermal:sawdust"
+  },
+  "mana": 20
+   })
+event.custom({
+  "type": "botania:mana_infusion",
   "catalyst": {
     "type": "block",
     "block": "botania:alchemy_catalyst"
@@ -2206,21 +2285,6 @@ event.custom({
   "output": {
     "count": 1,
     "item": "infernalexp:trapped_glowdust_sand"
-  }
-})
-event.custom({
-  "type": "botania:mana_infusion",
-  "catalyst": {
-    "type": "block",
-    "block": "botania:alchemy_catalyst"
-  },
-  "input": {
-    "item": "create:zinc_ingot"
-  },
-  "mana": 5000,
-  "output": {
-    "count": 1,
-    "item": "thermal:tin_ingot"
   }
 })
 event.custom({

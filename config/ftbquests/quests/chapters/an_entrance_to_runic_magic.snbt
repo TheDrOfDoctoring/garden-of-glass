@@ -570,7 +570,11 @@
 		}
 		{
 			size: 2.0d
-			description: ["Allows you to create various Elven materials. Check the &6Lexica Botanica &ffor more information on how to create the portal!"]
+			description: [
+				"Allows you to create various Elven materials. Check the &6Lexica Botanica &ffor more information on how to create the portal!"
+				""
+				"&cAt this point, you may want to begin to fully automate some of the most basic runes."
+			]
 			id: "2BDBCD64ECA09FE7"
 			x: 11.5d
 			y: -2.5d
@@ -824,9 +828,10 @@
 			y: 0.75d
 			title: "Blaze Burner"
 			rewards: [{
-				id: "1EC2D07747EC0185"
-				type: "item"
-				item: "create:blaze_cake"
+				id: "6BCF2773A93528F2"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1857703300642923985L
 			}]
 			dependencies: ["3AE18811D491D287"]
 			tasks: [{
@@ -837,10 +842,15 @@
 		}
 		{
 			size: 1.5d
-			description: ["&7Allows for the creation of very compact Mana-machines. One of the most useful alloys in the world of Manaengineering."]
+			description: [
+				"&7Allows for the creation of very compact Mana-machines. One of the most useful alloys in the world of Manaengineering."
+				""
+				"&cAt this point, you may want to begin to fully automate some of the more intermediate level runes."
+			]
 			id: "0FF9C59411EFA79D"
 			x: 12.75d
 			y: 2.25d
+			title: "&5Invar Idea"
 			rewards: [
 				{
 					id: "2173CD02DEBE21ED"
@@ -1187,7 +1197,7 @@
 			id: "554361CF3AEB81A0"
 			x: 8.5d
 			y: 0.75d
-			title: "&3Waterwheels Be Gone!"
+			title: "&3Waterwheels Begone!"
 			rewards: [{
 				id: "510E60D7032D2880"
 				type: "item"

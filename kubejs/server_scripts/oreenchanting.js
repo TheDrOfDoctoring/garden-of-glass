@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         ],
         "reagent": [
           {
-            "item": "minecraft:stone"
+            "item": "botania:livingrock"
           }
         ],
         "sourceCost": 750
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         ],
         "reagent": [
           {
-            "item": "minecraft:stone"
+            "item": "botania:livingrock"
           }
         ],
         "sourceCost": 100
@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
         ],
         "reagent": [
           {
-            "item": "minecraft:stone"
+            "item": "botania:livingrock"
           }
         ],
         "sourceCost": 750
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
         "keepNbtOfReagent": true,
         "output": {
           "item": "minecraft:diamond_ore",
-          "count": 3
+          "count": 2
         },
         "pedestalItems": [
           {
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         ],
         "reagent": [
           {
-            "item": "minecraft:stone"
+            "item": "botania:livingrock"
           }
         ],
         "sourceCost": 1000
