@@ -9,6 +9,8 @@ ServerEvents.recipes(event => {
   //exoblast for stone, maybe oil sand and assorted other block blasting stuff
   //potentially make source timber the ingredient for andesite casing and rename to source casing, though source timber may deserve an additional recipe prior to that
   //continue triplet (energy, time, material) design method for automation heavy items
+  //flax changes
+  //3 iron nuggets from regular smelting instead of full ingot in order to make iron a bit more rare since you end up having tons of it?
 	event.remove({output: 'ars_nouveau:blue_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:purple_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:red_archwood_sapling'})
@@ -139,6 +141,7 @@ ServerEvents.recipes(event => {
   event.remove({id: 'computercraft:pocket_computer_advanced'})
   event.remove({id: 'computercraft:pocket_computer_advanced_upgrade'})
   event.remove({id: 'computercraft:turtle_normal'})
+  event.remove({id: 'create:compat/supplementaries/milling/flax'})
   event.remove({id: 'create:compat/ae2/milling/certus_quartz'})
   event.remove({id: 'computercraft:turtle_advanced_upgrade'})
   event.remove({id: 'computercraft:turtle_advanced'})
@@ -266,9 +269,8 @@ ServerEvents.recipes(event => {
 	event.replaceInput({id: 'easy_mob_farm:urn_small_from_diorite_and_other_stuff'}, 'minecraft:gold_ingot', 'botania:rune_mana')
   event.replaceInput({id: 'thermal:machine_pulverizer'}, 'minecraft:piston', 'ars_nouveau:glyph_crush')
 	event.replaceInput({id: 'easy_mob_farm:urn_small_from_diorite_and_other_stuff'}, 'minecraft:ender_eye', 'quark:soul_bead')
-  event.replaceInput({id: 'thermal:machine_insolator'}, 'minecraft:dirt', 'ars_nouveau:earth_essence')
+  event.replaceInput({id: 'thermal:machine_insolator'}, 'minecraft:dirt', 'moreminecarts:hard_light_lens')
   event.replaceInput({id: 'thermal:energy_cell_frame'}, 'thermal:electrum_gear', 'kubejs:manasteel_gear')
-  event.replaceInput({id: 'thermal:machine_insolator'}, 'thermal:rf_coil', 'moreminecarts:hard_light_lens')
   event.replaceInput({mod: 'ars_nouveau', input: 'minecraft:diamond'}, 'minecraft:diamond', 'botania:mana_diamond')
   event.replaceInput({id: 'toomanyglyphs:glyph_amplify_two'}, 'minecraft:diamond', 'botania:mana_diamond')
   event.replaceInput({id: 'toomanyglyphs:glyph_amplify_two'}, 'minecraft:diamond_block', 'botania:mana_diamond_block')
@@ -307,6 +309,7 @@ ServerEvents.recipes(event => {
   event.recipes.thermal.insolator('2x moreminecarts:glass_cactus', 'moreminecarts:glass_cactus').water(400)
   event.recipes.thermal.press('kubejs:zinc_plate', 'create:zinc_ingot')
   event.recipes.thermal.press('create:brass_sheet', 'create:brass_ingot')
+  event.recipes.thermal.press('minecraft:gold_ingot', 'create:golden_sheet')
 event.smelting('thermal:tin_ingot', 'thermal:tin_dust')
 event.blasting('thermal:tin_ingot', 'thermal:tin_dust')
 event.smithing(
@@ -880,7 +883,7 @@ event.shaped(
   ],
   {
     A: 'thermal:rf_coil',  
-	  B: '#kubejs:computation_rune',
+	  B: '#kubejs:computation_runes',
   }
 )
 event.shaped(
@@ -888,7 +891,7 @@ event.shaped(
   [ 
     '  C', 
     'ABA',
-    'D '  
+    'D  '  
   ],
   {
     A: 'minecraft:redstone',  
@@ -902,7 +905,7 @@ event.shaped(
   [ 
     '  C', 
     'ABA',
-    'D '  
+    'D  '  
   ],
   {
     A: 'minecraft:redstone',  
@@ -1361,6 +1364,19 @@ event.shaped(
   }
 )
 event.shaped(
+  Item.of('botania:mana_fluxfield', 1), 
+  [ 
+    'CAC', 
+    'ABA',
+    'CAC'  
+  ],
+  {
+    A: 'botania:livingrock',  
+	  B: 'kubejs:runic_flux_circuit',
+    C: 'thermal:lead_ingot'
+  }
+)
+event.shaped(
   Item.of('supplementaries:end_stone_lamp', 4), 
   [ 
     'CAC', 
@@ -1505,6 +1521,7 @@ event.shaped(
     A: 'ars_nouveau:glyph_crush'
 
 	})
+  
   event.shaped(Item.of("minecraft:sculk", 1), [
 		' B ',
 		'BAB',
@@ -1824,6 +1841,19 @@ event.custom({
       "chance": 1.0,
       "count": 1,
       "item": "kubejs:zinc_plate"
+    }
+  ]
+})
+event.custom({
+  "type": "ars_nouveau:crush",
+  "input": {
+    "item": "minecraft:gold_ingot"
+  },
+  "output": [
+    {
+      "chance": 1.0,
+      "count": 1,
+      "item": "create:golden_sheet"
     }
   ]
 })

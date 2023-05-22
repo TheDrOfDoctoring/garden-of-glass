@@ -2780,6 +2780,25 @@ event.custom({
     "sourceCost": 0
   })
   event.custom({
+    "type": "create:milling",
+    "ingredients": [
+      {
+        "item": "supplementaries:flax"
+      }
+    ],
+    "results": [
+      {
+        "item": "minecraft:string"
+      },
+      {
+        "item": "minecraft:string",
+        "count": 2,
+        "chance": 0.25
+      }
+    ],
+    "processingTime": 150
+  })
+  event.custom({
     "type": "ars_nouveau:enchanting_apparatus",
     "keepNbtOfReagent": false,
     "output": {
@@ -3028,6 +3047,37 @@ event.custom({
 }
 ],
 "sourceCost": 1000
+})
+event.custom({
+  "type": "ars_nouveau:enchanting_apparatus",
+"keepNbtOfReagent": true,
+"output": {
+"count": 4,
+"item": "thermal:sawdust"
+},  
+"pedestalItems": [
+{
+  "item": {
+    "item": "minecraft:raw_gold"
+  }
+},
+{
+  "item": {
+    "item": "minecraft:raw_gold"
+  }
+},
+{
+  "item": {
+    "item": "ars_nouveau:earth_essence"
+  }
+}
+],
+"reagent": [
+{
+  "tag": "minecraft:logs"
+}
+],
+"sourceCost": 0
 })
 event.custom({
   "type": "ars_nouveau:enchanting_apparatus",
