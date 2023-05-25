@@ -72,6 +72,60 @@ ServerEvents.recipes(event => {
         }
     })
     event.custom({
+      "type": "botania:runic_altar",
+      "ingredients": [
+        {
+          "item": "botania:rune_earth"
+        },
+        {
+          "item": "botania:rune_air"
+        },
+        {
+          "tag": "minecraft:sand"
+        },
+        {
+          "tag": "minecraft:sand"
+        },
+        {
+          "item": "thermal:rosin"
+        },
+        {
+          "item": "ars_nouveau:source_berry_roll"
+        }
+      ],
+      "mana": 8000,
+      "output": {
+        "item": "botania:rune_summer"
+      }
+    })
+    event.custom({
+      "type": "botania:runic_altar",
+      "ingredients": [
+        {
+          "item": "botania:rune_water"
+        },
+        {
+          "item": "botania:rune_fire"
+        },
+        {
+          "tag": "ars_nouveau:archwood"
+        },
+        {
+          "tag": "ars_nouveau:archwood"
+        },
+        {
+          "item": "kubejs:sap"
+        },
+        {
+          "item": "kubejs:sap"
+        }
+      ],
+      "mana": 8000,
+      "output": {
+        "item": "botania:rune_spring"
+      }
+    })
+    event.custom({
         "type": "botania:runic_altar",
         "ingredients": [
           {

@@ -1052,7 +1052,7 @@ ServerEvents.recipes(event => {
     ],
     "results": [
       {
-        "count": 3,
+        "count": 2,
         "item": "thermal:invar_ingot"
       }
     ]
@@ -1153,6 +1153,22 @@ ServerEvents.recipes(event => {
       "tag": "botania:seed_apothecary_reagent"
     }
   })
+  event.custom({
+      "type": "create:item_application",
+      "ingredients": [
+        {
+          "tag": "forge:stripped_logs"
+        },
+        {
+          "item": "kubejs:source_timber"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:andesite_casing"
+        }
+      ]
+  })
   //im aware you can get them from growing trees
   event.custom({
     "type": "botania:pure_daisy",
@@ -1188,7 +1204,7 @@ ServerEvents.recipes(event => {
       "result": [
         {
           "fluid": "thermal:ender",
-          "amount": 1000
+          "amount": 500
         }
       ],
       "energy": 35000
@@ -1212,7 +1228,7 @@ ServerEvents.recipes(event => {
         },
         {
           "item": {
-            "item": "botania:rune_earth"
+            "item": "botania:rune_water"
           }
         }
       ],
@@ -1222,6 +1238,186 @@ ServerEvents.recipes(event => {
         }
       ],
       "sourceCost": 2500
+    })
+    event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
+      "keepNbtOfReagent": true,
+      "output": {
+        "item": "kubejs:pure_earth_essence"
+      },
+      "pedestalItems": [
+        {
+          "item": {
+            "item": "botania:rune_winter"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_earth"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_earth"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_winter"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_earth"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_earth"
+          }
+        }
+      ],
+      "reagent": [
+        {
+          "item": "ars_nouveau:earth_essence"
+        }
+      ],
+      "sourceCost": 1000
+    })
+    event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
+      "keepNbtOfReagent": true,
+      "output": {
+        "item": "kubejs:pure_air_essence"
+      },
+      "pedestalItems": [
+        {
+          "item": {
+            "item": "botania:rune_autumn"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_air"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_air"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_autumn"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_air"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_air"
+          }
+        }
+      ],
+      "reagent": [
+        {
+          "item": "ars_nouveau:air_essence"
+        }
+      ],
+      "sourceCost": 1000
+    })
+    event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
+      "keepNbtOfReagent": true,
+      "output": {
+        "item": "kubejs:pure_water_essence"
+      },
+      "pedestalItems": [
+        {
+          "item": {
+            "item": "botania:rune_spring"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_water"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_water"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_spring"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_water"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_water"
+          }
+        }
+      ],
+      "reagent": [
+        {
+          "item": "ars_nouveau:water_essence"
+        }
+      ],
+      "sourceCost": 1000
+    })
+    event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
+      "keepNbtOfReagent": true,
+      "output": {
+        "item": "kubejs:pure_fire_essence"
+      },
+      "pedestalItems": [
+        {
+          "item": {
+            "item": "botania:rune_summer"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_fire"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_fire"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_summer"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_fire"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_fire"
+          }
+        }
+      ],
+      "reagent": [
+        {
+          "item": "ars_nouveau:fire_essence"
+        }
+      ],
+      "sourceCost": 1000
     })
     event.custom({
       "type": "ars_nouveau:enchanting_apparatus",
@@ -1438,6 +1634,36 @@ ServerEvents.recipes(event => {
     "type": "ars_nouveau:enchanting_apparatus",
     "keepNbtOfReagent": true,
     "output": {
+      "item": "botania:terrasteel_ingot"
+    },
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "kubejs:pure_earth_essence"
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:netherite_scrap"
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:netherite_scrap"
+        }
+      }
+    ],
+    "reagent": [
+      {
+        "item": "botania:terrasteel_nugget"
+      }
+    ],
+    "sourceCost": 10000
+  })
+  event.custom({
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": true,
+    "output": {
       "item": "minecraft:vine"
     },
     "pedestalItems": [
@@ -1464,7 +1690,7 @@ ServerEvents.recipes(event => {
     ],
     "reagent": [
       {
-        "item": "botania:rune_earth"
+        "item": "botania:rune_water"
       }
     ],
     "sourceCost": 250
@@ -1640,6 +1866,27 @@ ServerEvents.recipes(event => {
       }
     ],
     "sourceCost": 5000
+  })
+  event.custom({
+    "type": "ars_nouveau:imbuement",
+    "count": 1,
+    "input": {
+      "item": "twigs:twig"
+    },
+    "output": "botania:livingwood_twig",
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "botania:livingwood_log"
+        }
+      },
+      {
+        "item": {
+          "item": "botania:livingwood_log"
+        }
+      }
+    ],
+    "source": 1500
   })
   event.custom({
     "type": "ars_nouveau:imbuement",
@@ -1963,6 +2210,68 @@ ServerEvents.recipes(event => {
       }
     ],
     "sourceCost": 0
+  })
+  event.custom({
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
+      "count": 1,
+      "item": "kubejs:dense_zinc_dust"
+    },
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "create:zinc_block"
+        }
+      },
+      {
+        "item": {
+          "item": "create:zinc_block"
+        }
+      },
+      {
+        "item": {
+          "item": "create:zinc_block"
+        }
+      }
+    ],
+    "reagent": [
+      {
+        "item": "kubejs:zinc_dust"
+      }
+    ],
+    "sourceCost": 250
+  })
+  event.custom({
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
+      "count": 1,
+      "item": "kubejs:dense_copper_dust"
+    },
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "minecraft:copper_block"
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:copper_block"
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:copper_block"
+        }
+      }
+    ],
+    "reagent": [
+      {
+        "item": "thermal:copper_dust"
+      }
+    ],
+    "sourceCost": 250
   })
   event.custom({
     "type": "ars_nouveau:enchanting_apparatus",
@@ -2485,6 +2794,24 @@ event.custom({
     }
   })
   event.custom({
+    "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "botania:manasteel_ingot",
+      "count": 4
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "kubejs:manasteel_gear"
+    }
+  ],
+  "energy": 2400
+  })
+  event.custom({
     "type": "create:sequenced_assembly",
     "ingredient": {
       "item": "kubejs:soul_pearl"
@@ -2757,8 +3084,39 @@ event.custom({
     "type": "ars_nouveau:enchanting_apparatus",
     "keepNbtOfReagent": false,
     "output": {
+      "item": "botania:conjuration_catalyst",
+      "count": 1
+    },
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "botania:pixie_dust"
+        }
+      },
+      {
+        "item": {
+          "item": "botania:rune_envy"
+        }
+      },
+      {
+        "item": {
+          "item": "ars_nouveau:conjuration_essence"
+        }
+      }
+    ],
+    "reagent": [
+      {
+        "item": "botania:alchemy_catalyst"
+      }
+    ],
+    "sourceCost": 5000
+  })
+  event.custom({
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
       "item": "kubejs:scorching_sulfur",
-      "count": 3
+      "count": 1
     },
     "pedestalItems": [
       {
@@ -3052,7 +3410,7 @@ event.custom({
   "type": "ars_nouveau:enchanting_apparatus",
 "keepNbtOfReagent": true,
 "output": {
-"count": 4,
+"count": 8,
 "item": "thermal:sawdust"
 },  
 "pedestalItems": [
@@ -3276,7 +3634,7 @@ event.custom({
     "pedestalItems": [
       {
         "item": {
-          "item": "botania:rune_earth"
+          "item": "botania:rune_water"
         }
       },
       {

@@ -5,6 +5,32 @@
       "name": "TheDrOfDoctoring",
       "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
     },
+    "time": 1684833892090,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/5pLgUBrksh"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "TheDrOfDoctoring",
+      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
+    },
+    "time": 1684830468950,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/EPCjQtDjls"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "TheDrOfDoctoring",
+      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
+    },
     "time": 1683462720330,
     "type": "Profiler",
     "data": {

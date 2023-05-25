@@ -107,5 +107,17 @@
 				item: "minecraft:andesite"
 			}]
 		}
+		{
+			size: 1.5d
+			description: ["Holds up to 640 items, but as many different types of items as you want."]
+			id: "0E8AA32666EA5CC1"
+			y: -1.0d
+			x: -8.0d
+			tasks: [{
+				id: "1C0F659BD84C59A7"
+				type: "item"
+				item: "quark:crate"
+			}]
+		}
 	]
 }

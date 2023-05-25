@@ -17,7 +17,7 @@
         "botanicadds:aura_ring_gaia": true,
         "botanicadds:dreaming_pool": true,
         "botanicadds:tesseract_attune": true,
-        "botanicadds:terrasteel": true,
+        "botanicadds:terrasteel": false,
         "botanicadds:gaiasteel_pylon": true,
         "botanicadds:flowers/necroidus": true,
         "botanicadds:elven_brewery": true,

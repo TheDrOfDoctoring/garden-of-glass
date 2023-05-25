@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
           },
           {
             "item": {
-              "item": "botania:rune_earth"
+              "item": "botania:rune_fire"
             }
           },
           {
@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
           },
           {
             "item": {
-              "item": "botania:rune_earth"
+              "item": "botania:rune_fire"
             }
           },
           {
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
           },
           {
             "item": {
-              "item": "botania:rune_earth"
+              "item": "botania:rune_fire"
             }
           },
           {

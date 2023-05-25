@@ -42,12 +42,13 @@ ServerEvents.recipes(event => {
     .input('minecraft:redstone_block')
     .input('kubejs:rune_calculation')
     event.recipes.summoningrituals
-    .altar('ae2:charged_certus_quartz_crystal')
+    .altar('botania:blacker_lotus')
     .itemOutput('ae2:fluix_crystal')
     .sacrifice('ars_nouveau:drygmy')
     .input('quark:soul_bead')
     .input('quark:soul_bead')
     .input('ae2:quartz_block')
+    .input('ae2:charged_certus_quartz_crystal')
     event.recipes.summoningrituals
     .altar("ars_nouveau:manipulation_essence")
     .blockBelow('botania:alchemy_catalyst')

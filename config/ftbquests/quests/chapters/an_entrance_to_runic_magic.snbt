@@ -34,6 +34,7 @@
 		}
 		{
 			size: 1.5d
+			description: ["Can be used to place &6Cobblestone &finfinitely, aside from a small &6Mana &fcost."]
 			id: "1B4E38C18ECBCF42"
 			x: -3.5d
 			y: -0.5d
@@ -52,6 +53,7 @@
 		}
 		{
 			size: 1.5d
+			description: ["Can be used to place &6Cobblestone &finfinitely, aside from a small &6Mana &fcost."]
 			id: "0A91229B249FA1CE"
 			x: -3.5d
 			y: -4.5d
@@ -428,7 +430,11 @@
 		}
 		{
 			size: 1.5d
-			description: ["The &6Terrestrial Aglomeration Plate &fis a way to channel a large amount of &6Mana &finto the creation of one thing, such as &6Terrasteel&f. The creation of &6Terrasteel &fcan lead into some very useful things."]
+			description: [
+				"The &6Terrestrial Aglomeration Plate &fis a way to channel a large amount of &6Mana &finto the creation of one thing, such as &6Terrasteel&f. The creation of &6Terrasteel &fcan lead into some very useful things."
+				""
+				"&cSoon after this point, you may want to consider the automation of raw resources, specifically ores."
+			]
 			id: "2F0AB2F2474F9B03"
 			x: 4.5d
 			y: -2.5d
@@ -514,6 +520,8 @@
 			description: [
 				"The &6Enchanting Apparatus &fis a primitive way to make a variety of gears."
 				"As you advance, you may find more efficient way to make gears than the apparatus."
+				""
+				"&cAs mentioned in the Terrasteel Forgery, you may want to begin setting up the automation of ores. You might need quite a lot soon."
 			]
 			id: "19FCFE5F0AD14680"
 			x: 4.5d
@@ -608,18 +616,18 @@
 			}]
 		}
 		{
-			size: 1.25d
+			size: 1.5d
 			description: ["This altar allows you to summon some entities and create some more advanced items which may be of use. "]
 			id: "4353BAF77E29DAAB"
-			x: 14.375d
-			y: -3.75d
+			x: 17.5d
+			y: -7.5d
 			rewards: [{
 				id: "4E39BC9AECC046EF"
 				type: "random"
 				exclude_from_claim_all: true
 				table_id: 6943663066194960901L
 			}]
-			dependencies: ["2BDBCD64ECA09FE7"]
+			dependencies: ["64CFE0448280A198"]
 			tasks: [{
 				id: "268E84EF137C555B"
 				type: "item"
@@ -824,7 +832,7 @@
 			size: 1.5d
 			description: ["To capture a &6Blaze &fwith the burner, simply right click on one. It allows for excessive heating of certain items which will prove useful in mixing."]
 			id: "0161EDF2EDB61E75"
-			x: 13.5d
+			x: 12.75d
 			y: 0.75d
 			title: "Blaze Burner"
 			rewards: [{
@@ -877,10 +885,14 @@
 		}
 		{
 			size: 1.5d
-			description: ["Allows you to turn &6Mana &finto a completely different form for use in Manaengineering machines."]
+			description: [
+				"Allows you to turn &6Mana &finto a completely different form for use in Manaengineering machines."
+				""
+				"This form of &6Mana &fcan be transferred with &6Fluxducts&f."
+			]
 			id: "3E8CA208782559B3"
-			x: 11.0d
-			y: 4.0d
+			x: 14.25d
+			y: 0.75d
 			dependencies: ["0FF9C59411EFA79D"]
 			tasks: [{
 				id: "56FFC69F51A0FD59"
@@ -894,6 +906,8 @@
 				"This is the base for a number of Manaengineering machines. They will consume a specific type of &6Mana &fwhich is only created by pouring &6Mana &finto &6Flux Fields&f."
 				""
 				"Highly recommended that you make a &6Flux Cell &fas soon as possible."
+				""
+				"&7Whilst its appearance is simple, this frame makes use of top of the line technology in Manaengineering."
 			]
 			id: "01F3ED970AEC73FC"
 			x: 15.5d
@@ -1020,7 +1034,10 @@
 				exclude_from_claim_all: true
 				table_id: 1857703300642923985L
 			}]
-			dependencies: ["01F3ED970AEC73FC"]
+			dependencies: [
+				"01F3ED970AEC73FC"
+				"3E8CA208782559B3"
+			]
 			tasks: [{
 				id: "7D6D38D52F935D6B"
 				type: "item"
@@ -1051,10 +1068,10 @@
 			]
 			dependencies: [
 				"2BDBCD64ECA09FE7"
-				"4353BAF77E29DAAB"
 				"706CF61C7F96DB82"
 				"2238F03AA6B33E48"
 				"245B2362F599BC2C"
+				"4353BAF77E29DAAB"
 			]
 			tasks: [
 				{
@@ -1187,9 +1204,9 @@
 				"In this pack, &6Create &fhas been quite heavily changed."
 				""
 				"&6Water Wheels&f, &6Wind Mills &fand &6Steam Engines &fhave been removed."
-				"Instead, to automatically create &6RPM &fyou need to use a &6Mana Motor &fand &6Spinerettes&f."
+				"Instead, to automatically create &6RPM &fyou need to use a &6Mana Motor &fand &6Spinerettes&f. These are bound to the &6Mana Motor &fusing a &6Wand of The Forest&f."
 				""
-				"The way this works is that the soil the flower is placed on determines the &6RPM &f(Where the &6RPM &fproduced by the &6Mana Motor &fis all of the flowers combined). In order from most to least productive soils, in ascending order of productivity they are:"
+				"The way this works is that the soil the flower is placed on determines the &6RPM &f(Where the &6RPM &fproduced by the &6Mana Motor &fis all of the flowers combined), however more flowers means less &6Stress Units &fto work with. In order from most to least productive soils, in ascending order of productivity they are:"
 				"&71 - Any Block Not Mentioned, 2 - Rooted Dirt, 3 - Rich Soil, 4 - Imbued Dirt and 5 - Enchanted Soil&f."
 				""
 				"Better soils will also give you more &6Stress Units &fto work with."
@@ -1216,6 +1233,114 @@
 					item: "genericbotaniapacktweaker:mana_motor"
 				}
 			]
+		}
+		{
+			size: 1.25d
+			description: ["Although you may already have set up mass storage systems with &6Ars Nouveau&f, &6Corporea Networks &fand the other various forms of storage, an AE2 network may be useful for autocrafting and automation if you desire it!"]
+			id: "42E5696E2D52BAD2"
+			x: 19.375d
+			y: 1.25d
+			rewards: [{
+				id: "4BB83B61EC795FEB"
+				type: "item"
+				item: "ae2:cell_component_4k"
+			}]
+			dependencies: [
+				"706CF61C7F96DB82"
+				"2238F03AA6B33E48"
+			]
+			tasks: [
+				{
+					id: "4F545A1C000A62E0"
+					type: "item"
+					item: "ae2:drive"
+				}
+				{
+					id: "0713AD1085BE3315"
+					type: "item"
+					item: "ae2:cell_component_1k"
+				}
+				{
+					id: "57946B88B56FB281"
+					type: "item"
+					item: "ae2:terminal"
+				}
+			]
+		}
+		{
+			size: 1.25d
+			description: [
+				"The hub of an &6ME System &fand despite its importance I will not be providing much guidance on how to use &6AE2 &fto its fullest in my quests. Check out &6AE2's &fwiki if you don't already know how to use it!"
+				""
+				"&nhttps://appliedenergistics.github.io/&r"
+			]
+			id: "16C9C0C88C781F14"
+			x: 18.5d
+			y: 0.0d
+			rewards: [{
+				id: "40B5CA0956DEAAE1"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+				count: 32
+			}]
+			dependencies: ["706CF61C7F96DB82"]
+			tasks: [{
+				id: "29D42838191088CF"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			size: 1.5d
+			description: [
+				"&6Computercraft &fadds programmable computers and other various programmable blocks. It's not at all necessary for this pack, but if you're so inclined you may be interested in it."
+				""
+				"&6Advanced Peripherals &fis also included, if you want to cheekily check the mana inside of one of your pools."
+				""
+				""
+				"&6CC Tweaked Wiki &nhttps://tweaked.cc/&r"
+			]
+			id: "38B6CA4314AAAEB0"
+			x: 13.5d
+			y: -5.5d
+			subtitle: "Definitely Mana Based"
+			dependencies: ["3E3140C846464ED4"]
+			tasks: [{
+				id: "12DAA6482571E600"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+		}
+		{
+			size: 1.25d
+			description: ["&7A container capable of holding despicable thoughts, it may be used in creating more complicated runes."]
+			id: "64CFE0448280A198"
+			x: 12.5d
+			y: -9.0d
+			dependencies: ["0D185D2CDE6E1256"]
+			tasks: [{
+				id: "29AAED51ED5FB3A4"
+				type: "item"
+				item: "kubejs:vitric_diamond"
+			}]
+		}
+		{
+			size: 1.25d
+			description: [
+				"The &6Summoning Altar &fhas recipes which allow for the creation of &6Starbuncles&f, &6Wixies&f and &6Drygmys &fwhich are useful creatures for automation. To learn more about how they work, check out the Automation chapter of the &6Worn Notebook&f."
+				""
+				"You can also summon a &6Toretoise&f, if you so wish. The original turtle can be created from &6Turtle Eggs&f."
+			]
+			id: "77C7F5D3A24EA76D"
+			icon: "ars_nouveau:starbuncle_shards"
+			x: 17.5d
+			y: -10.0d
+			title: "Creatures Nouveau"
+			dependencies: ["4353BAF77E29DAAB"]
+			tasks: [{
+				id: "7DD8DD8CB9793F17"
+				type: "checkmark"
+			}]
 		}
 	]
 }
