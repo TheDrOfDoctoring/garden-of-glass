@@ -701,13 +701,33 @@
 			size: 1.5d
 			description: ["A risky way to get some extra dirt, or related blocks, as &6Rocky Dirt &fcan be turned into 4 dirt."]
 			id: "18373FB900336E27"
-			x: 19.0d
-			y: -2.5d
+			x: 15.75d
+			y: -3.0d
 			dependencies: ["295ADAC4384BB2C6"]
 			tasks: [{
 				id: "107BD82304AAC76A"
 				type: "item"
 				item: "kubejs:dirty_dirt"
+			}]
+		}
+		{
+			size: 1.25d
+			description: ["At your current stage, you only have two options to process ores. You can either smelt them directly, for &33 Nuggets &fof the ore, or use &6Mana Infusion &fon them, and smelt the result of that for &35 Nuggets&f."]
+			id: "1A133CA8C025499E"
+			x: 19.0d
+			y: -3.0d
+			title: "&3Ore Processing: Part 1"
+			rewards: [{
+				id: "4E6B78E471FCC1BE"
+				type: "item"
+				item: "botania:black_lotus"
+			}]
+			subtitle: "Never Before Done"
+			dependencies: ["295ADAC4384BB2C6"]
+			tasks: [{
+				id: "5F15A7DA509F28F3"
+				type: "item"
+				item: "kubejs:mana_iron_dust"
 			}]
 		}
 	]

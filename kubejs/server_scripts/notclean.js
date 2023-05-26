@@ -1886,7 +1886,7 @@ ServerEvents.recipes(event => {
         }
       }
     ],
-    "source": 1500
+    "source": 500
   })
   event.custom({
     "type": "ars_nouveau:imbuement",
@@ -2659,6 +2659,12 @@ event.custom({
       },
       {
         "item": "create:zinc_ingot"
+      },
+      {
+        "item": "create:zinc_ingot"
+      },
+      {
+        "item": "botania:rune_water"
       },
       {
         "item": "botania:rune_water"

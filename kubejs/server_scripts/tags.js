@@ -24,19 +24,32 @@ ServerEvents.tags('item', event => {
     
     event.get('forge:ores/sulfur').add('kubejs:sulfur_ore')
 
+    event.get('kubejs:processing/lead').add('thermal:raw_lead')
+    event.get('kubejs:processing/lead').add('thermal:deepslate_lead_ore')
+    event.get('kubejs:processing/iron').add('minecraft:iron_ore')
+    event.get('kubejs:processing/iron').add('minecraft:deepslate_iron_ore')
+    event.get('kubejs:processing/iron').add('minecraft:raw_iron')
+    event.get('kubejs:processing/nickel').add('thermal:deepslate_nickel_ore')
+    event.get('kubejs:processing/nickel').add('thermal:raw_nickel')
+    event.get('kubejs:processing/gold').add('minecraft:gold_ore')
+    event.get('kubejs:processing/gold').add('minecraft:raw_gold')
+    event.get('kubejs:processing/gold').add('minecraft:deepslate_gold_ore')
+    event.get('kubejs:processing/copper').add('minecraft:copper_ore')
+    event.get('kubejs:processing/copper').add('minecraft:deepslate_copper_ore')
+    event.get('kubejs:processing/copper').add('minecraft:raw_copper')
+
     event.remove('forge:ingots/steel', 'material_elements:steel_ingot')
     event.remove('forge:dusts/ender_pearl', 'thermal:ender_pearl_dust')
     event.remove('forge:ores/sulfur', 'thermal:sulfur_ore')
 
     event.remove('forge:nuggets/copper', 'create:copper_nugget')
 
-
 })
 
-//YOU ONLY DESERVE ULTIMINE FOR THE ORECHID!!!!!
+//automate logs don't veinmine 
 ServerEvents.tags('block', event => {
     event.get('ftbultimine:excluded_blocks').add('minecraft:netherrack')
-
+    event.get('ftbultimine:excluded_blocks').add('#minecraft:logs')
     event.remove('ars_nouveau:harvest/fellable', '#minecraft:logs')
     event.get('ars_nouveau:harvest/fellable').add('minecraft:oak_log')
     event.get('ars_nouveau:harvest/fellable').add('minecraft:spruce_log')

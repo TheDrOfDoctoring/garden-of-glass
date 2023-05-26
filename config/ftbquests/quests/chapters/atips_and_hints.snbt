@@ -119,5 +119,36 @@
 				item: "quark:crate"
 			}]
 		}
+		{
+			size: 1.5d
+			description: ["There are a few different tiers of &6Construction Wands&f, each of which affects their durability. They are used to help quickly place blocks in rows, such as for expansion of your area. Try one out for yourself!"]
+			id: "5992355D9F6423F3"
+			y: 0.5d
+			x: -8.0d
+			tasks: [{
+				id: "0EAB5A024DBCE477"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			size: 1.5d
+			description: ["Can be used to quickly exchange blocks. &6Shift Right-Click &fon a block to select it as the one to replace with, then &6Right-Click &fthe blocks you want to replace."]
+			id: "5FEB6C51D593A8BF"
+			y: 0.5d
+			x: -6.5d
+			tasks: [{
+				id: "5F3D3F8A58408808"
+				type: "item"
+				item: "botania:exchange_rod"
+			}]
+		}
 	]
 }
