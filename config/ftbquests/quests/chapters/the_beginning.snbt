@@ -1,312 +1,311 @@
 {
-	quest_links: [ ]
 	default_hide_dependency_lines: false
-	group: ""
-	id: "58B134C2165D7E65"
-	filename: "the_beginning"
 	default_quest_shape: ""
+	filename: "the_beginning"
+	group: ""
 	icon: "botania:pure_daisy"
-	title: "&6The Beginning"
+	id: "58B134C2165D7E65"
 	order_index: 0
+	quest_links: [ ]
 	quests: [
 		{
-			size: 3.0d
 			description: ["Welcome -- This pack is meant to offer a uniquely integrated experience between Botania and other mods, such as Ars Nouveau. It's very likely you've already heard that pitch, but as you progress through this pack some of its more unique &m(gimmicky)&r qualities will show.  &4NOTE: You should be playing on a Garden of Glass World Type. By Default, the World Type is set to Garden of Glass. This pack is not meant to be played outside of GoG mode!"]
 			icon: "botania:lexicon"
 			id: "3163288C39ADAC3B"
-			x: -6.0d
-			y: 1.5d
-			title: "&6&lWelcome to Generic Botania Pack"
 			rewards: [{
 				id: "78922B27E2624B7C"
 				type: "xp"
 				xp: 100
 			}]
+			size: 3.0d
 			tasks: [{
 				id: "770AC97E7EDFF7BE"
-				type: "checkmark"
 				title: "Are you Ready?"
+				type: "checkmark"
 			}]
+			title: "&6&lWelcome to Generic Botania Pack"
+			x: -6.0d
+			y: 1.5d
 		}
 		{
-			size: 2.0d
-			description: ["You begin your journey with a complementary Spell Book on your final hotbar slot. Intially, you may not have access to many spells, however you will unlock more through Ars Nouveau."]
-			id: "464CF515B7EE98B8"
-			icon: "ars_nouveau:novice_spell_book"
-			x: -6.0d
-			y: -3.0d
-			title: "&eGeneric Not-Botania Spellbook"
-			dependency_requirement: "one_completed"
 			dependencies: ["3163288C39ADAC3B"]
+			dependency_requirement: "one_completed"
+			description: ["You begin your journey with a complementary Spell Book on your final hotbar slot. Intially, you may not have access to many spells, however you will unlock more through Ars Nouveau."]
 			hide_dependency_lines: false
+			icon: "ars_nouveau:novice_spell_book"
+			id: "464CF515B7EE98B8"
+			size: 2.0d
 			tasks: [{
 				id: "1919A12A2393FCD7"
-				type: "checkmark"
 				title: "Generic Botania Spellbook"
+				type: "checkmark"
 			}]
+			title: "&eGeneric Not-Botania Spellbook"
+			x: -6.0d
+			y: -3.0d
 		}
 		{
-			size: 1.5d
+			dependencies: ["3163288C39ADAC3B"]
 			description: [
 				"Living Root can be found underneath your island, mine down and grab some. You may find &6Quark's Reach Around Feature&f (Shift, and then look underneath a block) to be quite useful when gathering it"
 				""
 				"You'll find &6Living Root &fto be quite useful. It can used as &6Bonemeal&f, or turned into &6Floral Fertilizer &for &6Oak Saplings&f."
 			]
 			id: "226798726DF9309F"
+			rewards: [{
+				count: 4
+				id: "2C83C54ED9D0E688"
+				item: "botania:living_root"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 8L
+				id: "56AD4FAA0C6B0271"
+				item: "botania:living_root"
+				type: "item"
+			}]
+			title: "Oak Meal"
 			x: -1.5d
 			y: 1.5d
-			title: "Oak Meal"
-			rewards: [{
-				id: "2C83C54ED9D0E688"
-				type: "item"
-				item: "botania:living_root"
-				count: 4
-			}]
-			dependencies: ["3163288C39ADAC3B"]
-			tasks: [{
-				id: "56AD4FAA0C6B0271"
-				type: "item"
-				item: "botania:living_root"
-				count: 8L
-			}]
 		}
 		{
-			size: 1.5d
+			dependencies: ["226798726DF9309F"]
 			description: [
 				"4 &6Living Root &fcan be crafted into Oak Saplings. Place them and let them grow!"
 				""
 				"&4Make sure that the Mana Spark that spawns with your island is not in the way of the sapling."
 			]
 			id: "70BE131F778B3613"
-			x: 1.5d
-			y: 0.0d
-			title: "Sticks and Stones"
 			rewards: [{
-				id: "115773FBE63DD209"
-				type: "item"
-				item: "minecraft:oak_log"
 				count: 4
+				id: "115773FBE63DD209"
+				item: "minecraft:oak_log"
+				type: "item"
 			}]
-			dependencies: ["226798726DF9309F"]
+			size: 1.5d
 			tasks: [{
 				id: "08953C7E92593ABF"
-				type: "item"
 				item: "minecraft:oak_sapling"
+				type: "item"
 			}]
+			title: "Sticks and Stones"
+			x: 1.5d
+			y: 0.0d
 		}
 		{
-			size: 1.5d
+			dependencies: ["226798726DF9309F"]
 			description: [
 				"Hold &6Shift Right-click&f on Grass Blocks in order to get &6Pebbles &fwhich can be crafted into &6Cobblestone&f."
 				""
 				"A quicker way to get pebbles might be to use the &6Pebblespawn &fspell you are given by default, it must be aimed at a &6Grass Block&f."
 			]
 			id: "0007563A33E18050"
+			rewards: [{
+				count: 8
+				id: "0C2D2117884B2CED"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 32L
+				id: "24A1A27F60F2B33C"
+				item: "botania:pebble"
+				type: "item"
+			}]
+			title: "May Break your Bones"
 			x: 1.5d
 			y: 3.0d
-			title: "May Break your Bones"
-			rewards: [{
-				id: "0C2D2117884B2CED"
-				type: "item"
-				item: "minecraft:cobblestone"
-				count: 8
-			}]
-			dependencies: ["226798726DF9309F"]
-			tasks: [{
-				id: "24A1A27F60F2B33C"
-				type: "item"
-				item: "botania:pebble"
-				count: 32L
-			}]
 		}
 		{
-			size: 1.5d
+			dependencies: ["226798726DF9309F"]
 			description: ["1 &6Living Root &fcan be turned into Floral Fertilizer, which lets you grow Mystical Flowers"]
 			id: "338DEE6551F385A2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "455BD4002F4013AA"
+				table_id: 4524402848925486934L
+				type: "choice"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "502E416C1778D2AC"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			title: "Petalmeal"
 			x: 1.5d
 			y: 1.5d
-			title: "Petalmeal"
-			rewards: [{
-				id: "455BD4002F4013AA"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 4524402848925486934L
-			}]
-			dependencies: ["226798726DF9309F"]
-			tasks: [{
-				id: "502E416C1778D2AC"
-				type: "item"
-				item: "botania:fertilizer"
-				count: 4L
-			}]
 		}
 		{
-			size: 1.5d
-			description: ["Since I don't know what else to talk about on this, you may want to know that for a decent amount of items in this pack there are a few different ways to make them. &e&nMake sure to check the other recipe categories when looking at particularly important items&r&o&r&r"]
-			id: "1136836816EB0BA6"
-			x: 4.0d
-			y: 1.5d
-			title: "&l&n&oGeneric Crafting Table Title"
-			rewards: [{
-				id: "7175C264DCC97CE9"
-				type: "item"
-				item: "minecraft:coal"
-				count: 8
-			}]
-			subtitle: "You Might Need This"
 			dependencies: [
 				"338DEE6551F385A2"
 				"70BE131F778B3613"
 				"0007563A33E18050"
 			]
+			description: ["Since I don't know what else to talk about on this, you may want to know that for a decent amount of items in this pack there are a few different ways to make them. &e&nMake sure to check the other recipe categories when looking at particularly important items&r&o&r&r"]
+			id: "1136836816EB0BA6"
+			rewards: [{
+				count: 8
+				id: "7175C264DCC97CE9"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "You Might Need This"
 			tasks: [
 				{
 					id: "4474FFF04B659025"
-					type: "item"
 					item: "minecraft:crafting_table"
+					type: "item"
 				}
 				{
 					id: "6774A765CD8F7752"
-					type: "item"
 					item: "minecraft:furnace"
+					type: "item"
 				}
 			]
+			title: "&l&n&oGeneric Crafting Table Title"
+			x: 4.0d
+			y: 1.5d
 		}
 		{
-			size: 1.5d
+			dependencies: ["1136836816EB0BA6"]
 			description: ["The &6Petal Apothecary &fis the gateway to everything. You can fill it up with water by using &6Bowls &fwhich can be filled with water by &6Right-Clicking &fon a water source block."]
 			id: "00FECC0A1A15B23A"
-			x: 7.5d
-			y: 1.5d
-			title: "Workbench for Pixelated Flora"
 			rewards: [{
-				id: "4ED2A031BBBC3672"
-				type: "random"
 				exclude_from_claim_all: true
+				id: "4ED2A031BBBC3672"
 				table_id: 4524402848925486934L
+				type: "random"
 			}]
+			size: 1.5d
 			subtitle: "Flower Power"
-			dependencies: ["1136836816EB0BA6"]
 			tasks: [{
 				id: "4693800BFE427854"
-				type: "item"
 				item: "botania:apothecary_default"
+				type: "item"
 			}]
+			title: "Workbench for Pixelated Flora"
+			x: 7.5d
+			y: 1.5d
 		}
 		{
-			size: 2.0d
+			dependencies: ["00FECC0A1A15B23A"]
 			description: ["Place &6Stone &for &6Logs &faround a &6Pure Daisy &fto have it slowly transform into a more useful form."]
 			id: "3298F3BF4F958FB3"
-			x: 10.5d
-			y: 1.5d
-			title: "Pursuit of Purity"
 			rewards: [{
-				id: "10A7E1938E5B848F"
-				type: "choice"
 				exclude_from_claim_all: true
+				id: "10A7E1938E5B848F"
 				table_id: 1202282546800153359L
+				type: "choice"
 			}]
+			size: 2.0d
 			subtitle: "Mystical Agriculture?"
-			dependencies: ["00FECC0A1A15B23A"]
 			tasks: [{
 				id: "01A9AD43832001BF"
-				type: "item"
 				item: "botania:pure_daisy"
+				type: "item"
 			}]
+			title: "Pursuit of Purity"
+			x: 10.5d
+			y: 1.5d
 		}
 		{
-			size: 1.5d
+			dependencies: ["3298F3BF4F958FB3"]
 			description: ["Place &6Stone &faround a &6Pure Daisy &fto obtain."]
 			id: "70AC54339C085D39"
+			rewards: [{
+				count: 8
+				id: "34A3F3B2E15EB202"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "3B574ED02371D1F2"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			title: "Livingrock"
 			x: 12.75d
 			y: 0.75d
-			title: "Livingrock"
-			rewards: [{
-				id: "34A3F3B2E15EB202"
-				type: "item"
-				item: "botania:livingwood_log"
-				count: 8
-			}]
-			dependencies: ["3298F3BF4F958FB3"]
-			tasks: [{
-				id: "3B574ED02371D1F2"
-				type: "item"
-				item: "botania:livingrock"
-				count: 16L
-			}]
 		}
 		{
-			size: 1.5d
+			dependencies: ["3298F3BF4F958FB3"]
 			description: ["Place &6Logs &faround a &6Pure Daisy &fto obtain."]
 			id: "4442BC9566E520FD"
+			rewards: [{
+				count: 8
+				id: "58A7B1EA33F4727E"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "2C14603D1C36E9ED"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			title: "Livingwood"
 			x: 12.75d
 			y: 2.25d
-			title: "Livingwood"
-			rewards: [{
-				id: "58A7B1EA33F4727E"
-				type: "item"
-				item: "botania:livingrock"
-				count: 8
-			}]
-			dependencies: ["3298F3BF4F958FB3"]
-			tasks: [{
-				id: "2C14603D1C36E9ED"
-				type: "item"
-				item: "botania:livingwood_log"
-				count: 16L
-			}]
 		}
 		{
-			size: 1.5d
+			dependencies: ["677D93896490CD67"]
 			description: ["Bind a &6Mana Spreader &fto the Pool to allow Mana to be transferred from &6Generating Flowers&f."]
 			id: "64298157CD396F59"
-			x: 15.0d
-			y: 0.75d
 			rewards: [{
 				id: "6D1B3C013C499AEE"
-				type: "item"
 				item: "botania:black_lotus"
+				type: "item"
 			}]
-			dependencies: ["677D93896490CD67"]
+			size: 1.5d
 			tasks: [{
 				id: "369A395321F34F7E"
-				type: "item"
 				item: "botania:mana_pool"
+				type: "item"
 			}]
+			x: 15.0d
+			y: 0.75d
 		}
 		{
-			size: 1.5d
-			description: ["The &6Wand of The Forest &fhas two modes, the &6Bind &fmode is what you will be using most of the time, modes can be changed with a &6Shift Right-Click&f."]
-			id: "677D93896490CD67"
-			x: 15.0d
-			y: 2.25d
-			title: "Manipulating Mana"
 			dependencies: [
 				"4442BC9566E520FD"
 				"70AC54339C085D39"
 			]
+			description: ["The &6Wand of The Forest &fhas two modes, the &6Bind &fmode is what you will be using most of the time, modes can be changed with a &6Shift Right-Click&f."]
+			id: "677D93896490CD67"
+			size: 1.5d
 			tasks: [
 				{
 					id: "119760D2055CC88D"
-					type: "item"
 					item: {
-						id: "botania:twig_wand"
 						Count: 1b
+						id: "botania:twig_wand"
 						tag: {
 							color1: 0
 							color2: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "32F5A51BF88D1F3F"
-					type: "item"
 					item: "botania:mana_spreader"
+					type: "item"
 				}
 			]
+			title: "Manipulating Mana"
+			x: 15.0d
+			y: 2.25d
 		}
 		{
-			size: 1.5d
+			dependencies: ["677D93896490CD67"]
 			description: [
 				"&4If you run out of coal, you can always make charcoal."
 				""
@@ -315,277 +314,280 @@
 				"The Endoflame allows you to turn burnable items into Mana. However, in this pack the Endoflame has been nerfed to encourage alternative solutions for Mana."
 			]
 			id: "15B805B387DB37B6"
-			x: 17.25d
-			y: 2.25d
 			rewards: [{
 				id: "575FBF6DDF86C4D7"
-				type: "item"
 				item: "minecraft:coal_block"
+				type: "item"
 			}]
-			dependencies: ["677D93896490CD67"]
+			size: 1.5d
 			tasks: [{
 				id: "4A710CFCBBB5A624"
-				type: "item"
 				item: "botania:endoflame"
+				type: "item"
 			}]
+			x: 17.25d
+			y: 2.25d
 		}
 		{
-			size: 1.75d
-			description: ["Placing &6Stone &fnearby to the &6Orechid &f connected to a &6Mana Pool &fwith Mana will convert the &6Stone &finto various ores which you can mine."]
-			id: "295ADAC4384BB2C6"
-			x: 17.25d
-			y: -0.75d
-			title: "&6Renewable Rocks!"
-			rewards: [
-				{
-					id: "15139B971D26F3B5"
-					type: "item"
-					item: "minecraft:stone"
-					count: 16
-				}
-				{
-					id: "60D1E5CE0B76C46C"
-					type: "item"
-					item: "botania:overgrowth_seed"
-				}
-			]
-			subtitle: "Wealth beyond measure, Outlander."
 			dependencies: [
 				"15B805B387DB37B6"
 				"64298157CD396F59"
 			]
+			description: ["Placing &6Stone &fnearby to the &6Orechid &f connected to a &6Mana Pool &fwith Mana will convert the &6Stone &finto various ores which you can mine."]
+			id: "295ADAC4384BB2C6"
+			rewards: [
+				{
+					count: 16
+					id: "15139B971D26F3B5"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					id: "60D1E5CE0B76C46C"
+					item: "botania:overgrowth_seed"
+					type: "item"
+				}
+			]
+			size: 1.75d
+			subtitle: "Wealth beyond measure, Outlander."
 			tasks: [{
 				id: "0880BC2015C9EB25"
-				type: "item"
 				item: "botania:orechid"
+				type: "item"
 			}]
+			title: "&6Renewable Rocks!"
+			x: 17.25d
+			y: -0.75d
 		}
 		{
-			size: 1.5d
+			dependencies: ["295ADAC4384BB2C6"]
 			description: [
 				"Due to &6Quark&f, &6Golden Pickaxes &fhave the equivalent of the &6Fortune II &f enchantment by default. Useful for getting the best out of the ore!"
 				""
 				"Additionally, swords have &6Looting II &fwhich will be useful for killing &6Fel Blazes &fand other mobs."
 			]
 			id: "51AE61E1CA89D07E"
-			x: 17.25d
-			y: -5.25d
 			rewards: [{
-				id: "63866C72648D1317"
-				type: "item"
-				item: "minecraft:gold_ore"
 				count: 4
+				id: "63866C72648D1317"
+				item: "minecraft:gold_ore"
+				type: "item"
 			}]
-			dependencies: ["295ADAC4384BB2C6"]
+			size: 1.5d
 			tasks: [{
 				id: "02D47F03DE65C97A"
-				type: "item"
 				item: {
-					id: "minecraft:golden_pickaxe"
 					Count: 1b
+					id: "minecraft:golden_pickaxe"
 					tag: {
 						Damage: 0
 					}
 				}
+				type: "item"
 			}]
+			x: 17.25d
+			y: -5.25d
 		}
 		{
-			size: 1.5d
-			description: ["It is very important for you to create a small platform around 32 blocks away from your island which allows hostile mobs to spawn. You'll need the Mob Drops!"]
-			id: "73E66CEF2A4B9198"
-			icon: "minecraft:rotten_flesh"
-			x: 4.0d
-			y: 5.0d
-			title: "&4Mob Spawning Platform"
-			rewards: [{
-				id: "111960E24603B20E"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 6878592553114220303L
-			}]
 			dependencies: ["1136836816EB0BA6"]
+			description: ["It is very important for you to create a small platform around 32 blocks away from your island which allows hostile mobs to spawn. You'll need the Mob Drops!"]
+			icon: "minecraft:rotten_flesh"
+			id: "73E66CEF2A4B9198"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "111960E24603B20E"
+				table_id: 6878592553114220303L
+				type: "choice"
+			}]
+			size: 1.5d
 			tasks: [{
+				entity: "minecraft:zombie"
 				id: "6CDF4CB113AFAD63"
 				type: "kill"
-				entity: "minecraft:zombie"
 				value: 10L
 			}]
+			title: "&4Mob Spawning Platform"
+			x: 4.0d
+			y: 5.0d
 		}
 		{
-			size: 1.5d
+			dependencies: ["1136836816EB0BA6"]
 			description: ["Pumpkins will be important for creating &6Fel Pumpkins&f. The seeds for them can be acquired by breaking regular grass,"]
 			id: "0038678DEF60F746"
+			rewards: [{
+				count: 16
+				id: "06E737ACE4F9385E"
+				item: "farmersdelight:pumpkin_slice"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "2D0EDCA3F095B18C"
+				item: "minecraft:pumpkin"
+				type: "item"
+			}]
+			title: "Pumpkin Farm"
 			x: 4.0d
 			y: -2.25d
-			title: "Pumpkin Farm"
-			rewards: [{
-				id: "06E737ACE4F9385E"
-				type: "item"
-				item: "farmersdelight:pumpkin_slice"
-				count: 16
-			}]
-			dependencies: ["1136836816EB0BA6"]
-			tasks: [{
-				id: "2D0EDCA3F095B18C"
-				type: "item"
-				item: "minecraft:pumpkin"
-				count: 4L
-			}]
 		}
 		{
-			size: 1.5d
+			dependencies: ["4442BC9566E520FD"]
 			description: ["Allows you to create &6Storage Drawers &f which is a more practical way to store certain items in the early game."]
 			id: "5E45FFA638BEEF30"
-			x: 12.75d
-			y: 4.5d
 			rewards: [{
-				id: "4E4AF8194760391F"
-				type: "item"
-				item: "botania:livingwood_log"
 				count: 8
+				id: "4E4AF8194760391F"
+				item: "botania:livingwood_log"
+				type: "item"
 			}]
-			dependencies: ["4442BC9566E520FD"]
+			size: 1.5d
 			tasks: [{
 				id: "74EE3E7BBAD2107C"
-				type: "item"
 				item: "kubejs:livingwood_storage"
+				type: "item"
 			}]
+			x: 12.75d
+			y: 4.5d
 		}
 		{
-			size: 1.25d
+			dependencies: ["5E45FFA638BEEF30"]
 			description: ["Allows you to make &6Storage Upgrades &fwhich can upgrade the capacity of your Storage Drawers"]
 			id: "02B81A019959BDF6"
-			x: 12.75d
-			y: 6.875d
 			rewards: [{
 				id: "04B0BA26693160DD"
-				type: "item"
 				item: "storagedrawers:obsidian_storage_upgrade"
+				type: "item"
 			}]
-			dependencies: ["5E45FFA638BEEF30"]
+			size: 1.25d
 			tasks: [{
 				id: "6BB8B2F8FA4968F4"
-				type: "item"
 				item: "storagedrawers:upgrade_template"
+				type: "item"
 			}]
+			x: 12.75d
+			y: 6.875d
 		}
 		{
-			size: 1.25d
+			dependencies: ["5E45FFA638BEEF30"]
 			id: "7D5DAB2466AEF611"
-			x: 15.0d
-			y: 4.5d
-			title: "Storage Drawers"
 			rewards: [{
 				id: "70D1D348290EC0EC"
-				type: "item"
 				item: "storagedrawers:obsidian_storage_upgrade"
+				type: "item"
 			}]
+			size: 1.25d
 			subtitle: "Better than Chests"
-			dependencies: ["5E45FFA638BEEF30"]
 			tasks: [{
 				id: "4BAA602C06C8E351"
-				type: "item"
-				title: "Any #storagedrawers:drawers"
 				item: {
-					id: "itemfilters:tag"
 					Count: 1b
+					id: "itemfilters:tag"
 					tag: {
 						value: "storagedrawers:drawers"
 					}
 				}
+				title: "Any #storagedrawers:drawers"
+				type: "item"
 			}]
+			title: "Storage Drawers"
+			x: 15.0d
+			y: 4.5d
 		}
 		{
-			size: 1.5d
+			dependencies: ["295ADAC4384BB2C6"]
 			description: ["The &6Runic Altar &fwill allow you to make Botania &6Runes, &fwhich will become important for a number of useful tools, such as &6Rods, &fwhich for example can give you access to dirt with the &6Rod of the Lands&f. "]
 			id: "7E85A520CBD001AC"
-			x: 21.0d
-			y: -0.75d
 			rewards: [{
-				id: "1F7E101DB66F7C08"
-				type: "item"
-				item: "botania:mana_powder"
 				count: 4
+				id: "1F7E101DB66F7C08"
+				item: "botania:mana_powder"
+				type: "item"
 			}]
-			dependencies: ["295ADAC4384BB2C6"]
+			size: 1.5d
 			tasks: [{
 				id: "652B7F325E4717CA"
-				type: "item"
 				item: "botania:runic_altar"
+				type: "item"
 			}]
+			x: 21.0d
+			y: -0.75d
 		}
 		{
-			size: 1.5d
+			dependencies: ["73E66CEF2A4B9198"]
 			description: ["Due to the Endoflame being weakened, it may be worth it to consider using your Experience as a source of Mana."]
 			id: "7660819C80FE85C3"
-			x: 7.5d
-			y: 5.0d
 			rewards: [{
 				id: "2860E2677B4C4055"
 				type: "xp"
 				xp: 250
 			}]
-			dependencies: ["73E66CEF2A4B9198"]
+			size: 1.5d
 			tasks: [{
 				id: "58D094BE1FFA1E28"
-				type: "item"
 				item: "botania:rosa_arcana"
+				type: "item"
 			}]
+			x: 7.5d
+			y: 5.0d
 		}
 		{
-			size: 1.5d
+			dependencies: ["51AE61E1CA89D07E"]
 			description: [
 				"&6Manaelectrum Tools &fare a custom addition. They offer similar stats to a golden pickaxe, as well as the bonus of &6Fortune II &flike with golden tools, but can be repaired with &6Mana&f. This is done by having a &6Mana Tablet &fwith some mana inside of it, or other methods of storing &6Mana &fon yourself."
 				""
 				"Additionally, swords have &6Looting II &fwhich will be useful for killing &6Fel Blazes &fand other mobs."
 			]
 			id: "4D095543CB1E0F6F"
-			x: 17.25d
-			y: -8.25d
 			rewards: [{
 				id: "709FBE2600AD6E88"
-				type: "item"
 				item: "botania:black_lotus"
+				type: "item"
 			}]
-			dependencies: ["51AE61E1CA89D07E"]
+			size: 1.5d
 			tasks: [{
 				id: "7D6BDDAD7EF540BD"
-				type: "item"
 				item: {
-					id: "genericbotaniapacktweaker:manaelectrum_pickaxe"
 					Count: 1b
+					id: "genericbotaniapacktweaker:manaelectrum_pickaxe"
 					tag: {
 						Damage: 0
 					}
 				}
+				type: "item"
 			}]
+			x: 17.25d
+			y: -8.25d
 		}
 		{
-			size: 1.5d
+			dependencies: ["295ADAC4384BB2C6"]
 			description: [
 				"In order to get the Obsidian required to create the &6Nether Portal &fyou will require several &6Blaze Meshes &f. The Blaze Powder required for these can be obtained by placing a &6Fel Pumpkin &fontop of two Iron Bars."
 				""
 				"Try lighting the portal with a &6Fire Charge&f."
 			]
 			id: "43B7964EB1EF168B"
+			rewards: [{
+				count: 8
+				id: "217414A95C8660A6"
+				item: "minecraft:nether_wart"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "79464B935F7A9FC2"
+				title: "Visit the Nether"
+				type: "dimension"
+			}]
 			x: 21.0d
 			y: 2.25d
-			rewards: [{
-				id: "217414A95C8660A6"
-				type: "item"
-				item: "minecraft:nether_wart"
-				count: 8
-			}]
-			dependencies: ["295ADAC4384BB2C6"]
-			tasks: [{
-				id: "79464B935F7A9FC2"
-				type: "dimension"
-				title: "Visit the Nether"
-				dimension: "minecraft:the_nether"
-			}]
 		}
 		{
-			size: 2.0d
+			dependencies: [
+				"7E85A520CBD001AC"
+				"43B7964EB1EF168B"
+			]
 			description: [
 				"These 4 &6Runes &fwill be the basis for many of the most important things in your playthrough. It may be worth trying to automate these - or at least some of their ingredients -  as soon as possible, especially the &6Rune of Mana&f. The &6Rune of Air &fis slightly important to a Botanist and harder to get as it requries the usage of a &6Cocoon of Caprice&f."
 				""
@@ -593,142 +595,140 @@
 				"From here, you will have a lot more freedom with what you can do. Make sure to take a look through the uses of the runes in JEI!"
 			]
 			id: "6AE0D0434399320C"
-			x: 24.0d
-			y: 0.85d
-			shape: "rsquare"
-			title: "&6Hearts of Botany"
 			rewards: [
 				{
-					id: "7C5575F92B104CC1"
-					type: "item"
-					item: "botania:rune_mana"
 					count: 3
-				}
-				{
-					id: "1387DD7BF4E259FD"
+					id: "7C5575F92B104CC1"
+					item: "botania:rune_mana"
 					type: "item"
-					item: "botania:black_lotus"
-					count: 5
 				}
 				{
-					id: "03D589AC5D1DCD3E"
-					type: "random"
+					count: 5
+					id: "1387DD7BF4E259FD"
+					item: "botania:black_lotus"
+					type: "item"
+				}
+				{
 					exclude_from_claim_all: true
+					id: "03D589AC5D1DCD3E"
 					table_id: 18951675626636805L
+					type: "random"
 				}
 			]
-			dependencies: [
-				"7E85A520CBD001AC"
-				"43B7964EB1EF168B"
-			]
+			shape: "rsquare"
+			size: 2.0d
 			tasks: [
 				{
 					id: "0BFED83E140C067F"
-					type: "item"
 					item: "botania:rune_fire"
+					type: "item"
 				}
 				{
 					id: "3F2DFA817A09F87E"
-					type: "item"
 					item: "botania:rune_earth"
+					type: "item"
 				}
 				{
 					id: "480EF7765CED0BC9"
-					type: "item"
 					item: "botania:rune_water"
+					type: "item"
 				}
 				{
 					id: "31AA2271488A1A9C"
-					type: "item"
 					item: "botania:rune_mana"
+					type: "item"
 				}
 			]
+			title: "&6Hearts of Botany"
+			x: 24.0d
+			y: 0.85d
 		}
 		{
-			size: 1.5d
-			description: ["The &6Mana Tablet &fallows you to store &6Mana&f. This is useful as this stored mana will allow you to use Botania's rods in the future, amongst other various trinkets."]
-			id: "7D89DE3F0C36C537"
-			x: 12.75d
-			y: -3.0d
-			rewards: [{
-				id: "54884FCFED44F495"
-				type: "item"
-				item: "botania:black_lotus"
-			}]
 			dependencies: [
 				"295ADAC4384BB2C6"
 				"70AC54339C085D39"
 			]
+			description: ["The &6Mana Tablet &fallows you to store &6Mana&f. This is useful as this stored mana will allow you to use Botania's rods in the future, amongst other various trinkets."]
+			id: "7D89DE3F0C36C537"
+			rewards: [{
+				id: "54884FCFED44F495"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
+			size: 1.5d
 			tasks: [{
 				id: "3D93217D2E712D8A"
-				type: "item"
 				item: "botania:mana_tablet"
+				type: "item"
 			}]
+			x: 12.75d
+			y: -3.0d
 		}
 		{
-			size: 2.0d
 			description: ["Be careful with it this time!"]
 			id: "7A3A3D39062856B5"
-			x: 8.0d
-			y: -1.5d
-			title: "&4Emergency Livingroot"
 			rewards: [{
-				id: "4ABB40D1358AF272"
-				type: "item"
-				item: "botania:living_root"
 				count: 16
+				id: "4ABB40D1358AF272"
+				item: "botania:living_root"
+				type: "item"
 			}]
+			size: 2.0d
 			tasks: [{
 				id: "09DFB00C77AE6C3B"
 				type: "checkmark"
 			}]
+			title: "&4Emergency Livingroot"
+			x: 8.0d
+			y: -1.5d
 		}
 		{
-			size: 1.25d
+			dependencies: ["1136836816EB0BA6"]
 			description: ["Slabs are a cheaper way to create a large platform."]
 			id: "405A9C1E2C88EFF6"
-			x: 5.5d
-			y: 0.0d
-			title: "Slab Superiority"
-			dependencies: ["1136836816EB0BA6"]
+			size: 1.25d
 			tasks: [{
 				id: "0160CF3FA6A186A2"
-				type: "item"
 				item: "minecraft:oak_slab"
+				type: "item"
 			}]
+			title: "Slab Superiority"
+			x: 5.5d
+			y: 0.0d
 		}
 		{
-			size: 1.5d
+			dependencies: ["295ADAC4384BB2C6"]
 			description: ["A risky way to get some extra dirt, or related blocks, as &6Rocky Dirt &fcan be turned into 4 dirt."]
 			id: "18373FB900336E27"
-			x: 15.75d
-			y: -3.0d
-			dependencies: ["295ADAC4384BB2C6"]
+			size: 1.5d
 			tasks: [{
 				id: "107BD82304AAC76A"
-				type: "item"
 				item: "kubejs:dirty_dirt"
+				type: "item"
 			}]
+			x: 15.75d
+			y: -3.0d
 		}
 		{
-			size: 1.25d
+			dependencies: ["295ADAC4384BB2C6"]
 			description: ["At your current stage, you only have two options to process ores. You can either smelt them directly, for &33 Nuggets &fof the ore, or use &6Mana Infusion &fon them, and smelt the result of that for &35 Nuggets&f."]
 			id: "1A133CA8C025499E"
-			x: 19.0d
-			y: -3.0d
-			title: "&3Ore Processing: Part 1"
 			rewards: [{
 				id: "4E6B78E471FCC1BE"
-				type: "item"
 				item: "botania:black_lotus"
+				type: "item"
 			}]
+			size: 1.25d
 			subtitle: "Never Before Done"
-			dependencies: ["295ADAC4384BB2C6"]
 			tasks: [{
 				id: "5F15A7DA509F28F3"
-				type: "item"
 				item: "kubejs:mana_iron_dust"
+				type: "item"
 			}]
+			title: "&3Ore Processing: Part 1"
+			x: 19.0d
+			y: -3.0d
 		}
 	]
+	title: "&6The Beginning"
 }

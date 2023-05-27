@@ -18,6 +18,9 @@
 			red_blossom = true
 			ancient = true
 
+		[types.leaves_type.ars_elemental]
+			yellow_archwood = true
+
 	[types.wood_type]
 
 		[types.wood_type.ars_nouveau]

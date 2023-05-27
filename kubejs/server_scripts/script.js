@@ -7,11 +7,7 @@ ServerEvents.recipes(event => {
   //3 new fuels for the endoflame
   //orechid rework
   //exoblast for stone, maybe oil sand and assorted other block blasting stuff
-  //potentially make source timber the ingredient for andesite casing and rename to source casing, though source timber may deserve an additional recipe prior to that
   //continue triplet (energy, time, material) design method for automation heavy items
-  //flax changes
-  //3 iron nuggets from regular smelting instead of full ingot in order to make iron a bit more rare since you end up having tons of it?
-  //pure earth, water, air and mana? essences (cost is = 4 runes + some source + ars nouveau esssence equivalent)
 	event.remove({output: 'ars_nouveau:blue_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:purple_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:red_archwood_sapling'})
@@ -205,6 +201,8 @@ ServerEvents.recipes(event => {
   event.remove({id: 'thermal:machines/pyrolyzer/pyrolyzer_coal'})
   event.remove({id: 'botanicadds:elven_fluxfield'})
   event.remove({id: 'botania:alfheim_portal'})
+  event.remove({id: 'ars_nouveau:upgrade_1'})
+  event.remove({id: 'ars_nouveau:upgrade_2'})
   event.remove({id: 'thermal:machine_frame'})
   event.replaceInput({input: (/ae2:item.*/)}, ('minecraft:iron_ingot'), 'botania:manasteel_ingot')
   event.replaceInput({id: 'ae2:decorative/quartz_glass'}, '#forge:glass', 'botania:elf_glass')
@@ -236,6 +234,10 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'create:crafting/kinetics/mechanical_drill'}, 'create:andesite_alloy', 'botania:terrasteel_nugget')
   event.replaceInput({id: 'botania:natura_pylon'}, 'minecraft:ender_eye', 'ars_nouveau:blaze_fiber')
   event.replaceInput({input: 'create:dough'}, 'create:dough', 'farmersdelight:wheat_dough')
+  event.replaceInput({id: 'ars_elemental:imbuement_mark_of_mastery'}, 'ars_nouveau:earth_essence', 'kubejs:pure_earth_essence')
+  event.replaceInput({id: 'ars_elemental:imbuement_mark_of_mastery'}, 'ars_nouveau:water_essence', 'kubejs:pure_water_essence')
+  event.replaceInput({id: 'ars_elemental:imbuement_mark_of_mastery'}, 'ars_nouveau:air_essence', 'kubejs:pure_air_essence')
+  event.replaceInput({id: 'ars_elemental:imbuement_mark_of_mastery'}, 'ars_nouveau:fire_essence', 'kubejs:pure_fire_essence')
  event.replaceInput({output: (/ars_nouveau:ritual.*/)}, (/_archwood_log/), 'kubejs:tablet_base')
   event.remove({output: (/ars_nouveau:ritual.*/), input: (/_archwood_log/)})
   event.replaceInput({mod: 'constructionwand'}, 'minecraft:stick', 'botania:livingwood_twig')
@@ -250,7 +252,6 @@ ServerEvents.recipes(event => {
 	event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
 	event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_nugget', 'kubejs:manaelectrum_nugget')
   event.replaceInput({mod: 'create', input: '#minecraft:planks'}, '#minecraft:planks', 'botania:livingwood')
-	event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:diamond', 'botania:mana_diamond')
 	event.replaceInput({mod: 'storagedrawers'}, 'minecraft:stick', 'botania:livingwood_twig')
 	event.replaceInput({id: 'storagedrawers:obsidian_storage_upgrade'}, 'minecraft:obsidian', 'minecraft:iron_ingot')
 	event.replaceInput({id: 'storagedrawers:iron_storage_upgrade'}, 'minecraft:iron_ingot', 'botania:manasteel_ingot')
@@ -288,6 +289,7 @@ ServerEvents.recipes(event => {
 	event.replaceInput({id: 'storagedrawers:compacting_drawers_3'}, 'minecraft:iron_ingot', 'botania:elementium_ingot')
 	event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:diamond', 'botania:dragonstone')
 	event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:stone', 'botania:dreamwood')
+  event.replaceInput({id: 'ars_elemental:imbuement_anima_essence'}, 'minecraft:bone_meal', 'kubejs:blooded_source')
 	event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
 	event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:comparator', 'botania:spark')
 	event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:comparator', 'botania:spark')
@@ -300,10 +302,10 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'thermal:machine_insolator'}, 'minecraft:dirt', 'moreminecarts:hard_light_lens')
   event.replaceInput({id: 'thermal:energy_cell_frame'}, 'thermal:electrum_gear', 'kubejs:manasteel_gear')
   event.replaceInput({mod: 'ars_nouveau', input: 'minecraft:diamond'}, 'minecraft:diamond', 'botania:mana_diamond')
-  event.replaceInput({id: 'toomanyglyphs:glyph_amplify_two'}, 'minecraft:diamond', 'botania:mana_diamond')
-  event.replaceInput({id: 'toomanyglyphs:glyph_amplify_two'}, 'minecraft:diamond_block', 'botania:mana_diamond_block')
-  event.replaceInput({id: 'toomanyglyphs:glyph_amplify_three'}, 'minecraft:diamond', 'botania:mana_diamond')
-  event.replaceInput({id: 'toomanyglyphs:glyph_amplify_three'}, 'minecraft:diamond_block', 'botania:mana_diamond_block')
+  event.replaceInput({id: 'toomanyglyphs:glyph_amplify_two'}, 'minecraft:diamond', 'kubejs:vitric_diamond')
+  event.replaceInput({id: 'toomanyglyphs:glyph_amplify_two'}, 'minecraft:diamond_block', 'kubejs:blooded_source')
+  event.replaceInput({id: 'toomanyglyphs:glyph_amplify_three'}, 'minecraft:diamond', 'kubejs:vitric_diamond')
+  event.replaceInput({id: 'toomanyglyphs:glyph_amplify_three'}, 'minecraft:diamond_block', 'kubejs:blooded_source')
   event.replaceInput({id: 'thermal:machine_pyrolyzer'}, 'minecraft:blaze_rod', 'botania:rune_wrath')
   event.replaceInput({id: 'ae2:network/parts/tunnel_me'}, 'ae2:engineering_processor', 'quark:soul_bead'), 
   event.replaceInput({id: 'ars_artifice:spell_storing_belt'}, 'ars_nouveau:source_gem', 'kubejs:blooded_source')
@@ -617,6 +619,7 @@ event.shapeless(
 [ 
   'create:blaze_cake_base',
   'botania:rune_fire',
+  'botania:rune_summer',
   'kubejs:hot_resin'	
 ]
 )
@@ -655,6 +658,8 @@ event.shapeless(
   Item.of('kubejs:blooded_source', 1), 
 [ 
   'ars_nouveau:source_gem', 
+  'kubejs:crystallised_blood',
+  'kubejs:crystallised_blood',
   'kubejs:crystallised_blood'
 ]
 )
@@ -1489,7 +1494,7 @@ event.shaped(
     'CAC'  
   ],
   {
-    A: 'botania:mana_pearl',  
+    A: 'botania:pixie_dust',  
 	  B: 'minecraft:obsidian',
     C: 'ae2:ender_dust'
   }

@@ -44,6 +44,10 @@ ServerEvents.tags('item', event => {
 
     event.remove('forge:nuggets/copper', 'create:copper_nugget')
 
+    event.remove('ars_nouveau:robe', ['ars_nouveau:apprentice_robes', 'ars_nouveau:novice_robes'])
+    event.remove('ars_nouveau:boots', ['ars_nouveau:apprentice_boots', 'ars_nouveau:novice_boots'])
+    event.remove('ars_nouveau:legs', ['ars_nouveau:apprentice_leggings', 'ars_nouveau:novice_leggings'])
+    event.remove('ars_nouveau:hood', ['ars_nouveau:apprentice_hood', 'ars_nouveau:novice_hood'])
 })
 
 //automate logs don't veinmine 

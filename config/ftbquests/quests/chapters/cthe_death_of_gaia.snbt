@@ -1,46 +1,45 @@
 {
-	quest_links: [ ]
 	default_hide_dependency_lines: false
-	group: ""
-	id: "41EB143760F32457"
-	filename: "cthe_death_of_gaia"
 	default_quest_shape: ""
+	filename: "cthe_death_of_gaia"
+	group: ""
 	icon: "botania:gaia_head"
-	title: "&4The Death of Gaia"
+	id: "41EB143760F32457"
 	order_index: 2
+	quest_links: [ ]
 	quests: [
 		{
-			size: 3.0d
+			dependencies: ["1EA3144D38F82615"]
 			description: ["You have killed the weaker form of &4Gaia&f. In order to kill the more powerful version, you must use a &6Gaia Spirit Ingot &finstead of a &6Terrasteel Ingot &fin the ritual."]
 			id: "1C97E024ED0439C5"
-			x: -2.0d
-			y: -0.5d
-			shape: "hexagon"
-			title: "&4The Death of Gaia"
 			rewards: [
 				{
-					id: "012E2F6BDB72B1D6"
-					type: "item"
-					item: "botania:blacker_lotus"
 					count: 10
+					id: "012E2F6BDB72B1D6"
+					item: "botania:blacker_lotus"
+					type: "item"
 				}
 				{
-					id: "4ADE3D310F1A2AF4"
-					type: "item"
-					item: "botania:overgrowth_seed"
 					count: 5
+					id: "4ADE3D310F1A2AF4"
+					item: "botania:overgrowth_seed"
+					type: "item"
 				}
 			]
-			dependencies: ["1EA3144D38F82615"]
+			shape: "hexagon"
+			size: 3.0d
 			tasks: [{
-				id: "796A94AA22606317"
-				type: "advancement"
 				advancement: "botania:main/gaia_guardian_kill"
 				criterion: ""
+				id: "796A94AA22606317"
+				type: "advancement"
 			}]
+			title: "&4The Death of Gaia"
+			x: -2.0d
+			y: -0.5d
 		}
 		{
-			size: 4.5d
+			dependencies: ["4C3BC450ACE9579D"]
 			description: [
 				"You now have truly unlimited &6Mana&f. Use this new found freedom as you wish, or let it be the end of your experience with this pack."
 				""
@@ -49,93 +48,94 @@
 				"&nhttps://discord.gg/tERPphR2et"
 			]
 			id: "5CBD8975441CE9C6"
-			x: 9.0d
-			y: -0.5d
-			shape: "gear"
-			title: "&6The Everlasting Guilty Pool"
 			rewards: [
 				{
 					id: "5ECE5035AA0C81E9"
-					type: "item"
 					item: "create:creative_motor"
+					type: "item"
 				}
 				{
 					id: "7F7CE0E7F3BEE68E"
-					type: "item"
 					item: "ars_nouveau:creative_spell_book"
+					type: "item"
 				}
 				{
 					id: "2F3483494173FB18"
-					type: "item"
 					item: "storagedrawers:creative_storage_upgrade"
+					type: "item"
 				}
 			]
+			shape: "gear"
+			size: 4.5d
 			subtitle: "&4In this place, where destiny is made."
-			dependencies: ["4C3BC450ACE9579D"]
 			tasks: [{
 				id: "71844889B905CF8E"
-				type: "item"
 				item: "botania:creative_pool"
+				type: "item"
 			}]
+			title: "&6The Everlasting Guilty Pool"
+			x: 9.0d
+			y: -0.5d
 		}
 		{
-			size: 2.5d
+			dependencies: ["3393FFE9FF49FDDD"]
 			description: ["&7A hyper-compressed form of runic magic that is only craftable through mechanical crafting, it has a volatile state that might be able to be channeled into something useful. "]
 			id: "4C3BC450ACE9579D"
-			x: 4.5d
-			y: -0.5d
-			title: "&5Runic Ingot"
-			dependencies: ["3393FFE9FF49FDDD"]
+			size: 2.5d
 			tasks: [{
 				id: "2BC71D4769977400"
-				type: "item"
 				item: "kubejs:runic_ingot"
+				type: "item"
 			}]
+			title: "&5Runic Ingot"
+			x: 4.5d
+			y: -0.5d
 		}
 		{
-			size: 2.5d
+			dependencies: ["1C97E024ED0439C5"]
 			description: [
 				"&7A Material that is completely saturated with Mana, it's almost impossible to"
 				"&7have this much mana condensed into one place."
 			]
 			id: "3393FFE9FF49FDDD"
-			x: 1.0d
-			y: -0.5d
-			title: "&cGaiasteel"
-			dependencies: ["1C97E024ED0439C5"]
+			size: 2.5d
 			tasks: [{
 				id: "3AF5863953100E46"
-				type: "item"
 				item: "botanicadds:gaiasteel_ingot"
+				type: "item"
 			}]
+			title: "&cGaiasteel"
+			x: 1.0d
+			y: -0.5d
 		}
 		{
-			size: 2.0d
+			dependencies: ["3393FFE9FF49FDDD"]
 			description: ["Once worn, this band is able to produce &6Mana &finto other trinkets at a ludicrous rate."]
 			id: "040D03AC7CFBFABA"
-			x: 3.0d
-			y: 2.0d
-			title: "Passive Income"
-			dependencies: ["3393FFE9FF49FDDD"]
+			size: 2.0d
 			tasks: [{
 				id: "6A4BD8628F5128B2"
-				type: "item"
 				item: "botanicadds:aura_ring_gaia"
+				type: "item"
 			}]
+			title: "Passive Income"
+			x: 3.0d
+			y: 2.0d
 		}
 		{
-			size: 2.0d
+			dependencies: ["3393FFE9FF49FDDD"]
 			description: ["&6Gaiasteel &7can be sucked of its internal mana to create absurd amounts of heat, however due to the sheer quantity of mana stored within &6Gaiasteel &7the heat will practically last forever."]
 			id: "4A98F3DB565D197A"
-			x: 1.0d
-			y: 2.0d
-			title: "Unmatched Heat"
-			dependencies: ["3393FFE9FF49FDDD"]
+			size: 2.0d
 			tasks: [{
 				id: "15EA688B68A89FCE"
-				type: "item"
 				item: "create:creative_blaze_cake"
+				type: "item"
 			}]
+			title: "Unmatched Heat"
+			x: 1.0d
+			y: 2.0d
 		}
 	]
+	title: "&4The Death of Gaia"
 }

@@ -1,154 +1,154 @@
 {
-	quest_links: [ ]
 	default_hide_dependency_lines: false
-	group: ""
-	id: "4EF5835B8052F002"
-	filename: "atips_and_hints"
 	default_quest_shape: ""
+	filename: "atips_and_hints"
+	group: ""
 	icon: "minecraft:book"
-	title: "&aTips and Hints"
+	id: "4EF5835B8052F002"
 	order_index: 3
+	quest_links: [ ]
 	quests: [
 		{
-			size: 1.5d
 			description: ["These seeds can be made and grown for an easy way to automate &6String&f."]
 			id: "3777508D93740037"
-			y: -1.0d
-			x: -0.5d
+			size: 1.5d
 			tasks: [{
 				id: "635EF15B6AF1FF42"
-				type: "item"
 				item: "supplementaries:flax_seeds"
+				type: "item"
 			}]
+			x: -0.5d
+			y: -1.0d
 		}
 		{
-			size: 1.5d
 			description: ["Doubles the amount of &6Mana &fa burst carries. Useful for transferring &6Mana &finto &6Source Jars &for &6Flux Fields &fquickly."]
 			id: "0E7C2AFB6AF814CE"
-			y: -1.0d
-			x: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "1FF30A146FB9C498"
-				type: "item"
 				item: "botania:lens_power"
+				type: "item"
 			}]
+			x: 1.0d
+			y: -1.0d
 		}
 		{
-			size: 1.5d
 			description: ["A faster way of growing crops like &6Sugar Cane&f."]
 			id: "62B947DFCB21102F"
-			y: -1.0d
-			x: 2.5d
+			size: 1.5d
 			tasks: [{
 				id: "2E1AD6419C6C2C37"
-				type: "item"
 				item: "snad:snad"
+				type: "item"
 			}]
+			x: 2.5d
+			y: -1.0d
 		}
 		{
-			size: 1.5d
 			description: ["Uses half the &6Source &fcost as a regular spell turret to cast spells."]
 			id: "78C2E246D9B0B211"
-			y: -1.0d
-			x: -2.0d
+			size: 1.5d
 			tasks: [{
 				id: "63F25C3A69AA58F9"
-				type: "item"
 				item: "ars_nouveau:spell_turret"
+				type: "item"
 			}]
+			x: -2.0d
+			y: -1.0d
 		}
 		{
-			size: 1.5d
+			dependencies: ["1136836816EB0BA6"]
 			description: ["Various paths and similar blocks have been given a speed increase when you walk on them. Useful to move around your base faster as it expands!"]
 			id: "3E78FDA888B1D701"
-			x: -3.5d
-			y: -1.0d
-			title: "Paving Paths"
-			dependencies: ["1136836816EB0BA6"]
+			size: 1.5d
 			tasks: [{
 				id: "6DDA921432269333"
-				type: "item"
 				item: "mcwpaths:oak_planks_path"
+				type: "item"
 			}]
+			title: "Paving Paths"
+			x: -3.5d
+			y: -1.0d
 		}
 		{
-			size: 1.5d
 			description: ["Speeds up growth rate for most plants."]
 			id: "0575489F79D32C0E"
-			y: -1.0d
-			x: -5.0d
+			size: 1.5d
 			tasks: [{
 				id: "2BF6DF994B5A761E"
-				type: "item"
 				item: "farmersdelight:rich_soil"
+				type: "item"
 			}]
+			x: -5.0d
+			y: -1.0d
 		}
 		{
-			size: 1.5d
 			description: ["Burns for significantly longer than regular coal."]
 			id: "4C5BC3992FFA0D14"
-			y: -1.0d
-			x: 4.0d
+			size: 1.5d
 			tasks: [{
 				id: "65BB68CF286DF5FC"
-				type: "item"
 				item: "kubejs:fiery_coal"
+				type: "item"
 			}]
+			x: 4.0d
+			y: -1.0d
 		}
 		{
-			size: 1.5d
 			description: ["Can be used by an &6Orechid&f, gives you chances of acquiring ores like &6Niter &fand &6Apetite&f."]
 			id: "68D257E806756E56"
-			y: -1.0d
-			x: -6.5d
+			size: 1.5d
 			tasks: [{
 				id: "1E00AFF5BDDAC6B6"
-				type: "item"
 				item: "minecraft:andesite"
+				type: "item"
 			}]
+			x: -6.5d
+			y: -1.0d
 		}
 		{
-			size: 1.5d
 			description: ["Holds up to 640 items, but as many different types of items as you want."]
 			id: "0E8AA32666EA5CC1"
-			y: -1.0d
-			x: -8.0d
+			size: 1.5d
 			tasks: [{
 				id: "1C0F659BD84C59A7"
-				type: "item"
 				item: "quark:crate"
+				type: "item"
 			}]
+			x: -8.0d
+			y: -1.0d
 		}
 		{
-			size: 1.5d
 			description: ["There are a few different tiers of &6Construction Wands&f, each of which affects their durability. They are used to help quickly place blocks in rows, such as for expansion of your area. Try one out for yourself!"]
 			id: "5992355D9F6423F3"
-			y: 0.5d
-			x: -8.0d
+			size: 1.5d
 			tasks: [{
 				id: "0EAB5A024DBCE477"
-				type: "item"
 				item: {
-					id: "constructionwand:stone_wand"
 					Count: 1b
+					id: "constructionwand:stone_wand"
 					tag: {
-						wand_options: { }
 						Damage: 0
+						wand_options: { }
 					}
 				}
+				type: "item"
 			}]
+			x: -8.0d
+			y: 0.5d
 		}
 		{
-			size: 1.5d
 			description: ["Can be used to quickly exchange blocks. &6Shift Right-Click &fon a block to select it as the one to replace with, then &6Right-Click &fthe blocks you want to replace."]
 			id: "5FEB6C51D593A8BF"
-			y: 0.5d
-			x: -6.5d
+			size: 1.5d
 			tasks: [{
 				id: "5F3D3F8A58408808"
-				type: "item"
 				item: "botania:exchange_rod"
+				type: "item"
 			}]
+			x: -6.5d
+			y: 0.5d
 		}
 	]
+	title: "&aTips and Hints"
 }

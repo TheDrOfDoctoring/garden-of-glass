@@ -1,4 +1,8 @@
 {
+	icon: "botania:rune_mana"
+	id: "00435472D59FC605"
+	loot_size: 1
+	order_index: 2
 	rewards: [
 		{ item: "botania:rune_water" }
 		{ item: "botania:rune_earth" }
@@ -6,9 +10,5 @@
 		{ item: "botania:rune_air" }
 		{ item: "botania:rune_mana" }
 	]
-	loot_size: 1
-	order_index: 2
-	id: "00435472D59FC605"
-	icon: "botania:rune_mana"
 	title: "Botania Runes (Tier 1)"
 }

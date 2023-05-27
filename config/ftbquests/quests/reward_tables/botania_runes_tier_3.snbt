@@ -1,4 +1,7 @@
 {
+	id: "19C7E34F34E465D1"
+	loot_size: 1
+	order_index: 6
 	rewards: [
 		{ item: "botania:rune_lust" }
 		{ item: "botania:rune_gluttony" }
@@ -8,8 +11,5 @@
 		{ item: "botania:rune_envy" }
 		{ item: "botania:rune_pride" }
 	]
-	loot_size: 1
-	order_index: 6
-	id: "19C7E34F34E465D1"
 	title: "Botania Runes (Tier 3)"
 }

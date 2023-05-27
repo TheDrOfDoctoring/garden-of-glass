@@ -1,11 +1,11 @@
 {
-	rewards: [
-		{ item: "botania:livingwood_log", count: 8 }
-		{ item: "botania:livingrock", count: 8 }
-	]
+	icon: "botania:pure_daisy"
+	id: "10AF5D9B39ACD30F"
 	loot_size: 1
 	order_index: 1
-	id: "10AF5D9B39ACD30F"
-	icon: "botania:pure_daisy"
+	rewards: [
+		{ count: 8, item: "botania:livingwood_log" }
+		{ count: 8, item: "botania:livingrock" }
+	]
 	title: "Living Resources"
 }

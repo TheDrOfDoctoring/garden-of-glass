@@ -2154,7 +2154,7 @@ ServerEvents.recipes(event => {
         }
       }
     ],
-    "source": 2500
+    "source": 10000
   })
   event.custom({
     "type": "create:crushing",
@@ -2313,7 +2313,7 @@ ServerEvents.recipes(event => {
     "type": "ars_nouveau:enchanting_apparatus",
     "keepNbtOfReagent": false,
     "output": {
-      "count": 4,
+      "count": 1,
       "item": "kubejs:bloodstone_block"
     },
     "pedestalItems": [
@@ -2341,6 +2341,42 @@ ServerEvents.recipes(event => {
     "reagent": [
       {
         "item": "botania:rune_earth"
+      }
+    ],
+    "sourceCost": 250
+  })
+  event.custom({
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
+      "count": 4,
+      "item": "kubejs:bloodstone_block"
+    },
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "twigs:bloodstone"
+        }
+      },
+      {
+        "item": {
+          "item": "twigs:bloodstone"
+        }
+      },
+      {
+        "item": {
+          "item": "twigs:bloodstone"
+        }
+      },
+      {
+        "item": {
+          "item": "twigs:bloodstone"
+        }
+      }
+    ],
+    "reagent": [
+      {
+        "item": "kubejs:pure_earth_essence"
       }
     ],
     "sourceCost": 0
@@ -2610,7 +2646,7 @@ event.custom({
         "tag": "botania:rune_seasons"
       },
       {
-        "item": "minecraft:egg"
+        "item": "botania:fel_pumpkin"
       },
       {
         "item": "minecraft:egg"
@@ -3132,6 +3168,11 @@ event.custom({
       },
       {
         "item": {
+          "item": "thermal:rosin"
+        }
+      },
+      {
+        "item": {
           "item": "botania:rune_fire"
         }
       }
@@ -3141,7 +3182,7 @@ event.custom({
         "item": "thermal:sulfur_block"
       }
     ],
-    "sourceCost": 0
+    "sourceCost": 1000
   })
   event.custom({
     "type": "create:milling",
@@ -3630,6 +3671,65 @@ event.custom({
 ],
 "sourceCost": 0
 })
+event.custom({
+  "type": "ars_nouveau:armor_upgrade",
+  "pedestalItems": [
+    {
+      "item": {
+        "item": "kubejs:blooded_source"
+      }
+    },
+    {
+      "item": {
+        "item": "kubejs:blooded_source"
+      }
+    },
+    {
+      "item": {
+        "item": "quark:soul_bead"
+      }
+    },
+    {
+      "item": {
+        "item": "quark:soul_bead"
+      }
+    },
+    {
+      "item": {
+        "item": "quark:soul_bead"
+      }
+    }
+  ],
+  "sourceCost": 5000,
+  "tier": 2
+}).id("ars_nouveau:upgrade_2")
+event.custom({
+  "type": "ars_nouveau:armor_upgrade",
+  "pedestalItems": [
+    {
+      "item": {
+        "item": "ars_nouveau:blaze_fiber"
+      }
+    },
+    {
+      "item": {
+        "item": "ars_nouveau:blaze_fiber"
+      }
+    },
+    {
+      "item": {
+        "item": "ars_nouveau:blaze_fiber"
+      }
+    },
+    {
+      "item": {
+        "item": "ars_nouveau:blaze_fiber"
+      }
+    }
+  ],
+  "sourceCost": 2500,
+  "tier": 1
+}).id("ars_nouveau:upgrade_1")
   event.custom({
     "type": "ars_nouveau:enchanting_apparatus",
     "keepNbtOfReagent": false,
@@ -3655,6 +3755,32 @@ event.custom({
       }
     ],
     "sourceCost": 500
+  })
+  event.custom({
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
+      "item": "minecraft:sponge",
+      "count": 1
+    },
+    "pedestalItems": [
+      {
+        "item": {
+          "item": "botania:rune_fire"
+        }
+      },
+      {
+        "item": {
+          "item": "ars_nouveau:fire_essence"
+        }
+      }
+    ],
+    "reagent": [
+      {
+        "item": "minecraft:dirt"
+      }
+    ],
+    "sourceCost": 1000
   })
   event.custom({
     "type": "ars_nouveau:enchanting_apparatus",
@@ -3931,5 +4057,4 @@ event.custom({
   ],
   "sourceCost": 500
 	})
-	
 })

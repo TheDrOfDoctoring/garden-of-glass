@@ -53,6 +53,28 @@ ServerEvents.recipes(event => {
         event.recipes.minecraft.smelting('7x #forge:nuggets/'+materials, "kubejs:pure_"+materials+"_dust").xp(0.7)
         event.recipes.minecraft.blasting('#forge:ingots/'+materials, "kubejs:elven_"+materials+"_dust").xp(0.7)
         event.recipes.minecraft.smelting('#forge:ingots/'+materials, "kubejs:elven_"+materials+"_dust").xp(0.7)
+        event.recipes.minecraft.blasting('11x #forge:nuggets/'+materials, "kubejs:soul_"+materials+"_dust").xp(0.7)
+        event.recipes.minecraft.smelting('11x #forge:nuggets/'+materials, "kubejs:soul_"+materials+"_dust").xp(0.7)
+        event.shapeless('2x kubejs:mana_'+materials+'_dust', ["#kubejs:processing/"+materials, 'kubejs:scorching_sulfur'])
+        event.shapeless('3x kubejs:blood_'+materials+'_dust', ["3x kubejs:soul_"+materials+"_dust", 'kubejs:crystallised_blood'])
+
+        event.custom({
+            "type": "create:mixing",
+            "ingredients": [
+              {
+                "item": "kubejs:elven_"+materials+"_dust"
+              },
+              {
+                "amount": 100,
+                "fluid": "kubejs:soul_fluid"
+              }
+            ],
+            "results": [
+              {
+                "item": "kubejs:soul_"+materials+"_dust"
+              }
+            ]
+          })
       event.custom({
         "type": "botania:mana_infusion",
         "input": {
@@ -145,4 +167,186 @@ ServerEvents.recipes(event => {
         "sourceCost": 100
       })    
     })
+    //Create doesn't accept tags as outputs sadly
+    
+    event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "heated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_iron_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:iron_nugget",
+            "count": 13
+          }
+        ]
+      })
+      event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "superheated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_iron_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:iron_nugget",
+            "count": 15
+          }
+        ]
+      })
+      event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "heated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_gold_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:gold_nugget",
+            "count": 13
+          }
+        ]
+      })
+      event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "superheated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_gold_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:gold_nugget",
+            "count": 15
+          }
+        ]
+      })
+      event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "heated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_copper_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:copper_nugget",
+            "count": 13
+          }
+        ]
+      })
+      event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "superheated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_copper_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:copper_nugget",
+            "count": 15
+          }
+        ]
+      })
+      event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "heated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_nickel_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "thermal:nickel_nugget",
+            "count": 13
+          }
+        ]
+      })
+      event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "superheated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_nickel_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "thermal:nickel_nugget",
+            "count": 15
+          }
+        ]
+      })
+      event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "heated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_lead_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "thermal:lead_nugget",
+            "count": 13
+          }
+        ]
+      })
+      event.custom({
+        "type": "create:mixing",
+        "heatRequirement": "superheated",
+        "ingredients": [
+          {
+            "item": "kubejs:blood_lead_dust"
+          },
+          {
+            "item": "ars_nouveau:water_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "thermal:lead_nugget",
+            "count": 15
+          }
+        ]
+      })
 })
