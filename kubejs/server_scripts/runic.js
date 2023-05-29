@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
             "item": "create:brass_ingot"
           },
           {
-            "item": "minecraft:redstone_block"
+            "tag": "kubejs:pure_essences"
           },
           {
             "item": "kubejs:manaelectrum_ingot"
@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
             "item": "thermal:steel_ingot"
           },
           {
-            "item": "minecraft:redstone_block"
+            "tag": "kubejs:pure_essences"
           },
           {
             "item": "botania:mana_diamond"
@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
             "item": "kubejs:source_timber"
           },
           {
-            "item": "minecraft:redstone_block"
+            "tag": "kubejs:pure_essences"
           },
           {
             "item": "ae2:certus_quartz_crystal"

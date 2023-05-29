@@ -199,12 +199,12 @@ ServerEvents.recipes(event => {
           },
           {
             "item": {
-              "item": "botania:rune_fire"
+              "item": "botania:rune_water"
             }
           },
           {
             "item": {
-              "item": "minecraft:prismarine_crystals"
+              "item": "minecraft:blaze_powder"
             }
           }
         ],

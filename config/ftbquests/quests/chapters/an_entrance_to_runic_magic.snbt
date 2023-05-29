@@ -143,8 +143,8 @@
 				type: "item"
 			}]
 			title: "Agricultural Advents"
-			x: -1.0d
-			y: -4.5d
+			x: -1.5d
+			y: -4.25d
 		}
 		{
 			dependencies: ["6619D81F2CED3D7B"]
@@ -250,6 +250,7 @@
 				}
 				type: "item"
 			}]
+			size: 1.25d
 			tasks: [
 				{
 					id: "12084CF0D316ACAB"
@@ -297,8 +298,8 @@
 				}
 			]
 			title: "Arcanist's Attire"
-			x: 0.5d
-			y: -6.5d
+			x: 0.0d
+			y: -8.125d
 		}
 		{
 			dependencies: ["6D9ED9BBA69C625C"]
@@ -315,6 +316,7 @@
 				}
 				type: "item"
 			}]
+			size: 1.25d
 			tasks: [
 				{
 					id: "7477D0F6648051C1"
@@ -362,8 +364,8 @@
 				}
 			]
 			title: "Sorcerer's Robes"
-			x: 0.0d
-			y: -5.5d
+			x: 2.5d
+			y: -8.125d
 		}
 		{
 			dependencies: ["6D9ED9BBA69C625C"]
@@ -381,6 +383,7 @@
 				}
 				type: "item"
 			}]
+			size: 1.25d
 			tasks: [
 				{
 					id: "306A4C2CCD9AF097"
@@ -428,8 +431,8 @@
 				}
 			]
 			title: "Battlemage's Armour"
-			x: 1.5d
-			y: -6.75d
+			x: 1.25d
+			y: -8.125d
 		}
 		{
 			dependencies: [
@@ -524,7 +527,7 @@
 				"The &6Enchanting Apparatus &fis a primitive way to make a variety of gears."
 				"As you advance, you may find more efficient way to make gears than the apparatus."
 				""
-				"&cAs mentioned in the Terrasteel Forgery, you may want to begin setting up the automation of ores. You might need quite a lot soon."
+				"&cAs mentioned in the Terrasteel Forgery, you may want to begin setting up the automation of ores. You might need quite a lot soon. Perhaps consider the usage of Spell Turrets from Ars Nouveau."
 			]
 			id: "19FCFE5F0AD14680"
 			rewards: [{
@@ -722,9 +725,9 @@
 			id: "29C4841B7DA93398"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "4F29B4DB67F1289E"
-				table_id: 1857703300642923985L
-				type: "random"
+				id: "2E02B32C44C7070E"
+				table_id: 6943663066194960901L
+				type: "choice"
 			}]
 			size: 1.5d
 			tasks: [{
@@ -768,8 +771,8 @@
 			id: "3AE18811D491D287"
 			rewards: [{
 				count: 8
-				id: "2DDFC9F0B2BF4D81"
-				item: "create:zinc_ingot"
+				id: "173BB8A2E17AC4CF"
+				item: "ars_nouveau:source_berry_pie"
 				type: "item"
 			}]
 			size: 1.5d
@@ -783,14 +786,26 @@
 		}
 		{
 			dependencies: ["554361CF3AEB81A0"]
-			description: ["Yes, it's Create time. If you playtesters get up to this point please tell me how I can improve it without ripping out Create. I am considering making rotation required a consistent stream of mana to function but other than that I have basically no ideas"]
+			description: [
+				"To use this, place the &6Mechanical Mixer &ftwo blocks above the &6Basin&f. Once acquired, the &6Blaze Burner &fcan be placed underneath the &6Basin&f. Use &6Rotational Energy &ffrom &6Mana Motor &fto power the mixer."
+				""
+				"&cI hope you've been trying to automate stuff by now.."
+			]
 			id: "4FCC910AD8BB3CD8"
-			rewards: [{
-				count: 4
-				id: "7BE5C78C29E1B593"
-				item: "create:gearbox"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7BE5C78C29E1B593"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3308B5D9F6AF094A"
+					item: "botania:black_lotus"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "Your Favourite Mod!"
 			tasks: [
@@ -835,19 +850,25 @@
 			dependencies: ["3AE18811D491D287"]
 			description: ["To capture a &6Blaze &fwith the burner, simply right click on one. It allows for excessive heating of certain items which will prove useful in mixing."]
 			id: "0161EDF2EDB61E75"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6BCF2773A93528F2"
-				table_id: 1857703300642923985L
-				type: "random"
-			}]
+			rewards: [
+				{
+					id: "171758B3E5ABD96C"
+					item: "botania:rune_summer"
+					type: "item"
+				}
+				{
+					id: "7E4ACBBDEFA7A88D"
+					item: "quark:charcoal_block"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "37B418AB547E05E9"
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			title: "Blaze Burner"
+			title: "&cBlaze Burner"
 			x: 12.75d
 			y: 0.75d
 		}
@@ -894,6 +915,22 @@
 				"This form of &6Mana &fcan be transferred with &6Fluxducts&f."
 			]
 			id: "3E8CA208782559B3"
+			rewards: [{
+				id: "4A7656B1A8FB8B50"
+				item: {
+					Count: 1b
+					id: "thermal:energy_cell"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 1000000
+							EnergyRecv: 1000
+							EnergySend: 1000
+						}
+					}
+				}
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "56FFC69F51A0FD59"
@@ -914,9 +951,9 @@
 			]
 			id: "01F3ED970AEC73FC"
 			rewards: [{
-				count: 5
-				id: "27596974F5998588"
-				item: "botania:black_lotus"
+				count: 2
+				id: "300329C428BB61ED"
+				item: "botania:blacker_lotus"
 				type: "item"
 			}]
 			size: 1.75d
@@ -966,22 +1003,22 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["069E800E2C36FE9C"]
+			dependencies: ["64CFE0448280A198"]
 			description: [
 				"This will allow you to quickly generate &6Cobblestone&f. It can be upgraded in the &6Smithing Table&f."
 				""
 				"Try placing some form of storage ontop of the block."
 			]
 			id: "2129490B244442FA"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "581788A40DA6D4AD"
 				item: "cobblefordays:tier_2"
 				type: "item"
 			}]
-			title: "Better Cobble Gen"
-			x: -5.0d
-			y: -1.0d
+			title: "Alternative Cobble Gen"
+			x: 12.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0E4BA55EA5D7F334"]
@@ -1017,13 +1054,14 @@
 				type: "xp"
 				xp: 100
 			}]
+			size: 1.25d
 			tasks: [{
 				id: "0702C711E072F9E7"
 				item: "ars_nouveau:magebloom_crop"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -7.0d
+			x: -0.625d
+			y: -6.875d
 		}
 		{
 			dependencies: [
@@ -1059,7 +1097,7 @@
 			id: "1EA3144D38F82615"
 			rewards: [
 				{
-					count: 2
+					count: 5
 					id: "6B116BDFE4BCB67D"
 					item: "botania:blacker_lotus"
 					type: "item"
@@ -1116,7 +1154,7 @@
 			id: "706CF61C7F96DB82"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "2F48DDB70DEC10CB"
+				id: "4B8F96B194D04FC3"
 				table_id: 1857703300642923985L
 				type: "choice"
 			}]
@@ -1165,13 +1203,23 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
+			title: "Treecapitator"
 			x: 0.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["0E4BA55EA5D7F334"]
-			description: ["&6Imbuement Chambers &fhave been modified so that when one is in the process of crafting a recipe it will provide a redstone signal strength of 15 through a &6comparator&f."]
+			description: [
+				"&6Imbuement Chambers &fhave been modified so that when one is in the process of crafting a recipe it will provide a redstone signal strength of 15 through a &6comparator&f."
+				""
+				"&6Quartz Ore &fno longer generates naturally. Only &6Quartz Clusters &fwill be available to acquire it in small amounts, until you can create it manually using an &6Orechid Ignem&f, or through &6Ore Enchanting&f."
+			]
 			id: "1127C3C5426AC1C7"
+			rewards: [{
+				id: "5564092809CAA6E1"
+				type: "xp"
+				xp: 50
+			}]
 			tasks: [{
 				id: "207589EC82C33A4D"
 				item: "minecraft:comparator"
@@ -1356,8 +1404,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "4D742403A8C6CE09"
-				item: "kubejs:imbued_lead_dust"
+				id: "5C3BB5CDD44C1A9E"
+				item: "kubejs:imbued_iron_dust"
 				type: "item"
 			}]
 			title: "&3Ore Processing: Part 2"
@@ -1381,8 +1429,8 @@
 				type: "item"
 			}]
 			title: "&3Ore Processing: Part 3"
-			x: 3.5d
-			y: -6.25d
+			x: 3.125d
+			y: -6.875d
 		}
 		{
 			dependencies: ["2BDBCD64ECA09FE7"]
@@ -1458,6 +1506,25 @@
 			title: "&3Ore Processing: Part 6"
 			x: 7.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["6D9ED9BBA69C625C"]
+			description: ["You can replace the normal &6Arcane Core &fthat goes underneath your &6Enchanting Apparatus &fwith a fast one. This makes it so that &6Enchanting Apparatus &frecipes are completely instantly."]
+			id: "60A939EE1CC490F2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2AD4D2E2F343F7C4"
+				table_id: 6943663066194960901L
+				type: "choice"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "55B2E1B6214DFD80"
+				item: "genericbotaniapacktweaker:fast_arcane_core"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
 		}
 	]
 	title: "&cAn Expedition into Runic Magic"

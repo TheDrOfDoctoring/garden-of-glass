@@ -53,6 +53,39 @@ ServerEvents.recipes(event => {
   event.remove({id: 'thermal:earth_charge/ender_pearl_dust_from_ender_pearl'})
   event.remove({id: 'thermal:machines/pulverizer/pulverizer_ender_pearl'})
   event.custom({
+    "type": "botania:terra_plate",
+    "ingredients": [
+      {
+        "item": "kubejs:dense_copper_dust"
+      },
+      {
+        "item": "kubejs:dense_copper_dust"
+      },      
+      {
+        "item": "kubejs:dense_copper_dust"
+      },
+      {
+        "item": "kubejs:dense_zinc_dust"
+      },
+      {
+        "item": "kubejs:dense_zinc_dust"
+      },      
+      {
+        "item": "kubejs:dense_zinc_dust"
+      },
+      {
+        "item": "kubejs:compressed_alloy_block"
+      },
+      {
+        "item": "botania:gaia_ingot"
+      }
+    ],
+    "mana": 1000000,
+    "result": {
+      "item": "botanicadds:gaiasteel_ingot"
+    }
+  })
+  event.custom({
     "type": "create:mechanical_crafting",
     "acceptMirrored": false,
     "key": {
@@ -1237,7 +1270,52 @@ ServerEvents.recipes(event => {
           "item": "farmersdelight:rich_soil"
         }
       ],
-      "sourceCost": 2500
+      "sourceCost": 1250
+    })
+    event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
+      "keepNbtOfReagent": true,
+      "output": {
+        "item": "kubejs:pure_mana_essence"
+      },
+      "pedestalItems": [
+        {
+          "item": {
+            "item": "botania:rune_mana"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_mana"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_mana"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_mana"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_mana"
+          }
+        },
+        {
+          "item": {
+            "item": "botania:rune_mana"
+          }
+        }
+      ],
+      "reagent": [
+        {
+          "item": "ars_nouveau:source_gem"
+        }
+      ],
+      "sourceCost": 1000
     })
     event.custom({
       "type": "ars_nouveau:enchanting_apparatus",
@@ -2805,7 +2883,7 @@ event.custom({
             "item": "kubejs:manaelectrum_ingot"
           },
           {
-            "item": "create:zinc_ingot"
+            "item": "kubejs:dense_zinc_dust"
           }
         ],
         "results": [
@@ -3059,7 +3137,7 @@ event.custom({
         "item": "kubejs:manaelectrum_ingot"
       }
     },
-    {
+    { 
       "item": {
         "item": "kubejs:manaelectrum_ingot"
       }
@@ -3303,7 +3381,7 @@ event.custom({
         "item": "thermal:rubber"
       },
       {
-        "item": "botania:rune_fire"
+        "item": "kubejs:pure_fire_essence"
       }
     ],
     "results": [
@@ -3473,7 +3551,7 @@ event.custom({
 },
 {
   "item": {
-    "item": "ars_nouveau:earth_essence"
+    "item": "minecraft:emerald"
   }
 }
 ],

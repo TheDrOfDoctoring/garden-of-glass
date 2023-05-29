@@ -111,6 +111,7 @@ ItemEvents.tooltip(event => {
 	event.add('thermal:apatite', "§8There's a rare chance of Apatite ore spawning from using an Orechid with Andesite")
 	event.add('kubejs:nether_quartz_dust', "§8This might be expensive...")
 	event.add('kubejs:source_timber', "§8It tries to escape your grasp...")
+	event.add('kubejs:runic_ingot', "§8Why would you make this?")
 	event.add('botania:ender_air_bottle', '§8Can be obtained by right clicking in the end with a Glass Bottle or by right clicking on Ender Conduit with a Glass Bottle')
 	event.add('ae2:controller', '§8A Mana-Energy System')
 	event.add('ars_nouveau:drygmy_shard', '§9Press U on Summoning Altar in JEI to See Summoning Recipes for Ars Nouveau Mobs')

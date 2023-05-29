@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
   //orechid rework
   //exoblast for stone, maybe oil sand and assorted other block blasting stuff
   //continue triplet (energy, time, material) design method for automation heavy items
+  //fast apparatus, use manaparticle in gaiasteel and maybe other stuff lol
 	event.remove({output: 'ars_nouveau:blue_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:purple_archwood_sapling'})
 	event.remove({output: 'ars_nouveau:red_archwood_sapling'})
@@ -283,7 +284,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'thermal:fluid_cell_frame'}, 'minecraft:copper_ingot', 'create:brass_ingot')
 	event.replaceInput({id: 'storagedrawers:diamond_storage_upgrade'}, 'minecraft:diamond', 'botania:mana_diamond')
 	event.replaceInput({id: 'storagedrawers:emerald_storage_upgrade'}, 'minecraft:emerald', 'botania:terrasteel_ingot')
-	event.replaceInput({id: 'ars_nouveau:enchanting_apparatus'}, 'kubejs:manaelectrum_nugget', 'botania:rune_mana')
 	event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:stone', 'botania:dreamwood')
 	event.replaceInput({id: 'storagedrawers:compacting_drawers_3'}, 'minecraft:stone', 'botania:dreamwood')
 	event.replaceInput({id: 'storagedrawers:compacting_drawers_3'}, 'minecraft:iron_ingot', 'botania:elementium_ingot')
@@ -291,6 +291,7 @@ ServerEvents.recipes(event => {
 	event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:stone', 'botania:dreamwood')
   event.replaceInput({id: 'ars_elemental:imbuement_anima_essence'}, 'minecraft:bone_meal', 'kubejs:blooded_source')
 	event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
+  event.replaceInput({id: 'ars_nouveau:wilden_summon_alt'}, 'minecraft:bow', 'kubejs:blood_drop')
 	event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:comparator', 'botania:spark')
 	event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:comparator', 'botania:spark')
 	event.replaceInput({id: 'ae2:network/parts/import_bus'}, 'minecraft:sticky_piston', 'botania:corporea_spark')
@@ -319,6 +320,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({input: 'thermal:rf_coil'}, 'thermal:rf_coil', 'kubejs:runic_flux_circuit')
   event.replaceInput({id: 'botania:exchange_rod'}, 'botania:rune_sloth', 'botania:rune_air')
   event.replaceInput({id: 'botania:exchange_rod'}, 'minecraft:stone', 'ars_nouveau:earth_essence')
+  event.replaceInput({id: 'ars_nouveau:enchanting_apparatus'}, 'botania:mana_diamond', 'botania:rune_mana')
   event.remove({id: 'thermal:fire_charge/enderium_ingot_2'})
   event.remove({id: 'botania:red_string_alt'})
   event.remove({id: 'create:mixing/andesite_alloy'})
@@ -434,7 +436,7 @@ event.smithing(
 event.smithing(
   'cobblefordays:tier_4',  
   'cobblefordays:tier_3', 
-  'botania:dragonstone'  
+  'kubejs:purity_essence'  
 )
 event.smithing(
   'cobblefordays:tier_5',  
@@ -895,16 +897,14 @@ event.shaped(
   Item.of('thermal:machine_frame', 1), 
   [ 
     'BWB', 
-    'ZAX',
-    'BYB'  
+    'ZAZ',
+    'BWB'  
   ],
   {
     A: 'kubejs:compressed_alloy_block',  
     B: 'thermal:invar_gear',
-    W: 'kubejs:pure_earth_essence',
-    X: 'kubejs:pure_water_essence',
-    Y: 'kubejs:pure_air_essence',
-    Z: 'kubejs:pure_fire_essence'
+    W: 'kubejs:dense_copper_dust',
+    Z: 'kubejs:dense_zinc_dust'
   }
 )
 event.shaped(
@@ -930,6 +930,22 @@ event.shaped(
   {
     A: 'botania:elf_glass',  
     C: 'botania:manasteel_ingot'
+  }
+)
+event.shaped(
+  Item.of('kubejs:purity_essence', 2), 
+  [ 
+    'DXD', 
+    'WBZ',
+    'DYD'  
+  ],
+  {
+	  B: 'quark:soul_bead',
+    W: 'kubejs:pure_fire_essence',
+    Y: 'kubejs:pure_earth_essence',
+    X: 'kubejs:pure_air_essence',
+    Z: 'kubejs:pure_water_essence',
+    D: 'kubejs:pure_mana_essence'
   }
 )
 event.shaped(
@@ -976,7 +992,7 @@ event.shaped(
   ],
   {
     A: 'thermal:rf_coil',  
-	  B: '#kubejs:computation_runes',
+	  B: 'kubejs:purity_essence',
     C: 'kubejs:terra_cable'
   }
 )
@@ -984,12 +1000,13 @@ event.shaped(
   Item.of('kubejs:terra_cable', 1), 
   [ 
     ' DB', 
-    'DBD',
+    'DCD',
     'BD '  
   ],
   {
     D: 'kubejs:tin_wire',  
-	  B: 'ars_nouveau:blaze_fiber'
+	  B: 'ars_nouveau:blaze_fiber',
+    C: 'kubejs:dense_copper_dust'
   }
 )
 event.shaped(
@@ -1069,8 +1086,8 @@ event.shaped(
   {
 	  C: 'minecraft:cobblestone',
     B: 'minecraft:lava_bucket',
-    X: 'botania:rune_fire',
-    Z: 'botania:rune_water'
+    X: 'botania:rune_sloth',
+    Z: 'botania:rune_greed'
   }
 )
 event.shaped(
@@ -1081,7 +1098,7 @@ event.shaped(
     'CAC'  
   ],
   {
-    A: 'botania:rune_spring',  
+    A: 'botania:rune_earth',  
 	  B: 'botania:fel_pumpkin',
     C: 'minecraft:string'
   }
@@ -1240,6 +1257,19 @@ event.shaped(
   {
     A: 'kubejs:source_timber',  
 	  B: 'create:andesite_alloy',
+  }
+)
+event.shaped(
+  Item.of('genericbotaniapacktweaker:fast_arcane_core', 1), 
+  [ 
+    ' C ', 
+    'BAB',
+    ' C '  
+  ],
+  {
+    A: 'ars_nouveau:arcane_core',  
+	  B: 'minecraft:lapis_block',
+    C: 'kubejs:dense_copper_dust'
   }
 )
 event.shaped(
@@ -1444,9 +1474,9 @@ event.shaped(
 event.shaped(
   Item.of('botania:gaia_pylon', 1), 
   [ 
-    'WEX', 
+    'PEP', 
     'CBD',
-    'YAZ'  
+    'PAP'  
   ],
   {
     A: 'ae2:fluix_block',  
@@ -1454,10 +1484,7 @@ event.shaped(
     C: 'ae2:calculation_processor',
     D: 'ae2:engineering_processor',
     E: 'ae2:logic_processor',
-    W: 'kubejs:pure_air_essence',
-    X: 'kubejs:pure_earth_essence',
-    Y: 'kubejs:pure_fire_essence',
-    Z: 'kubejs:pure_water_essence'
+    P: 'kubejs:purity_essence'
   }
 )
 event.shaped(
@@ -1642,14 +1669,13 @@ event.shaped(
 
 	})
   event.shaped(Item.of("kubejs:runic_catalyst", 1), [
-		'MCM',
+		'M M',
 		'BAB',
 		'MBM'
 	], {
 		M: 'botania:livingrock',
-		B: 'botania:gaia_ingot',
-    A: 'botania:alchemy_catalyst',
-    C: 'botania:life_essence'
+		B: 'kubejs:pure_mana_essence',
+    A: 'botania:alchemy_catalyst'
 
 	})
 	event.shaped(Item.of("summoningrituals:altar", 1), [
@@ -2010,15 +2036,15 @@ function getInputsForEssence(essence) {
 	
 	switch(essence) {
 		case 'abjuration':	
-		    text = ['botania:rune_envy', 'botania:pure_daisy']
+		    text = ['botania:rune_envy', 'ars_nouveau:wilden_spike']
 			break;
 		case 'conjuration':
 			text = ['botania:rune_greed', 'ars_nouveau:wilden_horn']
 			break;
 		case 'air':
-			 text = ['botania:rune_air', 'ars_nouveau:wilden_wing']
+			 text = ['botania:rune_air', 'minecraft:feather']
 			break;
-		case 'earth':
+		case 'earth': 
 			 text = ['botania:rune_earth', 'minecraft:dirt']
 			break;
 		case 'fire':

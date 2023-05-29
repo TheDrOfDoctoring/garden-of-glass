@@ -45,6 +45,8 @@ StartupEvents.registry('item', event => {
 	event.create('pure_water_essence').glow(true).displayName('Pure Water Essence')
 	event.create('pure_fire_essence').glow(true).displayName('Pure Fire Essence')
 	event.create('pure_air_essence').glow(true).displayName('Pure Air Essence')
+	event.create('pure_mana_essence').glow(true).displayName('Pure Mana Essence')
+	event.create('purity_essence').glow(true).displayName('Essence of Purity')
 })
 StartupEvents.registry('block', event => {
 	event.create('fractured_obsidian')

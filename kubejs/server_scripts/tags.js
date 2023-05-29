@@ -21,7 +21,12 @@ ServerEvents.tags('item', event => {
     event.get('kubejs:computation_runes').add('kubejs:rune_logic')
     event.get('kubejs:computation_runes').add('kubejs:rune_calculation')
     event.get('kubejs:computation_runes').add('kubejs:rune_engineering')
-    
+
+    event.get('kubejs:pure_essences').add('kubejs:pure_earth_essence')
+    event.get('kubejs:pure_essences').add('kubejs:pure_water_essence')
+    event.get('kubejs:pure_essences').add('kubejs:pure_air_essence')
+    event.get('kubejs:pure_essences').add('kubejs:pure_fire_essence')
+
     event.get('forge:ores/sulfur').add('kubejs:sulfur_ore')
 
     event.get('kubejs:processing/lead').add('thermal:raw_lead')
