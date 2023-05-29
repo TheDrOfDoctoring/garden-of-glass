@@ -904,7 +904,7 @@ event.shaped(
     A: 'kubejs:compressed_alloy_block',  
     B: 'thermal:invar_gear',
     W: 'kubejs:dense_copper_dust',
-    Z: 'kubejs:dense_zi'
+    Z: 'kubejs:dense_zinc_dust'
   }
 )
 event.shaped(

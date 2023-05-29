@@ -111,6 +111,42 @@ ServerEvents.recipes(event => {
         "type": "ars_nouveau:enchanting_apparatus",
         "keepNbtOfReagent": true,
         "output": {
+          "item": "minecraft:emerald_ore",
+          "count": 2
+        },
+        "pedestalItems": [
+          {
+            "item": {
+              "item": "kubejs:mana_gem"
+            }
+          },
+          {
+            "item": {
+              "item": "kubejs:mana_gem"
+            }
+          },
+          {
+            "item": {
+              "item": "minecraft:slime_ball"
+            }
+          },
+          {
+            "item": {
+              "item": "ars_nouveau:earth_essence"
+            }
+          }
+        ],
+        "reagent": [
+          {
+            "item": "botania:livingrock"
+          }
+        ],
+        "sourceCost": 500
+      })
+      event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "keepNbtOfReagent": true,
+        "output": {
           "item": "minecraft:diamond_ore",
           "count": 2
         },
