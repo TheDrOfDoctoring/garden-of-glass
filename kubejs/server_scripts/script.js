@@ -2,27 +2,27 @@
 
 
 ServerEvents.recipes(event => {
-	//TODO:
+  //TODO:
   //organisation
   //3 new fuels for the endoflame
   //orechid rework
   //exoblast for stone, maybe oil sand and assorted other block blasting stuff
   //continue triplet (energy, time, material) design method for automation heavy items
   //fast apparatus, use manaparticle in gaiasteel and maybe other stuff lol
-	event.remove({output: 'ars_nouveau:blue_archwood_sapling'})
-	event.remove({output: 'ars_nouveau:purple_archwood_sapling'})
-	event.remove({output: 'ars_nouveau:red_archwood_sapling'})
-	event.remove({output: 'ars_nouveau:green_archwood_sapling'})
-	event.remove({id: 'ars_nouveau:novice_spell_book'})
+  event.remove({output: 'ars_nouveau:blue_archwood_sapling'})
+  event.remove({output: 'ars_nouveau:purple_archwood_sapling'})
+  event.remove({output: 'ars_nouveau:red_archwood_sapling'})
+  event.remove({output: 'ars_nouveau:green_archwood_sapling'})
+  event.remove({id: 'ars_nouveau:novice_spell_book'})
   event.remove({id: 'thermal:rf_coil'})
   event.remove({id: 'create:mixing/brass_ingot'})
   event.remove({id: 'thermal:compat/create/smelter_create_alloy_brass'})
   event.remove({id: 'thermal:lumium_dust_4'})
-	event.remove({id: 'ars_nouveau:blaze_fiber'})
+  event.remove({id: 'ars_nouveau:blaze_fiber'})
   event.remove({id: 'create:crafting/materials/rose_quartz'})
   event.remove({id: 'ars_nouveau:scribes_table'})
-	event.remove({id: 'enderchests:ender_pouch'})
-	event.remove({id: 'botania:terra_plate/terrasteel_ingot'})
+  event.remove({id: 'enderchests:ender_pouch'})
+  event.remove({id: 'botania:terra_plate/terrasteel_ingot'})
   event.remove({id: 'ars_artifice:imbuement_spell_gem_upgrade_t1'})
   event.remove({id: 'ars_artifice:spell_gem_upgrade_t2'})
   event.remove({id: 'ars_artifice:spell_gem_upgrade_t3'})
@@ -43,42 +43,42 @@ ServerEvents.recipes(event => {
   event.remove({id: 'ae2:network/blocks/interfaces_interface'})
   event.remove({id: 'ae2:transform/fluix_crystals'})
   event.remove({id: 'ae2:network/blocks/energy_vibration_chamber'})
-	event.remove({id: 'ars_nouveau:apprentice_spell_book_upgrade'})
-	event.remove({id: 'ars_nouveau:archmage_spell_book_upgrade'})
-	event.remove({mod: 'cobblefordays'})
-	event.remove({id: 'ars_nouveau:sourcestone'})
+  event.remove({id: 'ars_nouveau:apprentice_spell_book_upgrade'})
+  event.remove({id: 'ars_nouveau:archmage_spell_book_upgrade'})
+  event.remove({mod: 'cobblefordays'})
+  event.remove({id: 'ars_nouveau:sourcestone'})
   event.remove({id: 'create:filling/blaze_cake'})
   event.remove({id: 'thermal:compat/create/bottler_create_blaze_cake'})
-	event.remove({id: 'ae2:network/blocks/controller'})
+  event.remove({id: 'ae2:network/blocks/controller'})
   event.remove({id: 'botania:runic_altar/spring'})
   event.remove({id: 'botania:runic_altar/summer'})
-	event.remove({id: 'twigs:ender_mesh'})
-	event.remove({id: 'ars_nouveau:potion_flask'})
-	event.remove({id: 'botania:pure_daisy/sand'})
+  event.remove({id: 'twigs:ender_mesh'})
+  event.remove({id: 'ars_nouveau:potion_flask'})
+  event.remove({id: 'botania:pure_daisy/sand'})
   event.remove({id: 'ars_nouveau:agronomic_sourcelink'})
   event.remove({id: 'botania:conjuration_catalyst'})
   event.remove({type: 'ae2:entropy'})
-	event.remove({id: 'create:crafting/materials/andesite_alloy'})
-	event.remove({id: 'create:crafting/materials/andesite_alloy_from_zinc'})
+  event.remove({id: 'create:crafting/materials/andesite_alloy'})
+  event.remove({id: 'create:crafting/materials/andesite_alloy_from_zinc'})
   event.remove({id: 'create:crafing/kinetics/hand_crank'})
-	event.remove({id: 'supplementaries:rope'})
-	event.remove({id: 'quark:building/crafting/rope'})
-	event.remove({id: 'quark:oddities/crafting/crate'})
-	event.remove({id: 'botania:runic_altar/mana'})
+  event.remove({id: 'supplementaries:rope'})
+  event.remove({id: 'quark:building/crafting/rope'})
+  event.remove({id: 'quark:oddities/crafting/crate'})
+  event.remove({id: 'botania:runic_altar/mana'})
   event.remove({id: 'botania:runic_altar/autumn'})
   event.remove({id: 'infernalexp:stonecutting/basalt_bricks_vertical_slab'})
-	event.remove({id: 'botania:pure_daisy/snow_block'})
+  event.remove({id: 'botania:pure_daisy/snow_block'})
   event.remove({output: 'ae2:entropy_manipulator'})
   event.remove({id: 'ars_nouveau:vitalic_sourcelink'})
   event.remove({id: 'ars_nouveau:alchemical_sourcelink'})
   event.remove({id: 'ars_nouveau:volcanic_sourcelink'})
   event.remove({id: 'ars_nouveau:mycelial_sourcelink'})
   event.remove({id: 'ae2:network/blocks/storage_drive'})
-	event.remove({id: 'ars_nouveau:imbuement_lapis'})
-	event.remove({id: 'ars_nouveau:imbuement_amethyst'})
-	event.remove({id: 'ars_nouveau:imbuement_amethyst_block'})
-	event.remove({id: 'ars_nouveau:wing_to_leather'})
-	event.remove({output: 'minecraft:shield'})
+  event.remove({id: 'ars_nouveau:imbuement_lapis'})
+  event.remove({id: 'ars_nouveau:imbuement_amethyst'})
+  event.remove({id: 'ars_nouveau:imbuement_amethyst_block'})
+  event.remove({id: 'ars_nouveau:wing_to_leather'})
+  event.remove({output: 'minecraft:shield'})
   event.remove({id: 'thermal:machines/smelter/smelter_alloy_lumium'})
   event.remove({id: 'thermal:machines/smelter/smelter_alloy_bronze'})
   event.remove({id: 'create:crafting/kinetics/empty_blaze_burner'})
@@ -94,14 +94,14 @@ ServerEvents.recipes(event => {
   event.remove({output: 'create:zinc_ingot'})
   event.remove({output: 'thermal:invar_dust'})
   event.remove({input: 'thermal:invar_dust'})
-	event.remove({output: 'easy_mob_farm:animal_plains_farm'})
-	event.remove({output: 'easy_mob_farm:monster_plains_cave_farm'})
-	event.remove({output: 'easy_mob_farm:bee_hive_farm'})
-	event.remove({output: 'easy_mob_farm:jungle_farm'})
-	event.remove({output: 'easy_mob_farm:swamp_farm'})
-	event.remove({output: 'easy_mob_farm:nether_farm'})
+  event.remove({output: 'easy_mob_farm:animal_plains_farm'})
+  event.remove({output: 'easy_mob_farm:monster_plains_cave_farm'})
+  event.remove({output: 'easy_mob_farm:bee_hive_farm'})
+  event.remove({output: 'easy_mob_farm:jungle_farm'})
+  event.remove({output: 'easy_mob_farm:swamp_farm'})
+  event.remove({output: 'easy_mob_farm:nether_farm'})
   event.remove({id: 'thermal:machines/centrifuge/centrifuge_oil_red_sand'})
-	event.remove({output: 'easy_mob_farm:desert_farm'})
+  event.remove({output: 'easy_mob_farm:desert_farm'})
   event.remove({output: 'thermal:invar_ingot', input: 'thermal:iron_dust'})
   event.remove({output: 'thermal:invar_ingot', input: 'minecraft:iron_ingot'})
   event.remove({id: 'create:crushing/asurine'})
@@ -246,27 +246,27 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'constructionwand:iron_wand'}, 'minecraft:iron_ingot', 'botania:manasteel_ingot')
   event.replaceInput({id: 'constructionwand:diamond_wand'}, 'minecraft:diamond', 'botania:dragonstone')
   event.replaceInput({id: 'constructionwand:infinity_wand'}, 'minecraft:nether_star', Item.of('botania:astrolabe'))
-	event.replaceInput({mod: 'storagedrawers', input: '#forge:chests/wooden'}, '#forge:chests/wooden', 'kubejs:livingwood_storage')
+  event.replaceInput({mod: 'storagedrawers', input: '#forge:chests/wooden'}, '#forge:chests/wooden', 'kubejs:livingwood_storage')
   event.replaceInput({mod: 'everycomp', input: '#forge:chests/wooden', output: (/.*drawer.*/)}, '#forge:chests/wooden', 'kubejs:livingwood_storage')
   event.replaceInput({mod: 'everycomp', input: 'everycompat:q/botania/livingwood_chest', output: (/.*drawer.*/)}, 'everycompat:q/botania/livingwood_chest', 'kubejs:livingwood_storage')
   event.replaceInput({mod: 'everycomp', output: (/.*trim.*/)}, 'minecraft:stick', 'botania:livingwood_twig')
-	event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
-	event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_nugget', 'kubejs:manaelectrum_nugget')
+  event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
+  event.replaceInput({mod: 'ars_nouveau'}, 'minecraft:gold_nugget', 'kubejs:manaelectrum_nugget')
   event.replaceInput({mod: 'create', input: '#minecraft:planks'}, '#minecraft:planks', 'botania:livingwood')
-	event.replaceInput({mod: 'storagedrawers'}, 'minecraft:stick', 'botania:livingwood_twig')
-	event.replaceInput({id: 'storagedrawers:obsidian_storage_upgrade'}, 'minecraft:obsidian', 'minecraft:iron_ingot')
-	event.replaceInput({id: 'storagedrawers:iron_storage_upgrade'}, 'minecraft:iron_ingot', 'botania:manasteel_ingot')
-	event.replaceInput({id: 'storagedrawers:gold_storage_upgrade'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
-	event.replaceInput({input: 'thermal:silver_ingot'}, 'thermal:silver_ingot', 'create:zinc_ingot')
-	event.replaceInput({input: 'thermal:iron_gear'}, 'thermal:iron_gear', 'kubejs:manasteel_gear')
+  event.replaceInput({mod: 'storagedrawers'}, 'minecraft:stick', 'botania:livingwood_twig')
+  event.replaceInput({id: 'storagedrawers:obsidian_storage_upgrade'}, 'minecraft:obsidian', 'minecraft:iron_ingot')
+  event.replaceInput({id: 'storagedrawers:iron_storage_upgrade'}, 'minecraft:iron_ingot', 'botania:manasteel_ingot')
+  event.replaceInput({id: 'storagedrawers:gold_storage_upgrade'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
+  event.replaceInput({input: 'thermal:silver_ingot'}, 'thermal:silver_ingot', 'create:zinc_ingot')
+  event.replaceInput({input: 'thermal:iron_gear'}, 'thermal:iron_gear', 'kubejs:manasteel_gear')
   event.replaceInput({id: 'thermal:device_tree_extractor'}, 'thermal:redstone_servo', 'botania:rune_water')
   event.replaceInput({id: 'thermal:augments/upgrade_augment_3'}, '#thermal:glass/hardened', '#kubejs:computation_runes')
   event.replaceOutput({id: 'thermal:machine/pulverizer/pulverizer_silver_ingot_to_dust'}, 'thermal:silver_dust', 'kubejs:zinc_dust')
   event.replaceOutput({id: 'thermal:machine/press/press_silver_ingot_to_gear'}, 'thermal:silver_gear', 'kubejs:zinc_gear')
   event.replaceInput({id: 'thermal:machines/smelter/smelter_alloy_enderium'}, 'thermal:diamond_dust', 'botania:life_essence')
-	event.replaceInput({input: 'thermal:silver_plate'}, 'thermal:silver_plate', 'kubejs:zinc_plate')
-	event.replaceInput({input: 'thermal:silver_gear'}, 'thermal:silver_gear', 'kubejs:zinc_gear')
-	event.replaceInput({input: 'thermal:silver_dust'}, 'thermal:silver_dust', 'kubejs:zinc_dust')
+  event.replaceInput({input: 'thermal:silver_plate'}, 'thermal:silver_plate', 'kubejs:zinc_plate')
+  event.replaceInput({input: 'thermal:silver_gear'}, 'thermal:silver_gear', 'kubejs:zinc_gear')
+  event.replaceInput({input: 'thermal:silver_dust'}, 'thermal:silver_dust', 'kubejs:zinc_dust')
   event.replaceInput({id: 'ae2:network/cells/fluid_cell_housing'}, 'minecraft:copper_ingot', 'kubejs:manaelectrum_ingot')
   event.replaceInput({id: 'ae2:network/cells/fluid_storage_cell_1k'}, 'minecraft:copper_ingot', 'kubejs:manaelectrum_ingot')
   event.replaceInput({id: 'ae2:network/cells/fluid_storage_cell_4k'}, 'minecraft:copper_ingot', 'kubejs:manaelectrum_ingot')
@@ -277,29 +277,29 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'thermal:machine_refinery'}, '#forge:glass', 'moreminecarts:silica_steel')
   event.replaceInput({id: 'thermal:fire_charge/constantan_ingot_2'}, 'minecraft:fire_charge', 'ars_nouveau:fire_essence')
   event.replaceInput({id: 'thermal:fire_charge/bronze_ingot_4'}, 'minecraft:fire_charge', 'ars_nouveau:fire_essence')
-	event.replaceInput({input: 'thermal:silver_nugget'}, 'thermal:silver_nugget', 'create:zinc_nugget')
-	event.replaceInput({id: 'botania:mana_pylon'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
+  event.replaceInput({input: 'thermal:silver_nugget'}, 'thermal:silver_nugget', 'create:zinc_nugget')
+  event.replaceInput({id: 'botania:mana_pylon'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
   event.replaceInput({id: 'thermal:fluid_duct_windowed_4'}, 'thermal:bronze_ingot', 'create:brass_ingot')
   event.replaceInput({id: 'thermal:fluid_duct_4'}, 'thermal:bronze_ingot', 'create:brass_ingot')
   event.replaceInput({id: 'thermal:fluid_cell_frame'}, 'minecraft:copper_ingot', 'create:brass_ingot')
-	event.replaceInput({id: 'storagedrawers:diamond_storage_upgrade'}, 'minecraft:diamond', 'botania:mana_diamond')
-	event.replaceInput({id: 'storagedrawers:emerald_storage_upgrade'}, 'minecraft:emerald', 'botania:terrasteel_ingot')
-	event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:stone', 'botania:dreamwood')
-	event.replaceInput({id: 'storagedrawers:compacting_drawers_3'}, 'minecraft:stone', 'botania:dreamwood')
-	event.replaceInput({id: 'storagedrawers:compacting_drawers_3'}, 'minecraft:iron_ingot', 'botania:elementium_ingot')
-	event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:diamond', 'botania:dragonstone')
-	event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:stone', 'botania:dreamwood')
+  event.replaceInput({id: 'storagedrawers:diamond_storage_upgrade'}, 'minecraft:diamond', 'botania:mana_diamond')
+  event.replaceInput({id: 'storagedrawers:emerald_storage_upgrade'}, 'minecraft:emerald', 'botania:terrasteel_ingot')
+  event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:stone', 'botania:dreamwood')
+  event.replaceInput({id: 'storagedrawers:compacting_drawers_3'}, 'minecraft:stone', 'botania:dreamwood')
+  event.replaceInput({id: 'storagedrawers:compacting_drawers_3'}, 'minecraft:iron_ingot', 'botania:elementium_ingot')
+  event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:diamond', 'botania:dragonstone')
+  event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:stone', 'botania:dreamwood')
   event.replaceInput({id: 'ars_elemental:imbuement_anima_essence'}, 'minecraft:bone_meal', 'kubejs:blooded_source')
-	event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
+  event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
   event.replaceInput({id: 'ars_nouveau:wilden_summon_alt'}, 'minecraft:bow', 'kubejs:blood_drop')
-	event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:comparator', 'botania:spark')
-	event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:comparator', 'botania:spark')
-	event.replaceInput({id: 'ae2:network/parts/import_bus'}, 'minecraft:sticky_piston', 'botania:corporea_spark')
-	event.replaceInput({id: 'ae2:network/parts/export_bus'}, 'minecraft:piston', 'botania:corporea_spark')
-	event.replaceInput({id: 'ae2:network/crafting/molecular_assembler'}, 'minecraft:crafting_table', 'kubejs:manasteel_gear')
-	event.replaceInput({id: 'easy_mob_farm:urn_small_from_diorite_and_other_stuff'}, 'minecraft:gold_ingot', 'botania:rune_mana')
+  event.replaceInput({id: 'storagedrawers:controller_slave'}, 'minecraft:comparator', 'botania:spark')
+  event.replaceInput({id: 'storagedrawers:controller'}, 'minecraft:comparator', 'botania:spark')
+  event.replaceInput({id: 'ae2:network/parts/import_bus'}, 'minecraft:sticky_piston', 'botania:corporea_spark')
+  event.replaceInput({id: 'ae2:network/parts/export_bus'}, 'minecraft:piston', 'botania:corporea_spark')
+  event.replaceInput({id: 'ae2:network/crafting/molecular_assembler'}, 'minecraft:crafting_table', 'kubejs:manasteel_gear')
+  event.replaceInput({id: 'easy_mob_farm:urn_small_from_diorite_and_other_stuff'}, 'minecraft:gold_ingot', 'botania:rune_mana')
   event.replaceInput({id: 'thermal:machine_pulverizer'}, 'minecraft:piston', 'ars_nouveau:glyph_crush')
-	event.replaceInput({id: 'easy_mob_farm:urn_small_from_diorite_and_other_stuff'}, 'minecraft:ender_eye', 'quark:soul_bead')
+  event.replaceInput({id: 'easy_mob_farm:urn_small_from_diorite_and_other_stuff'}, 'minecraft:ender_eye', 'quark:soul_bead')
   event.replaceInput({id: 'thermal:machine_insolator'}, 'minecraft:dirt', 'moreminecarts:hard_light_lens')
   event.replaceInput({id: 'thermal:energy_cell_frame'}, 'thermal:electrum_gear', 'kubejs:manasteel_gear')
   event.replaceInput({mod: 'ars_nouveau', input: 'minecraft:diamond'}, 'minecraft:diamond', 'botania:mana_diamond')
@@ -444,7 +444,7 @@ event.smithing(
   'botania:life_essence'  
 )
 let manaInfusion = (input, output, mana) => {
-		event.custom({
+    event.custom({
   "type": "botania:mana_infusion",
   "input": {
     "item": input
@@ -509,7 +509,7 @@ let crushItUp = (input, output, mana) => {
         }
       ]
   })
-	event.custom({
+  event.custom({
   "type": "botania:mana_infusion",
   "input": {
     "item": "thermal:cinnabar"
@@ -566,12 +566,12 @@ runicInfusion("minecraft:ice", "botania:rune_water")
 runicInfusion("minecraft:hay_block", "botania:rune_earth")
 runicInfusion("minecraft:feather", "botania:rune_air")
 runicInfusion("minecraft:blaze_powder", "botania:rune_fire")
-	event.replaceInput({id: 'twigs:rocky_dirt'}, 'twigs:pebble', 'botania:pebble')
-	event.replaceInput({id: 'farmeresdelight:basket'}, 'minecraft:bamboo', 'farmersdelight:straw')
-	event.replaceInput({id: 'ars_nouveau:basic_spell_turret'}, 'minecraft:redstone_block', 'botania:avatar')
+  event.replaceInput({id: 'twigs:rocky_dirt'}, 'twigs:pebble', 'botania:pebble')
+  event.replaceInput({id: 'farmeresdelight:basket'}, 'minecraft:bamboo', 'farmersdelight:straw')
+  event.replaceInput({id: 'ars_nouveau:basic_spell_turret'}, 'minecraft:redstone_block', 'botania:avatar')
 
 
-	event.shapeless(
+  event.shapeless(
     Item.of('kubejs:manaelectrum_nugget', 9), 
   [ 
     'kubejs:manaelectrum_ingot'
@@ -625,12 +625,12 @@ event.shapeless(
   'kubejs:hot_resin'	
 ]
 )
-	event.shapeless(
+  event.shapeless(
     Item.of('ars_nouveau:novice_spell_book', 1), 
   [ 
     'botania:rune_mana',
     'kubejs:manaelectrum_ingot',
-	  'minecraft:book'	
+    'minecraft:book'	
   ]
  )
 
@@ -826,10 +826,10 @@ event.shaped(
   ],
   {
   A: 'minecraft:andesite',  
-	B: 'botania:rune_sloth',
-	C: 'create:zinc_ingot',
+  B: 'botania:rune_sloth',
+  C: 'create:zinc_ingot',
   D: 'botania:rune_pride'
-	
+  
   }
 )
 event.shaped(
@@ -841,7 +841,7 @@ event.shaped(
   ],
   {
   A: 'minecraft:stone',  
-	B: 'botania:rune_earth'
+  B: 'botania:rune_earth'
   }
 )
 event.shaped(
@@ -853,7 +853,7 @@ event.shaped(
   ],
   {
   A: 'minecraft:cobblestone',  
-	B: 'botania:rune_earth'
+  B: 'botania:rune_earth'
   }
 )
 event.shaped(
@@ -865,7 +865,7 @@ event.shaped(
   ],
   {
   A: 'minecraft:gravel',  
-	B: 'botania:rune_earth'
+  B: 'botania:rune_earth'
   }
 )
 event.shaped(
@@ -877,7 +877,7 @@ event.shaped(
   ],
   {
     A: 'botania:livingrock',  
-	B: 'ars_nouveau:source_gem'
+  B: 'ars_nouveau:source_gem'
   }
 ).id("ars_nouveau:a1")
 event.shaped(
@@ -889,7 +889,7 @@ event.shaped(
   ],
   {
     A: 'botania:terrasteel_nugget',  
-	  B: 'botania:livingwood',
+    B: 'botania:livingwood',
     C: 'botania:manasteel_nugget'
   }
 )
@@ -904,7 +904,7 @@ event.shaped(
     A: 'kubejs:compressed_alloy_block',  
     B: 'thermal:invar_gear',
     W: 'kubejs:dense_copper_dust',
-    Z: 'kubejs:dense_zinc_dust'
+    Z: 'kubejs:dense_zi'
   }
 )
 event.shaped(
@@ -916,7 +916,7 @@ event.shaped(
   ],
   {
     B: 'botania:terrasteel_nugget',  
-	  A: 'kubejs:source_timber',
+    A: 'kubejs:source_timber',
     C: '#botania:livingwood_logs'
   }
 )
@@ -940,7 +940,7 @@ event.shaped(
     'DYD'  
   ],
   {
-	  B: 'quark:soul_bead',
+    B: 'quark:soul_bead',
     W: 'kubejs:pure_fire_essence',
     Y: 'kubejs:pure_earth_essence',
     X: 'kubejs:pure_air_essence',
@@ -957,7 +957,7 @@ event.shaped(
   ],
   {
     A: 'thermal:lead_block',  
-	  B: 'thermal:tin_block'
+    B: 'thermal:tin_block'
   }
 )
 event.shaped(
@@ -969,7 +969,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:clay',  
-	  B: 'minecraft:slime_ball',
+    B: 'minecraft:slime_ball',
   }
 )
 event.shaped(
@@ -992,7 +992,7 @@ event.shaped(
   ],
   {
     A: 'thermal:rf_coil',  
-	  B: 'kubejs:purity_essence',
+    B: 'kubejs:purity_essence',
     C: 'kubejs:terra_cable'
   }
 )
@@ -1005,7 +1005,7 @@ event.shaped(
   ],
   {
     D: 'kubejs:tin_wire',  
-	  B: 'ars_nouveau:blaze_fiber',
+    B: 'ars_nouveau:blaze_fiber',
     C: 'kubejs:dense_copper_dust'
   }
 )
@@ -1018,7 +1018,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:redstone',  
-	  B: 'kubejs:manaelectrum_ingot',
+    B: 'kubejs:manaelectrum_ingot',
     C: 'botania:rune_winter',
     D: 'botania:rune_summer'
   }
@@ -1032,7 +1032,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:redstone',  
-	  B: 'kubejs:manaelectrum_ingot',
+    B: 'kubejs:manaelectrum_ingot',
     C: 'botania:rune_autumn',
     D: 'botania:rune_spring'
   }
@@ -1046,7 +1046,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:redstone',  
-	  C: 'botania:livingrock',
+    C: 'botania:livingrock',
     B: 'botania:manasteel_ingot'
   }
 )
@@ -1071,7 +1071,7 @@ event.shaped(
   ],
   {
     A: 'kubejs:crystallised_blood',  
-	  C: 'kubejs:manaelectrum_nugget',
+    C: 'kubejs:manaelectrum_nugget',
     B: '#forge:glass',
     D: 'thermal:lead_ingot'
   }
@@ -1084,7 +1084,7 @@ event.shaped(
     'CCC'  
   ],
   {
-	  C: 'minecraft:cobblestone',
+    C: 'minecraft:cobblestone',
     B: 'minecraft:lava_bucket',
     X: 'botania:rune_sloth',
     Z: 'botania:rune_greed'
@@ -1099,7 +1099,7 @@ event.shaped(
   ],
   {
     A: 'botania:rune_earth',  
-	  B: 'botania:fel_pumpkin',
+    B: 'botania:fel_pumpkin',
     C: 'minecraft:string'
   }
 )
@@ -1112,7 +1112,7 @@ event.shaped(
   ],
   {
     A: '#forge:logs/archwood',  
-	  B: 'kubejs:manaelectrum_ingot',
+    B: 'kubejs:manaelectrum_ingot',
     C: 'ars_nouveau:archwood_slab',
     D: 'botania:rune_mana'
   }
@@ -1125,7 +1125,7 @@ event.shaped(
     'CBC'  
   ],
   {
-	  B: '#forge:glass',
+    B: '#forge:glass',
     C: 'botania:livingrock',
     D: 'kubejs:rune_calculation'
   }
@@ -1139,7 +1139,7 @@ event.shaped(
   ],
   {
     A: 'botania:rune_pride',
-	  B: '#forge:glass',
+    B: '#forge:glass',
     C: 'botania:livingrock',
     D: 'kubejs:rune_calculation'
   }
@@ -1153,7 +1153,7 @@ event.shaped(
   ],
   {
     A: 'quark:soul_bead',
-	  B: '#forge:glass',
+    B: '#forge:glass',
     C: 'botania:livingrock',
     D: 'kubejs:rune_calculation'
   }
@@ -1167,7 +1167,7 @@ event.shaped(
   ],
   {
     A: 'create:sturdy_sheet',  
-	  B: 'minecraft:netherrack',
+    B: 'minecraft:netherrack',
     C: 'ae2:silicon'
   }
 )
@@ -1180,7 +1180,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:obsidian',  
-	  B: 'botania:gaia_ingot',
+    B: 'botania:gaia_ingot',
     C: 'ars_nouveau:end_fiber'
   }
 )
@@ -1193,7 +1193,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:obsidian',  
-	  B: 'botania:ender_hand',
+    B: 'botania:ender_hand',
     C: 'ars_nouveau:end_fiber'
   }
 )
@@ -1206,7 +1206,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:bucket',  
-	  B: 'botania:ender_hand',
+    B: 'botania:ender_hand',
     C: 'ars_nouveau:end_fiber'
   }
 )
@@ -1219,7 +1219,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:obsidian',  
-	  B: 'thermal:fluid_cell',
+    B: 'thermal:fluid_cell',
     C: 'ars_nouveau:end_fiber'
   }
 )
@@ -1232,7 +1232,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:iron_ingot',  
-	  B: 'create:andesite_alloy',
+    B: 'create:andesite_alloy',
   }
 )
 event.shaped(
@@ -1244,7 +1244,7 @@ event.shaped(
   ],
   {
     A: 'botania:mana_glass',  
-	  B: 'botania:rune_mana',
+    B: 'botania:rune_mana',
   }
 )
 event.shaped(
@@ -1256,7 +1256,7 @@ event.shaped(
   ],
   {
     A: 'kubejs:source_timber',  
-	  B: 'create:andesite_alloy',
+    B: 'create:andesite_alloy',
   }
 )
 event.shaped(
@@ -1268,7 +1268,7 @@ event.shaped(
   ],
   {
     A: 'ars_nouveau:arcane_core',  
-	  B: 'minecraft:lapis_block',
+    B: 'minecraft:lapis_block',
     C: 'kubejs:dense_copper_dust'
   }
 )
@@ -1281,7 +1281,7 @@ event.shaped(
   ],
   {
     A: 'botania:mana_glass',  
-	  B: 'thermal:cured_rubber',
+    B: 'thermal:cured_rubber',
   }
 )
 event.shaped(
@@ -1293,7 +1293,7 @@ event.shaped(
   ],
   {
     A: 'botania:rune_wrath',  
-	  B: 'ae2:fluix_dust',
+    B: 'ae2:fluix_dust',
     C: 'ae2:logic_processor'
   }
 )
@@ -1306,7 +1306,7 @@ event.shaped(
   ],
   {
     A: 'botania:rune_sloth',  
-	  B: 'ae2:fluix_dust',
+    B: 'ae2:fluix_dust',
     C: 'ae2:logic_processor'
   }
 )
@@ -1415,7 +1415,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:redstone',  
-	  B: 'prettypipes:blank_module',
+    B: 'prettypipes:blank_module',
     C: 'botania:rune_air'
   }
 )
@@ -1428,7 +1428,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:redstone',  
-	  B: 'prettypipes:blank_module',
+    B: 'prettypipes:blank_module',
     C: 'botania:rune_fire'
   }
 )
@@ -1441,7 +1441,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:redstone',  
-	  B: 'prettypipes:blank_module',
+    B: 'prettypipes:blank_module',
     C: 'botania:rune_earth'
   }
 )
@@ -1454,7 +1454,7 @@ event.shaped(
   ],
   {
     A: 'botania:livingwood_log',  
-	  B: 'supplementaries:bellows',
+    B: 'supplementaries:bellows',
     C: 'botania:rune_air'
   }
 )
@@ -1467,7 +1467,7 @@ event.shaped(
   ],
   {
     A: 'botania:mana_glass',  
-	  B: 'botania:rune_air',
+    B: 'botania:rune_air',
     C: 'kubejs:manaelectrum_ingot'
   }
 )
@@ -1480,7 +1480,7 @@ event.shaped(
   ],
   {
     A: 'ae2:fluix_block',  
-	  B: 'botania:natura_pylon',
+    B: 'botania:natura_pylon',
     C: 'ae2:calculation_processor',
     D: 'ae2:engineering_processor',
     E: 'ae2:logic_processor',
@@ -1496,7 +1496,7 @@ event.shaped(
   ],
   {
     A: 'quark:soul_bead',  
-	  B: 'ae2:engineering_processor',
+    B: 'ae2:engineering_processor',
     C: 'kubejs:infused_livingwood'
   }
 )
@@ -1509,7 +1509,7 @@ event.shaped(
   ],
   {
     A: 'botania:livingrock',  
-	  B: 'kubejs:runic_flux_circuit',
+    B: 'kubejs:runic_flux_circuit',
     C: 'thermal:lead_ingot'
   }
 )
@@ -1522,7 +1522,7 @@ event.shaped(
   ],
   {
     A: 'botania:pixie_dust',  
-	  B: 'minecraft:obsidian',
+    B: 'minecraft:obsidian',
     C: 'ae2:ender_dust'
   }
 )
@@ -1535,7 +1535,7 @@ event.shaped(
   ],
   {
     A: 'botania:elf_glass',  
-	  B: 'botania:corporea_spark',
+    B: 'botania:corporea_spark',
     D: 'ae2:annihilation_core',
     E: 'ae2:formation_core',
     C: 'minecraft:iron_ingot'
@@ -1551,7 +1551,7 @@ event.shaped(
   {
     B: 'botania:livingrock',
     A: 'ae2:fluix_glass_cable',  
-	  T: 'ae2:engineering_processor',
+    T: 'ae2:engineering_processor',
     C: 'kubejs:infused_livingwood'
 
   }
@@ -1565,7 +1565,7 @@ event.shaped(
   ],
   {
     A: 'botania:rune_mana',  
-	  T: 'minecraft:lapis_block',
+    T: 'minecraft:lapis_block',
     C: 'ars_nouveau:earth_essence',
     D: 'ars_nouveau:source_gem_block',
     X: 'botania:spark',
@@ -1629,124 +1629,124 @@ event.shaped(
     B: 'ae2:engineering_processor'  
   }
 )
-	event.shaped(Item.of("quark:crate", 1), [
-		'MMM',
-		'M M',
-		'MBM'
-	], {
-		M: 'botania:livingwood_planks',
-		B: 'farmersdelight:basket'
+  event.shaped(Item.of("quark:crate", 1), [
+    'MMM',
+    'M M',
+    'MBM'
+  ], {
+    M: 'botania:livingwood_planks',
+    B: 'farmersdelight:basket'
 
-	})
+  })
   event.shaped(Item.of("kubejs:crystalliser", 1), [
-		'MBM',
-		'BAB',
-		'MBM'
-	], {
-		M: 'botania:terrasteel_nugget',
-		B: 'botania:manasteel_ingot',
+    'MBM',
+    'BAB',
+    'MBM'
+  ], {
+    M: 'botania:terrasteel_nugget',
+    B: 'botania:manasteel_ingot',
     A: 'botania:manasteel_block'
 
-	})
+  })
   event.shaped(Item.of("kubejs:crusher", 1), [
-		'MBM',
-		'BAB',
-		'MBM'
-	], {
-		M: 'minecraft:redstone_block',
-		B: 'botania:manasteel_ingot',
+    'MBM',
+    'BAB',
+    'MBM'
+  ], {
+    M: 'minecraft:redstone_block',
+    B: 'botania:manasteel_ingot',
     A: 'ars_nouveau:glyph_crush'
 
-	})
+  })
   
   event.shaped(Item.of("minecraft:sculk", 1), [
-		' B ',
-		'BAB',
-		' B '
-	], {
-		B: 'botania:ender_air_bottle',
+    ' B ',
+    'BAB',
+    ' B '
+  ], {
+    B: 'botania:ender_air_bottle',
     A: 'minecraft:end_stone'
 
-	})
+  })
   event.shaped(Item.of("kubejs:runic_catalyst", 1), [
-		'M M',
-		'BAB',
-		'MBM'
-	], {
-		M: 'botania:livingrock',
-		B: 'kubejs:pure_mana_essence',
+    'M M',
+    'BAB',
+    'MBM'
+  ], {
+    M: 'botania:livingrock',
+    B: 'kubejs:pure_mana_essence',
     A: 'botania:alchemy_catalyst'
 
-	})
-	event.shaped(Item.of("summoningrituals:altar", 1), [
-		' M ',
-		'ADA',
-		' B '
-	], {
-		M: 'minecraft:wither_skeleton_skull',
-		B: '#minecraft:logs',
+  })
+  event.shaped(Item.of("summoningrituals:altar", 1), [
+    ' M ',
+    'ADA',
+    ' B '
+  ], {
+    M: 'minecraft:wither_skeleton_skull',
+    B: '#minecraft:logs',
     D: 'kubejs:vitric_diamond',
     A: 'kubejs:manaelectrum_ingot'
 
-	})
-	event.shaped(Item.of("supplementaries:rope", 1), [
-		' M ',
-		' M ',
-		' M '
-	], {
-		M: 'farmersdelight:rope', 
+  })
+  event.shaped(Item.of("supplementaries:rope", 1), [
+    ' M ',
+    ' M ',
+    ' M '
+  ], {
+    M: 'farmersdelight:rope', 
 
-	})
-	event.shaped(Item.of("create:electron_tube", 1), [
-		' C ',
-		' M ',
-		' D '
-	], {
-		M: 'create:iron_sheet', 
+  })
+  event.shaped(Item.of("create:electron_tube", 1), [
+    ' C ',
+    ' M ',
+    ' D '
+  ], {
+    M: 'create:iron_sheet', 
     C: 'create:polished_rose_quartz',
     D: 'ae2:silicon'
 
-	})
-	event.shaped(Item.of("kubejs:introsceptre", 1), [
-		'  M',
-		' C ',
-		'D  '
-	], {
-		M: 'botania:mana_glass', 
+  })
+  event.shaped(Item.of("kubejs:introsceptre", 1), [
+    '  M',
+    ' C ',
+    'D  '
+  ], {
+    M: 'botania:mana_glass', 
     C: 'botania:livingwood_twig',
     D: 'kubejs:rune_calculation'
 
-	})
-	event.shaped(Item.of("kubejs:livingwood_storage", 2), [
-		'MMM',
-		'M M',
-		'MMM'
-	], {
-		M: 'botania:livingwood_log', 
+  })
+  event.shaped(Item.of("kubejs:livingwood_storage", 2), [
+    'MMM',
+    'M M',
+    'MMM'
+  ], {
+    M: 'botania:livingwood_log', 
 
-	})
-	event.shaped(Item.of("supplementaries:bellows", 1), [
-		'MMM',
-		'CAC',
-		'MMM'
-	], {
-		M: '#minecraft:wooden_slabs', 
+  })
+  event.shaped(Item.of("supplementaries:bellows", 1), [
+    'MMM',
+    'CAC',
+    'MMM'
+  ], {
+    M: '#minecraft:wooden_slabs', 
     C: 'minecraft:leather',
     A: 'botania:rune_fire'
 
-	})
-	event.shaped(Item.of("kubejs:tablet_base", 2), [
-		'CMC',
-		'MAM',
-		'CMC'
-	], {
-		M: 'botania:livingrock', 
+  })
+  event.shaped(Item.of("kubejs:tablet_base", 2), [
+    'CMC',
+    'MAM',
+    'CMC'
+  ], {
+    M: 'botania:livingrock', 
     C: 'minecraft:stone',
     A: '#botania:runes'
 
-	})
+  })
 event.custom({
-	  "type": "botania:marimorphosis",
+    "type": "botania:marimorphosis",
   "biome_bonus": 11,
   "biome_bonus_tag": "botania:marimorphosis_desert_bonus",
   "input": {
@@ -1760,7 +1760,7 @@ event.custom({
   "weight": 1
 })
 event.custom({
-	"type": "botania:petal_apothecary",	
+  "type": "botania:petal_apothecary",	
   "ingredients": [
     {
       "item": "minecraft:glowstone_dust"
@@ -1783,7 +1783,7 @@ event.custom({
   }
 })
 event.custom({
-	  "type": "botania:marimorphosis",
+    "type": "botania:marimorphosis",
   "biome_bonus": 11,
   "biome_bonus_tag": "botania:marimorphosis_desert_bonus",
   "input": {
@@ -1797,7 +1797,7 @@ event.custom({
   "weight": 1
 })
 event.custom({
-	  "type": "botania:marimorphosis",
+    "type": "botania:marimorphosis",
   "biome_bonus": 11,
   "biome_bonus_tag": "botania:marimorphosis_desert_bonus",
   "input": {
@@ -1811,7 +1811,7 @@ event.custom({
   "weight": 1
 })
 event.custom({
-	  "type": "botania:marimorphosis",
+    "type": "botania:marimorphosis",
   "biome_bonus": 11,
   "biome_bonus_tag": "botania:marimorphosis_desert_bonus",
   "input": {
@@ -1826,9 +1826,9 @@ event.custom({
 })
 let colors = ["blue", "red", "green", "purple"]
 colors.forEach(color => {
-	
+  
 event.custom({
-	"type": "botania:petal_apothecary",	
+  "type": "botania:petal_apothecary",	
   "ingredients": [
     {
       "tag": "botania:petals/"+color
@@ -1917,7 +1917,7 @@ function getMaterialforInput(input) {
 materialsGear.forEach(material => {
   let materialthing = getMaterialforInput(material)
   event.custom({
-		  "type": "ars_nouveau:enchanting_apparatus",
+      "type": "ars_nouveau:enchanting_apparatus",
   "keepNbtOfReagent": true,
   "output": {
     "item": "thermal:"+material+"_gear"
@@ -2032,42 +2032,42 @@ event.custom({
 })
 //what's a map?
 function getInputsForEssence(essence) {
-	let text = new Array()
-	
-	switch(essence) {
-		case 'abjuration':	
-		    text = ['botania:rune_envy', 'ars_nouveau:wilden_spike']
-			break;
-		case 'conjuration':
-			text = ['botania:rune_greed', 'ars_nouveau:wilden_horn']
-			break;
-		case 'air':
-			 text = ['botania:rune_air', 'minecraft:feather']
-			break;
-		case 'earth': 
-			 text = ['botania:rune_earth', 'minecraft:dirt']
-			break;
-		case 'fire':
-		    text = ['botania:rune_fire', 'minecraft:fire_charge']
-			break;
-		case 'manipulation':
-			 text = ['botania:rune_pride', 'minecraft:clock']
-			break;
-		case 'water':
-		     text = ['botania:rune_water', 'minecraft:snow_block']
-			break;
-		return text;
-		
-	}
-	return text;
+  let text = new Array()
+  
+  switch(essence) {
+    case 'abjuration':	
+        text = ['botania:rune_envy', 'ars_nouveau:wilden_spike']
+      break;
+    case 'conjuration':
+      text = ['botania:rune_greed', 'ars_nouveau:wilden_horn']
+      break;
+    case 'air':
+       text = ['botania:rune_air', 'minecraft:feather']
+      break;
+    case 'earth': 
+       text = ['botania:rune_earth', 'minecraft:dirt']
+      break;
+    case 'fire':
+        text = ['botania:rune_fire', 'minecraft:fire_charge']
+      break;
+    case 'manipulation':
+       text = ['botania:rune_pride', 'minecraft:clock']
+      break;
+    case 'water':
+         text = ['botania:rune_water', 'minecraft:snow_block']
+      break;
+    return text;
+    
+  }
+  return text;
 }
 let essences = ['abjuration', 'conjuration', 'air', 'earth', 'fire', 'manipulation', 'water']
 essences.forEach(essence => {
-	event.remove({id: 'ars_nouveau:imbuement_'+essence+'_essence'})
+  event.remove({id: 'ars_nouveau:imbuement_'+essence+'_essence'})
 let items = getInputsForEssence(essence)
 event.custom({
-	
-	  "type": "ars_nouveau:imbuement",
+  
+    "type": "ars_nouveau:imbuement",
   "count": 1,
   "input": {
     "tag": "forge:gems/source"
@@ -2095,7 +2095,7 @@ event.custom({
 })
 
 /*event.custom({
-	  "type": "botania:orechid",
+    "type": "botania:orechid",
   "input": {
     "type": "block",
     "block": "botania:mana_quartz"
@@ -2180,10 +2180,10 @@ event.custom({
   {
     "item": "ars_nouveau:apprentice_spell_book"
   }
-	
+  
 })
 event.custom({
-	  "type": "ars_nouveau:book_upgrade",
+    "type": "ars_nouveau:book_upgrade",
   "ingredients": [
     {
       "item": "ars_nouveau:apprentice_spell_book"

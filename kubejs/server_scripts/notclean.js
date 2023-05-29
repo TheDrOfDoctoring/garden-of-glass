@@ -2,28 +2,28 @@ ServerEvents.recipes(event => {
 
 
   event.remove({id: 'ars_nouveau:end_fiber'})
-	event.remove({id: 'ars_nouveau:apprentice_leggings'})
-	event.remove({id: 'ars_nouveau:apprentice_robes'})
-	event.remove({id: 'ars_nouveau:apprentice_hood'})
-	event.remove({id: 'ars_nouveau:apprentice_boots'})
-	event.remove({id: 'ars_nouveau:novice_leggings'}) 
-	event.remove({id: 'ars_nouveau:novice_robes'})
-	event.remove({id: 'ars_nouveau:novice_hood'})
-	event.remove({id: 'ars_nouveau:novice_boots'})
-	event.remove({id: 'ars_nouveau:archmage_leggings'})
-	event.remove({id: 'ars_nouveau:archmage_robes'})
-	event.remove({id: 'ars_nouveau:archmage_hood'})
-	event.remove({id: 'ars_nouveau:archmage_boots'})
-	event.remove({id: 'botania:flask'})
-	event.remove({id: 'botania:vial'})
+  event.remove({id: 'ars_nouveau:apprentice_leggings'})
+  event.remove({id: 'ars_nouveau:apprentice_robes'})
+  event.remove({id: 'ars_nouveau:apprentice_hood'})
+  event.remove({id: 'ars_nouveau:apprentice_boots'})
+  event.remove({id: 'ars_nouveau:novice_leggings'}) 
+  event.remove({id: 'ars_nouveau:novice_robes'})
+  event.remove({id: 'ars_nouveau:novice_hood'})
+  event.remove({id: 'ars_nouveau:novice_boots'})
+  event.remove({id: 'ars_nouveau:archmage_leggings'})
+  event.remove({id: 'ars_nouveau:archmage_robes'})
+  event.remove({id: 'ars_nouveau:archmage_hood'})
+  event.remove({id: 'ars_nouveau:archmage_boots'})
+  event.remove({id: 'botania:flask'})
+  event.remove({id: 'botania:vial'})
   event.remove({id: 'botania:munchdew'})
   event.remove({id: 'botania:rosa_arcana'})
   event.remove({id: 'easy_mob_farm:nether_fortress_farm_from_steel_mob_farm_template'})
-	event.remove({id: 'botania:vial'})
+  event.remove({id: 'botania:vial'})
   event.remove({id: 'thermal:rubber_from_vine'})
-	event.remove({id: 'ars_nouveau:amulet_of_mana_boost'})
-	event.remove({id: 'ars_nouveau:amulet_of_mana_regen'})
-	event.remove({id: 'ars_nouveau:belt_of_levitation'})
+  event.remove({id: 'ars_nouveau:amulet_of_mana_boost'})
+  event.remove({id: 'ars_nouveau:amulet_of_mana_regen'})
+  event.remove({id: 'ars_nouveau:belt_of_levitation'})
   event.remove({id: 'botania:mana_infusion/cocoa_beans_to_wheat_seeds'})
   event.remove({id: 'botania:runic_altar/mana'})
   event.remove({id: 'ars_nouveau:potion_flask'})
@@ -3980,8 +3980,8 @@ event.custom({
         "item": "minecraft:wheat_seeds"
       }
       })
-	event.custom({
-		  "type": "ars_nouveau:enchanting_apparatus",
+  event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
   "keepNbtOfReagent": true,
   "output": {
     "item": "ars_nouveau:apprentice_robes"
@@ -4014,9 +4014,9 @@ event.custom({
     }
   ],
   "sourceCost": 500
-	})
-		event.custom({
-		  "type": "ars_nouveau:enchanting_apparatus",
+  })
+    event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
   "keepNbtOfReagent": true,
   "output": {
     "item": "ars_nouveau:apprentice_boots"
@@ -4049,9 +4049,9 @@ event.custom({
     }
   ],
   "sourceCost": 500
-	})
-	event.custom({
-		  "type": "ars_nouveau:enchanting_apparatus",
+  })
+  event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
   "keepNbtOfReagent": true,
   "output": {
     "item": "ars_nouveau:apprentice_leggings"
@@ -4084,7 +4084,7 @@ event.custom({
     }
   ],
   "sourceCost": 500
-	})
+  })
   event.custom({
       "type": "botania:mana_infusion",
       "catalyst": {
@@ -4100,8 +4100,8 @@ event.custom({
       },
       "mana": 250000
   })
-	event.custom({
-		  "type": "ars_nouveau:enchanting_apparatus",
+  event.custom({
+      "type": "ars_nouveau:enchanting_apparatus",
   "keepNbtOfReagent": true,
   "output": {
     "item": "ars_nouveau:apprentice_hood"
@@ -4134,5 +4134,5 @@ event.custom({
     }
   ],
   "sourceCost": 500
-	})
+  })
 })

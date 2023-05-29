@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
               }
             }
           ],
-           "source": 1500
+           "source": 3000
        })   
        event.custom({
         "type": "ars_nouveau:enchanting_apparatus",
@@ -150,12 +150,17 @@ ServerEvents.recipes(event => {
         "pedestalItems": [
           {
             "item": {
-              "item": "ars_nouveau:fire_essence"
+              "item": "minecraft:glowstone_dust"
             }
           },
           {
             "item": {
-              "item": "ars_nouveau:earth_essence"
+              "item": "botania:mana_powder"
+            }
+          },
+          {
+            "item": {
+              "item": "thermal:sawdust"
             }
           }
         ],
