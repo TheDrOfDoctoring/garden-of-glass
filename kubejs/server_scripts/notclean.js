@@ -3754,12 +3754,12 @@ event.custom({
   "pedestalItems": [
     {
       "item": {
-        "item": "kubejs:blooded_source"
+        "item": "kubejs:pure_mana_essence"
       }
     },
     {
       "item": {
-        "item": "kubejs:blooded_source"
+        "item": "kubejs:pure_mana_essence"
       }
     },
     {

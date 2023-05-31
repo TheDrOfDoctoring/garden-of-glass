@@ -21,6 +21,29 @@
 		[types.leaves_type.ars_elemental]
 			yellow_archwood = true
 
+		[types.leaves_type.colorfulazaleas]
+			blue_azalea = true
+			blue_blooming_azalea = true
+			blue_flowering_azalea = true
+			orange_azalea = true
+			orange_blooming_azalea = true
+			orange_flowering_azalea = true
+			pink_azalea = true
+			pink_blooming_azalea = true
+			pink_flowering_azalea = true
+			purple_azalea = true
+			purple_blooming_azalea = true
+			purple_flowering_azalea = true
+			red_azalea = true
+			red_blooming_azalea = true
+			red_flowering_azalea = true
+			white_azalea = true
+			white_blooming_azalea = true
+			white_flowering_azalea = true
+			yellow_azalea = true
+			yellow_blooming_azalea = true
+			yellow_flowering_azalea = true
+
 	[types.wood_type]
 
 		[types.wood_type.ars_nouveau]
@@ -35,6 +58,15 @@
 		[types.wood_type.botania]
 			livingwood = true
 			dreamwood = true
+
+		[types.wood_type.colorfulazaleas]
+			tecal_azalea = true
+			fiss_azalea = true
+			roze_azalea = true
+			azule_azalea = true
+			bright_azalea = true
+			walnut_azalea = true
+			titanium_azalea = true
 
 [entries]
 

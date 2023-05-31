@@ -210,7 +210,8 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'ars_nouveau:source_jar'}, '#forge:glass', 'botania:mana_glass')
   event.replaceInput({id: 'entangled:block'}, '#forge:chests/wooden', 'botania:red_string_container')
   event.replaceInput({id: 'create:crafting/kinetics/millstone'}, 'create:cogwheel', 'ars_nouveau:glyph_crush')
-  event.replaceInput({id: 'entangled:block'}, 'minecraft:ender_pearl', 'botanicadds:gaia_shard')
+  event.replaceInput({id: 'entangled:block'}, 'minecraft:ender_pearl', 'ars_nouveau:air_essence')
+  event.replaceInput({id: 'farmersdelight:basket'}, 'minecraft:bamboo', 'botania:livingwood_twig')
   event.replaceInput({id: 'ae2:network/blocks/energy_energy_cell'}, 'ae2:quartz_glass', 'botania:mana_tablet')
   event.replaceInput({id: 'botania:lava_pendant'}, 'botania:manasteel_ingot', 'ars_nouveau:fire_essence')
   event.replaceInput({id: 'ae2:materials/basiccard'}, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
@@ -1166,7 +1167,7 @@ event.shaped(
     'CAC'  
   ],
   {
-    A: 'create:sturdy_sheet',  
+    A: 'minecraft:chain',  
     B: 'minecraft:netherrack',
     C: 'ae2:silicon'
   }
@@ -1567,7 +1568,7 @@ event.shaped(
     A: 'botania:rune_mana',  
     T: 'minecraft:lapis_block',
     C: 'ars_nouveau:earth_essence',
-    D: 'ars_nouveau:source_gem_block',
+    D: 'kubejs:pure_mana_essence',
     X: 'botania:spark',
   }
 )
@@ -1876,6 +1877,29 @@ blossoms.forEach(blossom => {
       "tag": "botania:seed_apothecary_reagent"
     }
   })
+})
+event.custom({
+  "type": "botania:petal_apothecary",	
+  "ingredients": [
+    {
+      "tag": "botania:petals/green"
+    },
+    {
+      "tag": "botania:petals/green"
+    },
+    {
+      "item": "botania:rune_earth"
+    },
+    {
+      "tag": "minecraft:saplings"
+    }
+  ],
+  "output": {
+    "item": "minecraft:azalea"
+  },
+  "reagent": {
+    "tag": "botania:seed_apothecary_reagent"
+  }
 })
 let materialsGear = ["steel", "rose_gold", "iron", "gold", "copper", "netherite", 'lapis', 'diamond', 'emerald', 'quartz', 'signalum', 'lumium', 'enderium', 'tin', 'lead', 'nickel', 'bronze', 'electrum', 'invar', 'constantan']
 let materialsPlate = ["steel", "rose_gold", "iron", "gold", "copper", "netherite", 'signalum', 'lumium', 'enderium', 'tin', 'lead', 'nickel', 'bronze', 'electrum', 'invar', 'constantan']

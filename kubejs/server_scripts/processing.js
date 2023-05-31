@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
             "item": "kubejs:imbued_"+materials+"_dust"
           }
         ],
-        "sourceCost": 100
+        "sourceCost": 0
       })    
     })
     //Create doesn't accept tags as outputs sadly

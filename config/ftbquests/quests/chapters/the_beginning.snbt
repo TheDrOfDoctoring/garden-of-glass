@@ -9,7 +9,12 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Welcome -- This pack is meant to offer a uniquely integrated experience between Botania and other mods, such as Ars Nouveau. It's very likely you've already heard that pitch, but as you progress through this pack some of its more unique &m(gimmicky)&r qualities will show.  &4NOTE: You should be playing on a Garden of Glass World Type. By Default, the World Type is set to Garden of Glass. This pack is not meant to be played outside of GoG mode!"]
+			description: [
+				"This pack is a highly modified experience, not just in terms of recipes but there are also fundamental changes to parts of mods like &6Ars Nouveau&f. This means that the only source of information for some elements of the pack are these quests, so I have tried to make them as detailed as possible.  "
+				""
+				""
+				"&4NOTE: You should be playing on a Garden of Glass World Type. By Default, the World Type is set to Garden of Glass so you should be fine. This pack is not meant to be played outside of GoG mode!"
+			]
 			icon: "botania:lexicon"
 			id: "3163288C39ADAC3B"
 			rewards: [{
@@ -30,7 +35,11 @@
 		{
 			dependencies: ["3163288C39ADAC3B"]
 			dependency_requirement: "one_completed"
-			description: ["You begin your journey with a complementary Spell Book on your final hotbar slot. Intially, you may not have access to many spells, however you will unlock more through Ars Nouveau."]
+			description: [
+				"Press &6C &fwith your &6Spell Book &fin your hand to begin crafting a spell. It needs to have a &6Form &fin the first slot and &6Effect &fafter that, with optional &6Augments&f. Select spells by pressing &6V &fwith your book out."
+				""
+				"&7You begin your journey with a complementary Spell Book on your final hotbar slot. Intially, you may not have access to many spells, however you will unlock more through Ars Nouveau."
+			]
 			hide_dependency_lines: false
 			icon: "ars_nouveau:novice_spell_book"
 			id: "464CF515B7EE98B8"
@@ -311,7 +320,7 @@
 				""
 				""
 				""
-				"The Endoflame allows you to turn burnable items into Mana. However, in this pack the Endoflame has been nerfed to encourage alternative solutions for Mana."
+				"The &6Endoflame &fallows you to turn burnable items into &6Mana&f. However, in this pack the &6Endoflame &fhas been nerfed to encourage alternative solutions for &6Mana&f."
 			]
 			id: "15B805B387DB37B6"
 			rewards: [{
@@ -390,7 +399,7 @@
 		}
 		{
 			dependencies: ["1136836816EB0BA6"]
-			description: ["It is very important for you to create a small platform around 32 blocks away from your island which allows hostile mobs to spawn. You'll need the Mob Drops!"]
+			description: ["It is very important for you to create a small platform around &632 blocks &faway from your island which allows hostile mobs to spawn. You'll need the Mob Drops!"]
 			icon: "minecraft:rotten_flesh"
 			id: "73E66CEF2A4B9198"
 			rewards: [{
@@ -470,6 +479,7 @@
 		}
 		{
 			dependencies: ["5E45FFA638BEEF30"]
+			description: ["&6Storage Drawers &fare a way to easily storage a large amount of items. Simply &6Right-click &fone of the slots and the stack will be stored. Each slot can store several stacks, and can be upgraded with &6Storage Upgrades&f."]
 			id: "7D5DAB2466AEF611"
 			rewards: [{
 				id: "70D1D348290EC0EC"
@@ -515,7 +525,11 @@
 		}
 		{
 			dependencies: ["73E66CEF2A4B9198"]
-			description: ["Due to the Endoflame being weakened, it may be worth it to consider using your Experience as a source of Mana."]
+			description: [
+				"Due to the &6Endoflame &fbeing weakened, it may be worth it to consider using your &6Experience &fas a source of Mana."
+				""
+				"This flower will drain your &6XP &fand convert it to &6Mana&f. It can also directly convert &6Experience Orbs &finto &6Mana&f."
+			]
 			id: "7660819C80FE85C3"
 			rewards: [{
 				id: "2860E2677B4C4055"
@@ -666,6 +680,7 @@
 		}
 		{
 			description: ["Be careful with it this time!"]
+			icon: "botania:living_root"
 			id: "7A3A3D39062856B5"
 			rewards: [{
 				count: 16

@@ -1,0 +1,12 @@
+Changelog: 0.2.5alpha
+- Added Colourful Azalea, 
+- Added Better Planting
+- Added Yung's Better Nether Forts
+- Included image for "Imbuement Changes" Quest
+- Bunch of random quest description changes for clarity
+- Farmer's Delight Basket now requires livingwood twigs instead of bamboo
+- Added recipe for Azalea
+- Changed Tier 3 Ars Armour Upgrade to require Pure Mana essence
+- Changed Terra Plate Recipe to require Pure Mana essence
+- Changed Entangled Block recipe to not require post-gaia stuff
+- Changed Blaze Burner recipe to use Chains instead of Sturdy Sheet
