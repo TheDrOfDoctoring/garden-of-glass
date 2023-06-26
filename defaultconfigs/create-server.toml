@@ -97,7 +97,7 @@
 	#.
 	#Select what mobs should ignore Deployers when attacked by them.
 	#Allowed Values: ALL, CREEPERS, NONE
-	ignoreDeployerAttacks = NONE"
+	ignoreDeployerAttacks = "NONE"
 	#.
 	#Game ticks between Kinetic Blocks checking whether their source is still valid.
 	#Range: > 5
