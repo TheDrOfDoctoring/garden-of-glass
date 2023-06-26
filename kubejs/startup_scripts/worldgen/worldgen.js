@@ -22,4 +22,13 @@ WorldgenEvents.add(event => {
           anchors.absolute(48)	      
         )								              
     })
+    event.addOre(ore => {
+        ore.biomes = '#minecraft:is_end'
+        ore.worldgenLayer = 'underground_ores'
+        ore.addTarget('minecraft:end_stone', 'kubejs:mythril_ore')
+        ore.size = 4
+        ore.noSurface = 0.75
+        ore.count([2, 4])             
+        .squared()                   								              
+    })
 })

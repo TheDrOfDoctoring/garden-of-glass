@@ -1,0 +1,29 @@
+{
+  "filters": [
+    {
+        "category": "thermal:stirling_fuel"
+
+    },
+    {
+        "category": "thermal:numismatic_fuel"
+    },
+    {
+        "category": "thermal:lapidary_fuel"
+    },
+    {
+        "category": "thermal:compression_fuel"
+    },
+    {
+        "category": "thermal:disenchantment_fuel"
+    },
+    {
+        "category": "thermal:magmatic_fuel"
+    },
+    {
+        "category": "thermal:gourmand_fuel"
+    },
+    {
+        "category": "botanicadds:gaia_plate"
+    }
+  ]
+}

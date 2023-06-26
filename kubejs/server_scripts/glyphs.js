@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({id: 'ars_nouveau:glyph_intangible'}, 'minecraft:ender_pearl', 'kubejs:pure_air_essence')
     event.replaceInput({id: 'ars_nouveau:glyph_life_link'}, 'minecraft:sculk_sensor', 'kubejs:blooded_source')
     event.replaceInput({id: 'ars_nouveau:glyph_explosion'}, 'ars_nouveau:fire_essence', 'kubejs:pure_fire_essence')
-    event.replaceInput({id: 'ars_nouveau:glyph_explosion'}, 'minecraft:fire_charge', 'kubejs:scorching_sulfur')
+    event.replaceInput({id: 'ars_nouveau:glyph_explosion'}, 'minecraft:fire_charge', 'kubejs:unstable_powder')
     event.custom({    
       "type": "ars_nouveau:glyph",
       "count": 1,

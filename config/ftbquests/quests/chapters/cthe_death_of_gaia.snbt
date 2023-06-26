@@ -41,11 +41,9 @@
 		{
 			dependencies: ["4C3BC450ACE9579D"]
 			description: [
-				"You now have truly unlimited &6Mana&f. Use this new found freedom as you wish, or let it be the end of your experience with this pack."
+				"You now have truly unlimited &6Mana&f. Use this new found freedom as you wish."
 				""
-				"&6Thank you for reaching the end of this pack! I would appreciate any suggestions on what could be changed to improve this pack."
-				""
-				"&nhttps://discord.gg/tERPphR2et"
+				"This is effectively the end of the pack, although you may continue on with some needless grinding to get the &6Creative Vending Upgrade &fand the unlimited items that come with it."
 			]
 			id: "5CBD8975441CE9C6"
 			rewards: [
@@ -79,8 +77,18 @@
 		}
 		{
 			dependencies: ["3393FFE9FF49FDDD"]
-			description: ["&7A hyper-compressed form of runic magic that is only craftable through mechanical crafting, it has a volatile state that might be able to be channeled into something useful. "]
+			description: [
+				"&7A hyper-compressed form of runic magic that is only craftable through mechanical crafting, it has a volatile state that might be able to be channeled into something useful. "
+				""
+				""
+				"&cWell done! :)"
+			]
 			id: "4C3BC450ACE9579D"
+			rewards: [{
+				id: "7817F04995A26987"
+				item: "thermal:machine_catalyst_creative_augment"
+				type: "item"
+			}]
 			size: 2.5d
 			tasks: [{
 				id: "2BC71D4769977400"
@@ -92,12 +100,21 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["1C97E024ED0439C5"]
+			dependencies: [
+				"1C97E024ED0439C5"
+				"5228A2936773C3B2"
+			]
 			description: [
 				"&7A Material that is completely saturated with Mana, it's almost impossible to"
 				"&7have this much mana condensed into one place."
 			]
 			id: "3393FFE9FF49FDDD"
+			rewards: [{
+				count: 3
+				id: "367B3C6F66A9F3D0"
+				item: "thermal:upgrade_augment_3"
+				type: "item"
+			}]
 			size: 2.5d
 			tasks: [{
 				id: "3AF5863953100E46"
@@ -112,6 +129,11 @@
 			dependencies: ["3393FFE9FF49FDDD"]
 			description: ["Once worn, this band is able to produce &6Mana &finto other trinkets at a ludicrous rate."]
 			id: "040D03AC7CFBFABA"
+			rewards: [{
+				id: "1505978D51B6D51B"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "6A4BD8628F5128B2"
@@ -126,6 +148,11 @@
 			dependencies: ["3393FFE9FF49FDDD"]
 			description: ["&6Gaiasteel &7can be sucked of its internal mana to create absurd amounts of heat, however due to the sheer quantity of mana stored within &6Gaiasteel &7the heat will practically last forever."]
 			id: "4A98F3DB565D197A"
+			rewards: [{
+				id: "7A5F374F0E3F3F2D"
+				item: "kubejs:mythril_ingot"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "15EA688B68A89FCE"
@@ -135,6 +162,109 @@
 			title: "Unmatched Heat"
 			x: 1.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["1C97E024ED0439C5"]
+			description: [
+				"&6End Portal Frames &fcan be manually crafted and placed like a regular &6End Portal &fthen activated as normal to create a working portal to the &4End&f."
+				""
+				"&cWhen building the portal, you should stand in the middle of where the portal would be and place the portal frames around you."
+			]
+			id: "173257D9AA2FF807"
+			rewards: [{
+				count: 12
+				id: "3FA586E348C15B55"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				count: 12L
+				id: "554489E19CBDFEC4"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			title: "&9To the End"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["173257D9AA2FF807"]
+			description: ["&6Mythril &fis obtainable through the form of &6Mthyril Ore &ffound inside of &6End Islands&f. It's rarity means you'll have to find a way to efficiently mine large areas."]
+			id: "5228A2936773C3B2"
+			rewards: [{
+				id: "0CE5BFF156470AD1"
+				item: "thermal:upgrade_augment_3"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "74D83585B98B408F"
+				item: "kubejs:mythril_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["173257D9AA2FF807"]
+			description: [
+				"Can be used to make &6Corundum &fwhich looks nice and can be used to make &6Coloured Runes &fwhich can be used to change the enchantment glint of items."
+				""
+				"Purely decorative :)"
+			]
+			id: "02131A4E493A7672"
+			rewards: [{
+				id: "22889E78FC30F137"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "5A6FA71E7732D06C"
+				item: "quark:myalite"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["173257D9AA2FF807"]
+			description: [
+				"Can be used as fuel as well as in the creation of &6Phytogro&f and a number of wireless mechanisms."
+				""
+				"Can also be used in &3Ore Enchanting &fto further improve yields on some recipes."
+			]
+			id: "21A8847275C4902D"
+			size: 1.5d
+			tasks: [{
+				id: "104DCC945B7D49B3"
+				item: "kubejs:mythical_biomass"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5CBD8975441CE9C6"]
+			description: [
+				"Allows you to get infinite of any item from a &6Storage Drawer&f."
+				""
+				""
+				"&6Thank you for reaching the end of this pack! I would appreciate any suggestions on what could be changed to improve this pack."
+				""
+				"&nhttps://discord.gg/tERPphR2et"
+			]
+			id: "720107FB17BA7159"
+			shape: "rsquare"
+			size: 5.0d
+			tasks: [{
+				id: "52740711AE3F8268"
+				item: "storagedrawers:creative_vending_upgrade"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -0.5d
 		}
 	]
 	title: "&4The Death of Gaia"

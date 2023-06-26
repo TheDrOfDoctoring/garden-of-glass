@@ -29,6 +29,7 @@
 				item: "botania:lens_power"
 				type: "item"
 			}]
+			title: "Lenses"
 			x: 1.0d
 			y: -1.0d
 		}
@@ -147,6 +148,42 @@
 				type: "item"
 			}]
 			x: -6.5d
+			y: 0.5d
+		}
+		{
+			description: ["&6Red String &fcan be turned into a number of useful blocks for redstone automation, check the &6Lexica Botania &ffor more information."]
+			id: "4B093F77066DA96E"
+			size: 1.5d
+			tasks: [{
+				id: "05768F9E63E5E239"
+				item: "botania:red_string"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			description: ["All 3 blocks are often very useful for redstone, as they can be used to properly time your redstone. Check out their &6ponders &for the &6Lexica Botania &ffor more information on them."]
+			id: "0B28D3556A6B6EB2"
+			size: 1.5d
+			tasks: [
+				{
+					id: "29797263C01C82F2"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+				{
+					id: "230F205F67EA41AB"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+				{
+					id: "4F273950C8EA853E"
+					item: "botania:hourglass"
+					type: "item"
+				}
+			]
+			x: -3.5d
 			y: 0.5d
 		}
 	]

@@ -5,6 +5,58 @@
       "name": "TheDrOfDoctoring",
       "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
     },
+    "time": 1687711777940,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/8QJwEOMz1C"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "TheDrOfDoctoring",
+      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
+    },
+    "time": 1686072029073,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/1optojHu38"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "TheDrOfDoctoring",
+      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
+    },
+    "time": 1686064178015,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/VLPbNGEObQ"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "TheDrOfDoctoring",
+      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
+    },
+    "time": 1685692914068,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/73VNqsIZT0"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "TheDrOfDoctoring",
+      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
+    },
     "time": 1684833892090,
     "type": "Profiler",
     "data": {
@@ -62,32 +114,6 @@
     "data": {
       "type": "url",
       "value": "https://spark.lucko.me/qpEZTG8SxA"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "TheDrOfDoctoring",
-      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
-    },
-    "time": 1680934270224,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/LiF57IJvXi"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "TheDrOfDoctoring",
-      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
-    },
-    "time": 1680913732883,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/iZXWKQ1RjF"
     }
   }
 ]

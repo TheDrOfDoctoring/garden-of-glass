@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         "item": "botania:mana_quartz"
       },
       {
-        "item": "botania:mana_quartz"
+        "item": "minecraft:vine"
       },
       {
         "item": "minecraft:spider_eye"
@@ -179,6 +179,33 @@ ServerEvents.recipes(event => {
           "item": "kubejs:rune_calculation"
         }
     })
+    event.custom({
+      "type": "botania:runic_altar",
+      "ingredients": [
+        {
+          "item": "kubejs:rune_logic"
+        },
+        {
+          "item": "kubejs:rune_calculation"
+        },
+        {
+          "item": "kubejs:rune_engineering"
+        },
+        {
+          "item": "botania:life_essence"
+        },
+        {
+          "item": "kubejs:purity_essence"
+        },
+        {
+          "item": "botania:terrasteel_nugget"
+        }
+      ],
+      "mana": 45000,
+      "output": {
+        "item": "kubejs:rune_intelligence"
+      }
+   })
     event.custom({
       "type": "botania:runic_altar",
       "ingredients": [

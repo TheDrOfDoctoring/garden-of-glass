@@ -4,3 +4,13 @@ https://github.com/AppliedEnergistics/Applied-Energistics-2
 https://github.com/VazkiiMods/Botania
 https://github.com/baileyholl/Ars-Nouveau
 https://github.com/jaquadro/StorageDrawers
+
+Sap, Ender Sap and Blood Drops are recoloured version of the Botania Manasteel Nuggets
+Pure Earth, Fire, Water and Air Essences are recoloured versions of their respecitve Essences
+Purity Essence is a modified version of Gaia Spirit Textures
+Pure Mana Essence and Soul Pearl are modified versions of the Mana Pearl Textures
+Manaelectrum tools, nuggets and ingots are recoloured versions of Manasteel Textures
+Nether Quartz Crystals and Crystallised Blood are recoloured version of AE2's certus quartz Crystals
+Vitric Diamond is a slightly modified version of the Mana Diamond Textures
+
+The original assets belong to the repositories above, and thus their creators.

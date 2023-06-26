@@ -1132,10 +1132,9 @@
 			dependencies: ["01F3ED970AEC73FC"]
 			id: "245B2362F599BC2C"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "42937F80F1D66CEA"
-				table_id: 1857703300642923985L
-				type: "choice"
+				id: "2963C419D3010EDC"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
 			}]
 			size: 1.25d
 			tasks: [{
@@ -1153,10 +1152,9 @@
 			]
 			id: "706CF61C7F96DB82"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "4B8F96B194D04FC3"
-				table_id: 1857703300642923985L
-				type: "choice"
+				id: "4DE7B325A29EFC18"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
 			}]
 			size: 1.25d
 			tasks: [{
@@ -1171,10 +1169,9 @@
 			dependencies: ["01F3ED970AEC73FC"]
 			id: "2238F03AA6B33E48"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "4014B372B9BE2D3F"
-				table_id: 1857703300642923985L
-				type: "choice"
+				id: "6974052DBE4BC39A"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
 			}]
 			size: 1.25d
 			tasks: [{
@@ -1214,6 +1211,7 @@
 				""
 				"&6Quartz Ore &fno longer generates naturally. Only &6Quartz Clusters &fwill be available to acquire it in small amounts, until you can create it manually using an &6Orechid Ignem&f, or through &6Ore Enchanting&f."
 				"{image:kubejs:textures/item/imbuement.png width:100 height:100 align:1}"
+				"{image:#FFFFFF width:100 height:100 align:1}"
 			]
 			id: "1127C3C5426AC1C7"
 			rewards: [{
@@ -1247,6 +1245,7 @@
 				title: "Ore Enchantment"
 				type: "checkmark"
 			}]
+			title: "&3Ore Enchantment"
 			x: 4.5d
 			y: -4.0d
 		}
@@ -1283,7 +1282,7 @@
 				}
 			]
 			title: "&3Waterwheels Begone!"
-			x: 8.5d
+			x: 9.0d
 			y: 0.75d
 		}
 		{
@@ -1291,7 +1290,7 @@
 				"706CF61C7F96DB82"
 				"2238F03AA6B33E48"
 			]
-			description: ["Although you may already have set up mass storage systems with &6Ars Nouveau&f, &6Corporea Networks &fand the other various forms of storage, an AE2 network may be useful for autocrafting and automation if you desire it!"]
+			description: ["Although you may already have set up mass storage systems with &6Ars Nouveau&f, &6Corporea Networks &fand &6Storage Drawers &fan AE2 network may still be useful for autocrafting and automation if you desire it!"]
 			id: "42E5696E2D52BAD2"
 			rewards: [{
 				id: "4BB83B61EC795FEB"
@@ -1556,6 +1555,41 @@
 			}]
 			x: 0.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["1E9D22EBB45D80F6"]
+			description: [
+				"Additionally, &6Biomass &fcan be used with some &3Ore Enchantment &frecipes to get more ores per recipe."
+				""
+				"You can also use &6Biomass &fas fuel, either for smelting or for an &6Endoflame&f."
+			]
+			id: "0C47F2CCE5C68199"
+			size: 1.25d
+			tasks: [{
+				id: "4F21F31B40CCD5A3"
+				item: "kubejs:biomass"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["554361CF3AEB81A0"]
+			description: [
+				"Both the &6Mechanical Drill &fand &6Mechanical Saw &fhave been removed, and the &6Mechanical Harvester &fhas been changed to make it less effective. "
+				""
+				"Additionally, the max size of &6Contraptions &fhas been greatly reduced."
+			]
+			icon: "create:mechanical_drill"
+			id: "33D7462512DBE53C"
+			size: 1.25d
+			tasks: [{
+				id: "3F2039D93E8C20F8"
+				title: "Create Changes"
+				type: "checkmark"
+			}]
+			x: 6.75d
+			y: 0.75d
 		}
 	]
 	title: "&cAn Expedition into Runic Magic"

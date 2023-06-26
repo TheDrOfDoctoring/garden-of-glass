@@ -5,7 +5,5 @@ BlockEvents.rightClicked(event => {
 		block.popItem('botania:ender_air_bottle')
 		player.getMainHandItem().shrink(1)
 		block.set("minecraft:air")
-		
-
 	}
 })
