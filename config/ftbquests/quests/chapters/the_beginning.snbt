@@ -10,8 +10,7 @@
 	quests: [
 		{
 			description: [
-				"This pack is a highly modified experience, not just in terms of recipes but there are also fundamental changes to parts of mods like &6Ars Nouveau&f. This means that the only source of information for some elements of the pack are these quests, so I have tried to make them as detailed as possible.  "
-				""
+				"Welcome to the pack! This pack makes a number of changes to mods that completely change the mod's mechanics in some cases. In order to prevent confusion from that, I have tried to make the quests as detailed as possible especially when there are any deviations from a mod's typical mechanics. "
 				""
 				"&4NOTE: You should be playing on a Garden of Glass World Type. By Default, the World Type is set to Garden of Glass so you should be fine. This pack is not meant to be played outside of GoG mode!"
 			]
@@ -107,7 +106,7 @@
 			description: [
 				"Hold &6Shift Right-click&f on Grass Blocks in order to get &6Pebbles &fwhich can be crafted into &6Cobblestone&f."
 				""
-				"A quicker way to get pebbles might be to use the &6Pebblespawn &fspell you are given by default, it must be aimed at a &6Grass Block&f."
+				"A quicker way to get pebbles might be to use the &6Pebblespawn &fspell you are given by default, it must be aimed at a &6Grass Block&f. "
 			]
 			id: "0007563A33E18050"
 			rewards: [{
@@ -154,7 +153,11 @@
 				"70BE131F778B3613"
 				"0007563A33E18050"
 			]
-			description: ["Since I don't know what else to talk about on this, you may want to know that for a decent amount of items in this pack there are a few different ways to make them. &e&nMake sure to check the other recipe categories when looking at particularly important items&r&o&r&r"]
+			description: [
+				"Since I don't know what else to talk about on this, you may want to know that for a decent amount of items in this pack there are a few different ways to make them. &e&nMake sure to check the other recipe categories when looking at particularly important items&r&o&r&r"
+				""
+				"Additionally, while you're at it check out the &6Tips and Hints &fchapter of the questbook."
+			]
 			id: "1136836816EB0BA6"
 			rewards: [{
 				count: 8
@@ -176,7 +179,7 @@
 					type: "item"
 				}
 			]
-			title: "&l&n&oGeneric Crafting Table Title"
+			title: "Generic Crafting Table Title"
 			x: 4.0d
 			y: 1.5d
 		}
@@ -356,6 +359,12 @@
 					item: "botania:overgrowth_seed"
 					type: "item"
 				}
+				{
+					count: 5
+					id: "024EE238CF4899B3"
+					item: "kubejs:fractured_obsidian"
+					type: "item"
+				}
 			]
 			size: 1.75d
 			subtitle: "Wealth beyond measure, Outlander."
@@ -399,7 +408,7 @@
 		}
 		{
 			dependencies: ["1136836816EB0BA6"]
-			description: ["It is very important for you to create a small platform around &632 blocks &faway from your island which allows hostile mobs to spawn. You'll need the Mob Drops!"]
+			description: ["It is very important for you to create a small platform around &624 blocks &faway from your island which allows hostile mobs to spawn. You'll need the Mob Drops!"]
 			icon: "minecraft:rotten_flesh"
 			id: "73E66CEF2A4B9198"
 			rewards: [{
@@ -581,12 +590,19 @@
 				"Try lighting the portal with a &6Fire Charge&f."
 			]
 			id: "43B7964EB1EF168B"
-			rewards: [{
-				count: 8
-				id: "217414A95C8660A6"
-				item: "minecraft:nether_wart"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "217414A95C8660A6"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "7DC5CA119FA8AA7F"
+					item: "botania:black_lotus"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -743,6 +759,24 @@
 			title: "&3Ore Processing: Part 1"
 			x: 19.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["3163288C39ADAC3B"]
+			description: [
+				"As this pack is new, I'm open to feedback on a lot of things, you can give suggestions on my discord at &n&chttps://discord.gg/T9s4PgtUuB&r&f."
+				""
+				"There's also a &6Tips and Hints &fchapter in the quest book, which you may want to check after every new unlock in the progression."
+			]
+			icon: "minecraft:book"
+			id: "1F08FBB6E0250720"
+			size: 2.0d
+			tasks: [{
+				id: "6CA6EE961DBB221E"
+				type: "checkmark"
+			}]
+			title: "General Information"
+			x: -9.5d
+			y: 1.5d
 		}
 	]
 	title: "&6The Beginning"

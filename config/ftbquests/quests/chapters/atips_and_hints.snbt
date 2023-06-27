@@ -58,20 +58,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["1136836816EB0BA6"]
-			description: ["Various paths and similar blocks have been given a speed increase when you walk on them. Useful to move around your base faster as it expands!"]
-			id: "3E78FDA888B1D701"
-			size: 1.5d
-			tasks: [{
-				id: "6DDA921432269333"
-				item: "mcwpaths:oak_planks_path"
-				type: "item"
-			}]
-			title: "Paving Paths"
-			x: -3.5d
-			y: -1.0d
-		}
-		{
 			description: ["Speeds up growth rate for most plants."]
 			id: "0575489F79D32C0E"
 			size: 1.5d
@@ -185,6 +171,19 @@
 			]
 			x: -3.5d
 			y: 0.5d
+		}
+		{
+			description: ["Various paths and similar blocks have been given a speed increase when you walk on them. Useful to move around your base faster as it expands!"]
+			id: "2C5D259F4F7F0A50"
+			size: 1.5d
+			tasks: [{
+				id: "135B94AEB4D8FB91"
+				item: "mcwpaths:oak_planks_path"
+				type: "item"
+			}]
+			title: "Paving Paths"
+			x: -3.5d
+			y: -1.0d
 		}
 	]
 	title: "&aTips and Hints"

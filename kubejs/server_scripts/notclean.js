@@ -1355,7 +1355,7 @@ ServerEvents.recipes(event => {
         ],
         "reagent": [
             {
-                "item": "quark:soul_bead"
+                "item": "kubejs:crystallised_blood"
             }
         ],
         "sourceCost": 0
