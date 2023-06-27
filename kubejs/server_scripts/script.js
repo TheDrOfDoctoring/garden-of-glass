@@ -215,6 +215,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'thermal:fire_charge/signalum_ingot_4'})
     event.remove({ id: 'thermal:fire_charge/signalum_dust_4'})
     event.remove({ id: 'gardenofglass:end_portal_frame' })
+    event.remove({ input: 'twigs:pebble'})
     event.remove({ id: 'thermal:machine_frame' })
     event.remove({ output: 'thermal:phytogro'})
     event.remove({ output: 'farmersdelight:organic_compost' })
