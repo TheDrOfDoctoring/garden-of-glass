@@ -189,6 +189,7 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'enderchests' })
     event.remove({ output: 'thermal:cinnabar_dust' })
     event.remove({ mod: 'endertanks' })
+    event.remove({ id: 'botania:petal_apothecary/munchdew'})
     event.remove({ output: 'easy_mob_farm:iron_mob_farm_template' })
     event.remove({ output: 'create:andesite_casing' })
     event.remove({ id: 'thermal:machines/pulverizer/pulverizer_silver_plate_to_dust' })

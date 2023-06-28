@@ -82,7 +82,7 @@
 			description: [
 				"4 &6Living Root &fcan be crafted into Oak Saplings. Place them and let them grow!"
 				""
-				"&4Make sure that the Mana Spark that spawns with your island is not in the way of the sapling."
+				"&4Make sure that the Mana Spark that spawns with your island is not in the way of the sapling, it can be hard to see so you may want to expand your island to create a new space for the sapling."
 			]
 			id: "70BE131F778B3613"
 			rewards: [{
