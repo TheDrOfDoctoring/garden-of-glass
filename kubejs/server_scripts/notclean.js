@@ -62,16 +62,7 @@ ServerEvents.recipes(event => {
                 "item": "kubejs:dense_copper_dust"
             },
             {
-                "item": "kubejs:dense_copper_dust"
-            },
-            {
-                "item": "kubejs:dense_copper_dust"
-            },
-            {
                 "item": "kubejs:mythril_ingot"
-            },
-            {
-                "item": "kubejs:dense_zinc_dust"
             },
             {
                 "item": "kubejs:dense_zinc_dust"
