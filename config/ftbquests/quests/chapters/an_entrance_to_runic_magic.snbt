@@ -33,7 +33,7 @@
 		}
 		{
 			dependencies: ["069E800E2C36FE9C"]
-			description: ["Can be used to place &6Cobblestone &finfinitely, aside from a small &6Mana &fcost."]
+			description: ["Can be used to place &6Dirt &finfinitely, aside from a small &6Mana &fcost."]
 			id: "1B4E38C18ECBCF42"
 			rewards: [{
 				count: 64

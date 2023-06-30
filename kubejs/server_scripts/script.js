@@ -494,9 +494,9 @@ ServerEvents.recipes(event => {
     manaInfusion("minecraft:amethyst_shard", "kubejs:mana_gem", 5000)
     manaInfusion("botanicadds:mana_lapis", "kubejs:mana_gem", 5000)
     manaInfusion("minecraft:emerald", "kubejs:mana_gem", 5000)
-    manaInfusion('minecraft:bucket', 'minecraft:water_bucket', 20000)
+    manaInfusion('minecraft:bucket', 'minecraft:water_bucket', 10000)
     manaInfusion('ars_nouveau:magebloom_fiber', 'botania:mana_string', 5000)
-
+    manaInfusion('twigs:twig', 'botania:living_root', 1000)
     let runicInfusion = (input, output) => {
         event.custom({
             "type": "botania:mana_infusion",

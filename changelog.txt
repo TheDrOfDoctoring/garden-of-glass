@@ -11,28 +11,66 @@ Changelog: 0.2.5alpha
 - Changed Entangled Block recipe to not require post-gaia stuff
 - Changed Blaze Burner recipe to use Chains instead of Sturdy Sheet
 
-    Changelog: 0.2.6alpha
-    - Updated Create and everything that requires it
-    - Update like everything else 
-    - Added Alternate Current
-    - Changed Archwood sapling recipes to use saplings as reagent instead of seeds
-    - Changed TNT recipe to use new "Volatile Powder"
-    - Changed Processors to require Runic Flux Circuit
-    - Changed Iron Rod recipe
-    - New addition to ore processing chain, Mana Foundry, to get better yields at a cost of mana.
-    - Cleaned up processing script a bit
-    - Magnets, how do they work?
-    - New Rune of Intelligence, used in creation of Enderium which is now used in the creation of Gaiasteel
-    - EMIficiation  
-    - Changed End Portal Recipe 
-    - Make a wacky recipe for the cog block (New Biomass Item)
-    - Biomass Item can be used as fuel (such as for Endoflame) or can improve Ore enchanting yields
-    - Add new "Creeper Gland" item which can only be obtained by killing a creeper when it is about to go boom. Used to make Unstable Powder
-    - Basalz Powder can be made using Unstable Powder, as well as Explosion Glyph
-    - Remove Mechanical Drill and Saw
-    - New 'Mythril Ore', only found in the End.
-    - Mythril acts as an alternative for terrasteel in some places, effectively just to be for blocks that are limited 
-    - Mythical Biomass which has double the burn time of regular biomass and can be used
-    - Added integral components as quest rewards
-    - Final quest is now the creative vending upgrade
-    - Increased the amount of living roots you get from the root on the spawn island
+Changelog: 0.2.6alpha
+- Updated Create and everything that requires it
+- Update like everything else 
+- Added Alternate Current
+- Changed Archwood sapling recipes to use saplings as reagent instead of seeds
+- Changed TNT recipe to use new "Volatile Powder"
+- Changed Processors to require Runic Flux Circuit
+- Changed Iron Rod recipe
+- New addition to ore processing chain, Mana Foundry, to get better yields at a cost of mana.
+- Cleaned up processing script a bit
+- Magnets, how do they work?
+- New Rune of Intelligence, used in creation of Enderium which is now used in the creation of Gaiasteel
+- EMIficiation  
+- Changed End Portal Recipe 
+- Make a wacky recipe for the cog block (New Biomass Item)
+- Biomass Item can be used as fuel (such as for Endoflame) or can improve Ore enchanting yields
+- Add new "Creeper Gland" item which can only be obtained by killing a creeper when it is about to go boom. Used to make Unstable Powder
+- Basalz Powder can be made using Unstable Powder, as well as Explosion Glyph
+- Remove Mechanical Drill and Saw
+- New 'Mythril Ore', only found in the End.
+- Mythril acts as an alternative for terrasteel in some places, effectively just to be for blocks that are limited 
+- Mythical Biomass which has double the burn time of regular biomass and can be used
+- Added integral components as quest rewards
+- Final quest is now the creative vending upgrade
+- Increased the amount of living roots you get from the root on the spawn island
+
+Changelog: 0.3.0beta
+- Updated Create and everything that requires it
+- Update like everything else 
+- Added Alternate Current
+- Changed Archwood sapling recipes to use saplings as reagent instead of seeds
+- Changed TNT recipe to use new "Volatile Powder"
+- Changed Processors to require Runic Flux Circuit
+- Changed Iron Rod recipe
+- New addition to ore processing chain, Mana Foundry, to get better yields at a cost of mana.
+- Cleaned up processing script a bit
+- Magnets, how do they work?
+- New Rune of Intelligence, used in creation of Enderium which is now used in the creation of Gaiasteel
+- EMIficiation  
+- Changed End Portal Recipe 
+- Make a wacky recipe for the cog block (New Biomass Item)
+- Biomass Item can be used as fuel (such as for Endoflame) or can improve Ore enchanting yields
+- Add new "Creeper Gland" item which can only be obtained by killing a creeper when it is about to go boom. Used to make Unstable Powder
+- Basalz Powder can be made using Unstable Powder, as well as Explosion Glyph
+- Remove Mechanical Drill and Saw
+- New 'Mythril Ore', only found in the End.
+- Mythril acts as an alternative for terrasteel in some places, effectively just to be for blocks that are limited 
+- Mythical Biomass which has double the burn time of regular biomass and can be used
+- Added integral components as quest rewards
+- Final quest is now the creative vending upgrade
+- Increased the amount of living roots you get from the root on the spawn island
+
+Changelog: 1.0.1 Release
+- Added Toast Control
+- Switched Fast Leaf Decay for Leaves Be Gone
+- Made Living Root more effective (2 to grow a tree)
+- Added ultimine info to quests
+- Killed twigs pebbles
+
+Changelog: 1.0.2 Release
+- Added tooltip for living root that they function as bonemeal  
+- Added recipe for living root 
+- Fixed error in Rod of the Lands quest description

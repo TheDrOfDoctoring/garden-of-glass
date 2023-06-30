@@ -43,6 +43,7 @@ ItemEvents.tooltip(event => {
 	event.add('kubejs:source_timber', "§8It tries to escape your grasp...")
     event.add('supplementaries:cog_block', "§8Only partially conscious")
 	event.add('kubejs:runic_ingot', "§8Why would you make this?")
+    event.add('botania:living_root', "§7Functions as bonemeal")
 	event.add('botania:ender_air_bottle', '§8Can be obtained by right clicking in the end with a Glass Bottle or by right clicking on Ender Conduit with a Glass Bottle')
 	event.add('ae2:controller', '§8A Mana-Energy System')
 	event.add('ars_nouveau:drygmy_shard', '§9Press U on Summoning Altar in JEI to See Summoning Recipes for Ars Nouveau Mobs')
