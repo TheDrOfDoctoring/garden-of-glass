@@ -1106,6 +1106,29 @@ ServerEvents.recipes(event => {
         "type": "botania:petal_apothecary",
         "ingredients": [
             {
+                "tag": "botania:petals/green"
+            },
+            {
+                "tag": "botania:petals/pink"
+            },
+            {
+                "tag": "botania:petals/pink"
+            },
+            {
+                "item": "botania:rune_earth"
+            }
+        ],
+        "output": {
+            "item": "minecraft:spore_blossom"
+        },
+        "reagent": {
+            "tag": "botania:seed_apothecary_reagent"
+        }
+    })
+    event.custom({
+        "type": "botania:petal_apothecary",
+        "ingredients": [
+            {
                 "tag": "botania:petals/blue"
             },
             {
