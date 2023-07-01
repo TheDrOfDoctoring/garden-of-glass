@@ -1609,6 +1609,25 @@
 			x: 8.0d
 			y: 2.25d
 		}
+		{
+			dependencies: ["069E800E2C36FE9C"]
+			description: ["&6Cursed Earth &fspreads to other &6Dirt &fblocks in the darkness, and can be used to spawn mobs very quickly as mobs will spawn on &6Cursed Earth &fmuch faster than other blocks."]
+			id: "1579CBD3CF76A6F0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72ED0A3E25CAD3AB"
+				table_id: 6878592553114220303L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "1FE7F425B290F15A"
+				item: "cursedearth:cursed_earth"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -1.25d
+		}
 	]
 	title: "&cAn Expedition into Runic Magic"
 }

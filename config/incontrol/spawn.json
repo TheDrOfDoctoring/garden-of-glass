@@ -22,5 +22,12 @@
     "mod": "ars_nouveau",
     "mob": "ars_nouveau:starbuncle",
     "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mod": "minecraft",
+    "mob": "minecraft:bat",
+    "result": "deny"
   }
+
 ]

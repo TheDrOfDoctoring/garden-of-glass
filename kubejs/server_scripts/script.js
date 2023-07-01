@@ -24,6 +24,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'botania:terra_plate/terrasteel_ingot' })
     event.remove({ id: 'ars_artifice:imbuement_spell_gem_upgrade_t1' })
     event.remove({ id: 'ars_artifice:spell_gem_upgrade_t2' })
+    event.remove({ id: 'minecraft:dripstone_block'})
     event.remove({ id: 'ars_artifice:spell_gem_upgrade_t3' })
     event.remove({ id: 'botania:mana_fluxfield' })
     event.remove({ id: 'infernalexp:crafting/crafting_shaped/quartz_glass' })
@@ -70,6 +71,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'botania:pure_daisy/snow_block' })
     event.remove({ output: 'ae2:entropy_manipulator' })
     event.remove({ id: 'ars_nouveau:vitalic_sourcelink' })
+    event.remove({ id: 'ars_elemental:invincible_book'})
     event.remove({ id: 'ars_nouveau:alchemical_sourcelink' })
     event.remove({ id: 'ars_nouveau:volcanic_sourcelink' })
     event.remove({ id: 'ars_nouveau:mycelial_sourcelink' })
@@ -475,6 +477,31 @@ ServerEvents.recipes(event => {
         'cobblefordays:tier_4',
         'botania:life_essence'
     )
+    event.smithing(
+        'genericbotaniapacktweaker:manaelectrum_pickaxe',
+        'minecraft:golden_pickaxe',
+        'kubejs:manaelectrum_ingot'
+    )
+    event.smithing(
+        'genericbotaniapacktweaker:manaelectrum_sword',
+        'minecraft:golden_sword',
+        'kubejs:manaelectrum_ingot'
+    )
+    event.smithing(
+        'genericbotaniapacktweaker:manaelectrum_axe',
+        'minecraft:golden_axe',
+        'kubejs:manaelectrum_ingot'
+    )
+    event.smithing(
+        'genericbotaniapacktweaker:manaelectrum_hoe',
+        'minecraft:golden_hoe',
+        'kubejs:manaelectrum_ingot'
+    )
+    event.smithing(
+        'genericbotaniapacktweaker:manaelectrum_sword',
+        'minecraft:golden_sword',
+        'kubejs:manaelectrum_ingot'
+    )
     let manaInfusion = (input, output, mana) => {
         event.custom({
             "type": "botania:mana_infusion",
@@ -630,6 +657,14 @@ ServerEvents.recipes(event => {
             'kubejs:mythical_biomass',
             'thermal:apatite',
             'thermal:niter'
+        ]
+    )
+    event.shapeless(
+        Item.of('cursedearth:cursed_earth', 1),
+        [
+            'minecraft:dirt',
+            'minecraft:fermented_spider_eye',
+            'botania:rune_earth'
         ]
     )
     event.shapeless(
@@ -1100,6 +1135,17 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'thermal:tin_ingot',
+        }
+    )
+    event.shaped(
+        Item.of('minecraft:pointed_dripstone', 3),
+        [
+            ' A ',
+            ' A ',
+            ' A '
+        ],
+        {
+            A: 'minecraft:dripstone_block',
         }
     )
     event.shaped(
