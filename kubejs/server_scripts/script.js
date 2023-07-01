@@ -371,7 +371,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'thermal:silver_nugget' })
     event.remove({ id: 'create:crafting/kinetics/water_wheel' })
     event.remove({ id: 'create:crafting/kinetics/large_water_wheel' })
-    event.remove({ id: 'create:crafting/kinetics/wind_mill_bearing' })
+    event.remove({ id: 'create:crafting/kinetics/windmill_bearing' })
     event.remove({ id: 'create:crafting/kinetics/steam_engine' })
     event.recipes.thermal.insolator('2x moreminecarts:glass_cactus', 'moreminecarts:glass_cactus').water(400)
     event.recipes.thermal.press('kubejs:zinc_plate', 'create:zinc_ingot')
