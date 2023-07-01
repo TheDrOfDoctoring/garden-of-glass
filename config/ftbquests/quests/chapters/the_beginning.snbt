@@ -742,7 +742,7 @@
 		}
 		{
 			dependencies: ["295ADAC4384BB2C6"]
-			description: ["At your current stage, you only have two options to process ores. You can either smelt them directly, for &33 Nuggets &fof the ore, or use &6Mana Infusion &fon them, and smelt the result of that for &35 Nuggets&f."]
+			description: ["At your current stage, you only have two options to process ores. You can either smelt them directly, for &33 Nuggets &fof the ore, or use &6Mana Infusion &fon them, and smelt the result of that for &34 Nuggets&f."]
 			id: "1A133CA8C025499E"
 			rewards: [{
 				id: "4E6B78E471FCC1BE"

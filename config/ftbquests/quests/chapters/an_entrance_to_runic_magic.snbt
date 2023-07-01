@@ -1625,6 +1625,7 @@
 				item: "cursedearth:cursed_earth"
 				type: "item"
 			}]
+			title: "Evil Earth"
 			x: -2.25d
 			y: -1.25d
 		}
