@@ -537,7 +537,7 @@ ServerEvents.recipes(event => {
             "output": {
                 "item": output
             },
-            "mana": 50000
+            "mana": 100000
         }).id("kubejs" + output)
     }
     let crushItUp = (input, output, mana) => {
