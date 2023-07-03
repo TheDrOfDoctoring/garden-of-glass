@@ -12,6 +12,7 @@ ServerEvents.tags('item', event => {
     event.get('ars_nouveau:archwood').add('ars_nouveau:red_archwood_sapling')
     event.get('ars_nouveau:archwood').add('ars_nouveau:purple_archwood_sapling')
     event.get('ars_nouveau:archwood').add('ars_nouveau:green_archwood_sapling')
+    event.get('ars_nouveau:archwood').add('ars_elemental:yellow_archwood_sapling')
 
     event.get('botania:rune_seasons').add('botania:rune_spring')
     event.get('botania:rune_seasons').add('botania:rune_autumn')
