@@ -186,6 +186,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:crafting/kinetics/whisk' })
     event.remove({ id: 'thermal:constantan_dust_2' })
     event.remove({ id: 'thermal:energy_duct_4' })
+    event.remove({ id: 'botania:petal_apothecary/rosa_arcana'})
     event.remove({ id: 'create:smelting/bread' })
     event.remove({ id: (/thermal:parts.*gear/) })
     event.remove({ mod: 'enderchests' })
@@ -2046,6 +2047,29 @@ ServerEvents.recipes(event => {
             }
         })
     })
+    event.custom({
+    "type": "botania:petal_apothecary",
+    "ingredients": [
+        {
+            "tag": "botania:petals/yellow"
+        },
+        {
+            "tag": "botania:petals/yellow"
+        },
+        {
+            "item": "botania:rune_mana"
+        },
+        {
+            "item": "botania:rune_earth"
+        }
+    ],
+    "output": {
+        "item": "ars_elemental:yellow_archwood_sapling"
+    },
+    "reagent": {
+        "tag": "minecraft:saplings"
+    }
+})
     let blossoms = ["red", "blue", "yellow", "pink", "orange"]
     blossoms.forEach(blossom => {
         event.custom({

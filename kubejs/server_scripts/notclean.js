@@ -2133,6 +2133,112 @@ ServerEvents.recipes(event => {
         "type": "ars_nouveau:imbuement",
         "count": 1,
         "input": {
+            "item": "minecraft:apple"
+        },
+        "output": "ars_nouveau:bastion_pod",
+        "pedestalItems": [
+            {
+                "item": {
+                    "item": "ars_nouveau:earth_essence"
+                }
+            },
+            {
+                "item": {
+                    "item": "ars_nouveau:purple_archwood_sapling"
+                }
+            }
+        ],
+        "source": 500
+    })
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": {
+            "item": "minecraft:apple"
+        },
+        "output": "ars_nouveau:bombegranate_pod",
+        "pedestalItems": [
+            {
+                "item": {
+                    "item": "ars_nouveau:earth_essence"
+                }
+            },
+            {
+                "item": {
+                    "item": "ars_nouveau:red_archwood_sapling"
+                }
+            }
+        ],
+        "source": 500
+    })
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": {
+            "item": "minecraft:apple"
+        },
+        "output": "ars_nouveau:frostaya_pod",
+        "pedestalItems": [
+            {
+                "item": {
+                    "item": "ars_nouveau:earth_essence"
+                }
+            },
+            {
+                "item": {
+                    "item": "ars_nouveau:blue_archwood_sapling"
+                }
+            }
+        ],
+        "source": 500
+    })
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": {
+            "item": "minecraft:apple"
+        },
+        "output": "ars_elemental:flashpine_pod",
+        "pedestalItems": [
+            {
+                "item": {
+                    "item": "ars_nouveau:earth_essence"
+                }
+            },
+            {
+                "item": {
+                    "item": "ars_elemental:yellow_archwood_sapling"
+                }
+            }
+        ],
+        "source": 500
+    })
+
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": {
+            "item": "minecraft:apple"
+        },
+        "output": "ars_nouveau:mendosteen_pod",
+        "pedestalItems": [
+            {
+                "item": {
+                    "item": "ars_nouveau:earth_essence"
+                }
+            },
+            {
+                "item": {
+                    "item": "ars_nouveau:green_archwood_sapling"
+                }
+            }
+        ],
+        "source": 500
+    })
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": {
             "item": "botania:mana_string"
         },
         "output": "infernalexp:glowsilk",
