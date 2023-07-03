@@ -2049,6 +2049,19 @@ ServerEvents.recipes(event => {
         ]
     })
     event.custom({
+        "type": "botania:elven_trade",
+        "ingredients": [
+            {
+                "item": "ars_elemental:yellow_archwood_sapling"
+            }
+        ],
+        "output": [
+            {
+                "item": "quark:ancient_sapling"
+            }
+        ]
+    })
+    event.custom({
         "type": "ars_artifice:no_damage_enchantment",
         "keepNbtOfReagent": false,
         "output": {
