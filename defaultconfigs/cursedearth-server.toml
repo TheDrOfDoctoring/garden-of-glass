@@ -2,10 +2,10 @@
 [general]
 	#minimum time between spawns in ticks
 	#Range: > 1
-	"min tick time" = 200
+	"min tick time" = 1000
 	#maximum time between spawns in ticks
 	#Range: > 1
-	"max tick time" = 500
+	"max tick time" = 5000
 	#Force spawns to occur regardless of conditions such as light level and elevation
 	"force spawns" = false
 	#does cursed earth die in sunlight
