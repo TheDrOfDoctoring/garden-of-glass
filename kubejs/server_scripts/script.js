@@ -80,6 +80,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:imbuement_amethyst' })
     event.remove({ id: 'ars_nouveau:imbuement_amethyst_block' })
     event.remove({ id: 'ars_nouveau:wing_to_leather' })
+    event.remove({ id: 'quark:building/crafting/cobblestone_bricks'})
     event.remove({ output: 'minecraft:shield' })
     event.remove({ id: 'thermal:machines/smelter/smelter_alloy_lumium' })
     event.remove({ id: 'thermal:machines/smelter/smelter_alloy_bronze' })
@@ -942,6 +943,17 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'kubejs:manaelectrum_nugget',
+        }
+    )
+    event.shaped(
+        Item.of('quark:cobblestone_bricks', 8),
+        [
+            'A A',
+            'AAA',
+            'AAA'
+        ],
+        {
+            A: 'minecraft:cobblestone',
         }
     )
     event.shaped(
