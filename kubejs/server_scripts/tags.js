@@ -60,6 +60,7 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('block', event => {
     event.get('ftbultimine:excluded_blocks').add('minecraft:netherrack')
     event.get('ftbultimine:excluded_blocks').add('#minecraft:logs')
+    event.get('ftbultimine:excluded_blocks').add('botania:livingrock')
     event.remove('ars_nouveau:harvest/fellable', '#minecraft:logs')
     event.get('ars_nouveau:harvest/fellable').add('minecraft:oak_log')
     event.get('ars_nouveau:harvest/fellable').add('minecraft:spruce_log')
