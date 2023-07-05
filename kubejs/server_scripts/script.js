@@ -125,6 +125,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'prettypipes:high_retrieval_module' })
     event.remove({ id: 'ars_nouveau:magebloom_fiber' })
     event.remove({ output: /thermal.*dynamo*/ })
+    event.remove({ id: 'ars_nouveau:ritual_conjure_island_desert'})
     event.remove({ mod: 'material_elements' })
     event.remove({ id: 'twigs:bloodstone' })
     event.remove({ id: 'thermal:rubber_from_dandelion' })
@@ -857,7 +858,7 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:brass_dust', 2),
         [
             'kubejs:dense_zinc_dust',
-            '2x kubejs:dense_copper_dust',
+            'kubejs:dense_copper_dust',
             '2x thermal:rosin'
         ]
     )
@@ -1441,6 +1442,18 @@ ServerEvents.recipes(event => {
         {
             A: 'botania:mana_glass',
             B: 'botania:rune_mana',
+        }
+    )
+    event.shaped(
+        Item.of('ars_nouveau:ritual_conjure_island_desert', 1),
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],
+        {
+            B: 'kubejs:tablet_base',
+            A: 'moreminecarts:glass_cactus',
         }
     )
     event.shaped(

@@ -1629,6 +1629,19 @@
 			x: -2.25d
 			y: -1.25d
 		}
+		{
+			dependencies: ["0D185D2CDE6E1256"]
+			description: ["Can be used to create a small &6Desert &fbiome which the &6Vitric Cactus &fcan grow in."]
+			id: "65EAF7B30F935711"
+			tasks: [{
+				id: "3D0F00B81F5A5FB4"
+				item: "ars_nouveau:ritual_conjure_island_desert"
+				type: "item"
+			}]
+			title: "Desert Decorum"
+			x: 10.5d
+			y: -9.5d
+		}
 	]
 	title: "&cAn Expedition into Runic Magic"
 }
