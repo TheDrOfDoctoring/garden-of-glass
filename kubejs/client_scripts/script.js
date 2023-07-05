@@ -1,5 +1,6 @@
 // priority: 0
 JEIEvents.information(event => {
+    event.addItem('ae2:quartz_glass', ['§8General Information', 'Obtained by having lightning strike an area of sand which has the Certus Quartz Block item dropped ontop'])
     event.addItem('#botania:lens', ['§8General Information', 'Can be combined with any other lens by putting both lenses together in a crafting menu with a Honey Bottle or Slime Ball'])
 	event.addItem('genericbotaniapacktweaker:dieselotus', ['§7Other Changes', 'Similar to the Thermalily; can burn refined fuel, creosote oil and tree oil for Mana in that order of level of mana produced'])
 	event.addItem('twigs:bloodstone', ['§7Other Changes', 'Obtained by killing a mob ontop of stone, or can be found naturally in the Nether'])

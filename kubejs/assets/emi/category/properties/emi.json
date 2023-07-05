@@ -44,6 +44,12 @@
   "emi:tag": {
     "order": 1000
   },
+  "lychee:lightning_channeling/minecraft/default": {
+    "order": -960
+  },
+  "lychee:item_exploding/minecraft/default": {
+    "order": -961
+  },
   "create:mixing": {
     "order": -1004
   },

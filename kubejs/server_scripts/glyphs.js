@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
     event.remove({id: 'ars_nouveau:glyph_fortune'})
     event.remove({id: 'ars_nouveau:glyph_sense_magic'})
     event.replaceInput({id: 'ars_nouveau:glyph_redstone_signal'}, 'ars_nouveau:manipulation_essence', 'botania:rune_air')
+    event.replaceInput({id: 'ars_nouveau:glyph_lightning'}, 'minecraft:heart_of_the_sea', 'botania:rune_pride')
     event.replaceInput({id: 'ars_nouveau:glyph_invisibility'}, 'ars_nouveau:manipulation_essence', 'botania:rune_air')
     event.replaceInput({id: 'ars_nouveau:glyph_toss'}, 'ars_nouveau:manipulation_essence', 'botania:rune_air')
     event.replaceInput({id: 'ars_nouveau:glyph_name'}, 'ars_nouveau:manipulation_essence', 'thermal:rosin')

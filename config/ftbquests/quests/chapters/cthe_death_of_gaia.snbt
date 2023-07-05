@@ -263,6 +263,7 @@
 				item: "storagedrawers:creative_vending_upgrade"
 				type: "item"
 			}]
+			title: "Infinity at Last"
 			x: 17.5d
 			y: -0.5d
 		}

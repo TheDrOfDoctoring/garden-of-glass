@@ -15,5 +15,9 @@ StartupEvents.registry("fluid", event => {
 	.displayName('Tree Oil')
 	.thickTexture(0x8B8000)
 	.bucketColor(0x8B8000)
+    event.create('soul_waste')
+	.displayName('Soul Waste')
+	.thickTexture(0x5A5A5A)
+	.bucketColor(0x5A5A5A)
 
 })

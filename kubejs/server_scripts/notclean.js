@@ -80,6 +80,54 @@ ServerEvents.recipes(event => {
         "type": "botania:terra_plate",
         "ingredients": [
             {
+                "item": "thermal:enderium_ingot"
+            },
+            {
+                "item": "kubejs:dense_copper_dust"
+            },
+            {
+                "item": "ae2:fluix_pearl"
+            },
+            {
+                "item": "ae2:fluix_pearl"
+            },
+            {
+                "item": "ae2:fluix_pearl"
+            },
+            {
+                "item": "kubejs:dense_zinc_dust"
+            },
+            {
+                "item": "kubejs:dense_zinc_dust"
+            }
+        ],
+        "mana": 1000000,
+        "result": {
+            "item": "botanicadds:gaiasteel_ingot"
+        }
+    })
+    event.custom({
+        "type": "thermal:refinery",
+        "ingredient": {
+            "fluid": "kubejs:soul_fluid",
+            "amount": 500
+        },
+        "result": [
+            {
+                "fluid": "kubejs:soul_waste",
+                "amount": 100
+            },
+            {
+                "item": "kubejs:soul_essence",
+                "chance": 0.75
+            }
+        ],
+        "energy": 100000
+    })
+    event.custom({
+        "type": "botania:terra_plate",
+        "ingredients": [
+            {
                 "item": "kubejs:unstable_powder"
             },
             {

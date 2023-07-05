@@ -185,6 +185,18 @@
 			x: -3.5d
 			y: -1.0d
 		}
+		{
+			description: ["A more practical way to complete &6Explosion Recipes &f(such as gears)"]
+			id: "60A5DB0B7F0F8674"
+			size: 1.5d
+			tasks: [{
+				id: "34C87AF5775AEDF1"
+				item: "botania:lens_explosive"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
 	]
 	title: "&aTips and Hints"
 }

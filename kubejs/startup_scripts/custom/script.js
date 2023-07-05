@@ -54,6 +54,7 @@ StartupEvents.registry('item', event => {
     event.create('mythical_biomass').glow(true).displayName('Mythical Biomass').burnTime(9600)
     event.create('unstable_powder').glow(true).displayName('Unstable Powder')
     event.create('mythril_ingot').displayName('Mythril Ingot')
+    event.create('soul_essence').displayName('Soul Essence')
 })
 StartupEvents.registry('block', event => {
 	event.create('fractured_obsidian')

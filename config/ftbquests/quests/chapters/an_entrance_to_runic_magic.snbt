@@ -522,7 +522,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["6D9ED9BBA69C625C"]
+			dependencies: [
+				"6D9ED9BBA69C625C"
+				"5CA1E9656ACDB1A8"
+			]
 			description: [
 				"The &6Enchanting Apparatus &fis a primitive way to make a variety of gears."
 				"As you advance, you may find more efficient way to make gears than the apparatus."
@@ -1438,8 +1441,8 @@
 				type: "item"
 			}]
 			title: "&3Ore Processing: Part 3"
-			x: 3.125d
-			y: -6.875d
+			x: 3.75d
+			y: -8.125d
 		}
 		{
 			dependencies: ["2BDBCD64ECA09FE7"]
@@ -1644,13 +1647,22 @@
 		}
 		{
 			dependencies: ["2BDBCD64ECA09FE7"]
+			description: ["Acts as a &6Mana Pool Catalyst&f, allows you to turn processing dusts directly into nuggets at a significantly increased yield, but very costly in mana."]
 			id: "4FA7F93D8E054233"
-			rewards: [{
-				count: 8
-				id: "16D4C7134E9EC80A"
-				item: "kubejs:pure_lead_dust"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "16FF1A38B727A037"
+					item: "thermal:deepslate_nickel_ore"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "46F9ADEA9A460EC4"
+					item: "thermal:deepslate_lead_ore"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "65D1BEB89AB0E187"
@@ -1659,6 +1671,28 @@
 			}]
 			x: 11.35d
 			y: -0.75d
+		}
+		{
+			dependencies: ["6D9ED9BBA69C625C"]
+			description: [
+				"Can be obtained by having &6Lightning &fstrike a block which has a &6Gunpowder &fand &6Sawdust Block &fitem dropped on top of it."
+				""
+				"In order to have the lightning strike that specific spot, you can create a &6Spell Gem &fimbued with the &6Touch -> Lightning &fspell. Check the &6Item Explosion &fcategory of recipes in &6JEI&f, (&3press U on a lightning rod in JEI) &for you can do it by having an explosion happen next to a block with a &6Rune of Fire, Lightning Rod &fand &6Diamond &flying ontop."
+			]
+			id: "5CA1E9656ACDB1A8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20D25E72E537AF1E"
+				table_id: 18951675626636805L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0E832F7FCA356DA2"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
 		}
 	]
 	title: "&cAn Expedition into Runic Magic"

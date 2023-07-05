@@ -238,10 +238,13 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'thermal:device_collector' })
     event.remove({ id: 'thermal:fire_charge/signalum_ingot_4'})
     event.remove({ id: 'thermal:fire_charge/signalum_dust_4'})
+    event.remove({ id: 'thermal:storage/cinnabar_from_block'})
+    event.remove({ id: 'thermal:storage/cinnabar_block'})
     event.remove({ id: 'gardenofglass:end_portal_frame' })
     event.remove({ input: 'twigs:pebble'})
     event.remove({ id: 'thermal:machine_frame' })
     event.remove({ output: 'thermal:phytogro'})
+    event.remove({ id: 'botania:lens_explosive'})
     event.remove({ output: 'farmersdelight:organic_compost' })
     event.replaceInput({ mod: 'ae2' }, 'minecraft:iron_ingot', 'botania:manasteel_ingot')
     event.replaceInput({ id: 'quark:automation/crafting/iron_rod' }, 'minecraft:end_rod', 'minecraft:chain')
@@ -379,9 +382,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:mixing/andesite_alloy' })
     event.remove({ id: 'create:mixing/andesite_alloy_from_zinc' })
     event.remove({ id: 'thermal:bronze_dust_4' })
+    event.remove({ id: 'ae2:decorative/quartz_glass'})
+    event.remove({ id: 'gardenofglass:magma_cream_to_slime_ball'})
     event.remove({ id: 'thermal:machines/smelter/smelter_alloy_bronze' })
     event.replaceInput({ mod: 'ae2' }, 'minecraft:iron_ingot', 'botania:manasteel_ingot')
     event.remove({ id: 'thermal:fire_charge/lumium_ingot_4' })
+    event.remove({ type: 'minecraft:crafting_special_repairitem', input: Item.of('ars_artifice:spell_gem_t1')})
     event.remove({ id: 'thermal:machines/smelter/smelter_invar_plate_to_ingot' })
     event.remove({ output: 'supplementaries:silver_door' })
     event.remove({ output: 'supplementaries:silver_trapdoor' })
@@ -537,7 +543,7 @@ ServerEvents.recipes(event => {
         })
     }
     manaInfusion("botania:black_petal", "botania:blacker_lotus", 200000)
-    manaInfusion("kubejs:vitric_diamond", "ars_artifice:spell_gem_t1", 20000)
+    manaInfusion("botania:mana_diamond", "ars_artifice:spell_gem_t1", 10000)
     manaInfusion("minecraft:gold_ingot", "kubejs:manaelectrum_ingot", 5000)
     manaInfusion("create:asurine", "minecraft:snow_block", 10000)
     manaInfusion("minecraft:amethyst_shard", "kubejs:mana_gem", 5000)
@@ -602,17 +608,6 @@ ServerEvents.recipes(event => {
             "mana": 5000
         })
         event.custom({
-            "type": "botania:mana_infusion",
-            "input": {
-                "item": "botania:mana_diamond"
-            },
-            "output": {
-                "item": "kubejs:mana_gem",
-                "count": 2
-            },
-            "mana": 5000
-        })
-        event.custom({
             "type": "create:crushing",
             "ingredients": [
                 {
@@ -658,8 +653,6 @@ ServerEvents.recipes(event => {
     runicInfusion("minecraft:feather", "botania:rune_air")
     runicInfusion("minecraft:blaze_powder", "botania:rune_fire")
 
-
-
     event.shapeless(
         Item.of('kubejs:manaelectrum_nugget', 9),
         [
@@ -679,6 +672,14 @@ ServerEvents.recipes(event => {
             'kubejs:mythical_biomass',
             'thermal:apatite',
             'thermal:niter'
+        ]
+    )
+    event.shapeless(
+        Item.of('botania:lens_explosive', 1),
+        [
+            'botania:lens_normal',
+            'botania:rune_envy',
+            'kubejs:unstable_powder'
         ]
     )
     event.shapeless(
@@ -744,6 +745,13 @@ ServerEvents.recipes(event => {
             'kubejs:sap',
             'thermal:niter',
             'thermal:sulfur'
+        ]
+    )
+    event.shapeless(
+        Item.of('kubejs:volatile_powder', 1),
+        [
+            '2x minecraft:gunpowder',
+            'thermal:niter'
         ]
     )
     event.shapeless(
@@ -859,7 +867,7 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:brass_dust', 2),
         [
             'kubejs:dense_zinc_dust',
-            'kubejs:dense_copper_dust',
+            '2x kubejs:dense_copper_dust',
             '2x thermal:rosin'
         ]
     )
@@ -1192,6 +1200,19 @@ ServerEvents.recipes(event => {
             A: 'thermal:rf_coil',
             B: 'kubejs:purity_essence',
             C: 'kubejs:terra_cable'
+        }
+    )
+    event.shaped(
+        Item.of('kubejs:runic_flux_circuit', 1),
+        [
+            'CAC',
+            'ABA',
+            'CAC'
+        ],
+        {
+            A: 'thermal:rf_coil',
+            B: 'kubejs:purity_essence',
+            C: 'kubejs:soul_essence'
         }
     )
     event.shaped(
@@ -1723,18 +1744,19 @@ ServerEvents.recipes(event => {
         }
     )
     event.shaped(
-        Item.of('botania:mana_fluxfield', 1),
+        Item.of('ae2:controller', 1),
         [
             'CAC',
             'ABA',
             'CAC'
         ],
         {
-            A: 'botania:livingrock',
-            B: 'kubejs:runic_flux_circuit',
-            C: 'thermal:lead_ingot'
+            A: 'quark:soul_bead',
+            B: 'ae2:engineering_processor',
+            C: 'kubejs:infused_livingwood'
         }
     )
+
     event.shaped(
         Item.of('supplementaries:end_stone_lamp', 4),
         [
@@ -1746,6 +1768,18 @@ ServerEvents.recipes(event => {
             A: 'botania:pixie_dust',
             B: 'minecraft:obsidian',
             C: 'ae2:ender_dust'
+        }
+    )
+    event.shaped(
+        Item.of('thermal:cinnabar_block', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'kubejs:soul_pearl',
+            C: 'thermal:cinnabar'
         }
     )
     event.shaped(
@@ -2218,6 +2252,26 @@ ServerEvents.recipes(event => {
                 }
             ],
             "sourceCost": 0
+        })
+        event.custom({
+            "type": 'lychee:item_exploding',
+            "item_in": [
+                {
+                  "item": materialthing
+                },
+                {
+                  "item": materialthing
+                },
+                {
+                  "item": 'kubejs:clay_gear'
+                }
+              ],
+              "post": [
+                {
+                  "type": "drop_item",
+                  "item": "thermal:" + material + "_gear"
+                }
+              ]          
         })
     })
     materialsPlate.forEach(material => {

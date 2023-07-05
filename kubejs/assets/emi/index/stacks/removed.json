@@ -384,6 +384,7 @@
         "item:thermal:carrot_block",
         "item:thermal:lead_ore",
         "item:thermal:nickel_ore",
+        "item:thermal:lightning_charge",
         "item:thermal:apple_block",
         "item:thermal:potato_block",
         "item:quark:carrot_crate",
