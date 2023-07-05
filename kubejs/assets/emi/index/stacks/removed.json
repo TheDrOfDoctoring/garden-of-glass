@@ -382,6 +382,8 @@
         "item:thermal:bamboo_block",
         "item:thermal:sugar_cane_block",
         "item:thermal:carrot_block",
+        "item:thermal:lead_ore",
+        "item:thermal:nickel_ore",
         "item:thermal:apple_block",
         "item:thermal:potato_block",
         "item:quark:carrot_crate",

@@ -17,7 +17,6 @@ ServerEvents.recipes(event => {
   "mana": 13350 * multiplier
    })
 } 
-
     event.recipes.minecraft.smelting('3x minecraft:iron_nugget', 'minecraft:iron_ore').xp(0.7)
     event.recipes.minecraft.smelting('3x minecraft:iron_nugget', 'minecraft:raw_iron').xp(0.7)
     event.recipes.minecraft.smelting('3x minecraft:iron_nugget', 'minecraft:deepslate_iron_ore').xp(0.7)
@@ -32,10 +31,8 @@ ServerEvents.recipes(event => {
     event.recipes.minecraft.smelting('3x minecraft:gold_nugget', 'minecraft:deepslate_gold_ore').xp(0.7)
     event.recipes.minecraft.smelting('3x minecraft:gold_nugget', 'minecraft:nether_gold_ore').xp(0.7)
     event.recipes.minecraft.smelting('3x minecraft:gold_ingot',  'minecraft:raw_gold_block').xp(6.3)
-    event.recipes.minecraft.smelting('3x thermal:lead_nugget', 'thermal:lead_ore').xp(0.7)
     event.recipes.minecraft.smelting('3x thermal:lead_nugget', 'thermal:raw_lead').xp(0.7)
     event.recipes.minecraft.smelting('3x thermal:lead_nugget', 'thermal:deepslate_lead_ore').xp(0.7)
-    event.recipes.minecraft.smelting('3x thermal:nickel_nugget', 'thermal:nickel_ore').xp(0.7)
     event.recipes.minecraft.smelting('3x thermal:nickel_nugget', 'thermal:raw_nickel').xp(0.7)
     event.recipes.minecraft.smelting('3x thermal:nickel_nugget', 'thermal:deepslate_nickel_ore').xp(0.7)
     event.recipes.minecraft.blasting('3x minecraft:iron_nugget', 'minecraft:iron_ore').xp(0.7)
@@ -52,16 +49,23 @@ ServerEvents.recipes(event => {
     event.recipes.minecraft.blasting('3x minecraft:gold_nugget', 'minecraft:deepslate_gold_ore').xp(0.7)
     event.recipes.minecraft.blasting('3x minecraft:gold_nugget', 'minecraft:nether_gold_ore').xp(0.7)
     event.recipes.minecraft.blasting('3x minecraft:gold_ingot',  'minecraft:raw_gold_block').xp(6.3)
-    event.recipes.minecraft.blasting('3x thermal:lead_nugget', 'thermal:lead_ore').xp(0.7)
     event.recipes.minecraft.blasting('3x thermal:lead_nugget', 'thermal:raw_lead').xp(0.7)
     event.recipes.minecraft.blasting('3x thermal:lead_nugget', 'thermal:deepslate_lead_ore').xp(0.7)
-    event.recipes.minecraft.blasting('3x thermal:nickel_nugget', 'thermal:nickel_ore').xp(0.7)
     event.recipes.minecraft.blasting('3x thermal:nickel_nugget', 'thermal:raw_nickel').xp(0.7)
     event.recipes.minecraft.blasting('3x thermal:nickel_nugget', 'thermal:deepslate_nickel_ore').xp(0.7)
 
     let processingMaterials = ["thermal:lead", "minecraft:iron", "thermal:nickel", "minecraft:gold", "thermal:copper"]
     processingMaterials.forEach(material => {
         let materials = material.split(':')[1]
+        event.remove({type: 'thermal:pulverizer', input: '#'+material+'_ores'})
+        event.remove({type: 'thermal:pulverizer', input: '#forge:ores/lead'})
+        event.remove({type: 'thermal:pulverizer', input: '#forge:ores/nickel'})
+        event.recipes.thermal.pulverizer('5x '+material+'_nugget', "kubejs:mana_"+materials+"_dust")
+        event.recipes.thermal.pulverizer('7x '+material+'_nugget', "kubejs:imbued_"+materials+"_dust")
+        event.recipes.thermal.pulverizer('10x '+material+'_nugget', "kubejs:pure_"+materials+"_dust")
+        event.recipes.thermal.pulverizer('16x '+material+'_nugget', "kubejs:elven_"+materials+"_dust")
+        event.recipes.thermal.pulverizer('20x '+material+'_nugget', "kubejs:soul_"+materials+"_dust")
+        event.recipes.thermal.pulverizer('25x '+material+'_nugget', "kubejs:blood_"+materials+"_dust")
         blastInfusion("kubejs:mana_"+materials+"_dust", material+'_nugget', 6, 1)
         blastInfusion("kubejs:imbued_"+materials+"_dust", material+'_nugget', 8, 1)
         blastInfusion("kubejs:pure_"+materials+"_dust", material+'_nugget', 11, 1)

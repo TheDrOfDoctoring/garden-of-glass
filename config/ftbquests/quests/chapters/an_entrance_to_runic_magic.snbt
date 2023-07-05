@@ -1642,6 +1642,24 @@
 			x: 10.5d
 			y: -9.5d
 		}
+		{
+			dependencies: ["2BDBCD64ECA09FE7"]
+			id: "4FA7F93D8E054233"
+			rewards: [{
+				count: 8
+				id: "16D4C7134E9EC80A"
+				item: "kubejs:pure_lead_dust"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "65D1BEB89AB0E187"
+				item: "kubejs:smelter"
+				type: "item"
+			}]
+			x: 11.35d
+			y: -0.75d
+		}
 	]
 	title: "&cAn Expedition into Runic Magic"
 }

@@ -47,8 +47,12 @@ ServerEvents.tags('item', event => {
     event.remove('forge:ingots/steel', 'material_elements:steel_ingot')
     event.remove('forge:dusts/ender_pearl', 'thermal:ender_pearl_dust')
     event.remove('forge:ores/sulfur', 'thermal:sulfur_ore')
+    event.remove('forge:ores/nickel', 'thermal:nickel_ore')
+    event.remove('forge:ores/lead', 'thermal:lead_ore')
 
     event.remove('forge:nuggets/copper', 'create:copper_nugget')
+
+
 
     event.remove('ars_nouveau:robe', ['ars_nouveau:apprentice_robes', 'ars_nouveau:novice_robes'])
     event.remove('ars_nouveau:boots', ['ars_nouveau:apprentice_boots', 'ars_nouveau:novice_boots'])

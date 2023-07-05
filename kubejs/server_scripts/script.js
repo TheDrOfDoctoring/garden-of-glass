@@ -267,6 +267,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: 'storagedrawers:upgrade_template' }, '#storagedrawers:drawers', 'botania:livingwood_log')
     event.replaceInput({ id: 'botania:lava_pendant' }, 'botania:mana_string', 'infernalexp:glowsilk')
     event.replaceInput({ id: 'quark:oddities/crafting/magnet' }, 'minecraft:chorus_fruit', 'ars_nouveau:air_essence')
+    event.replaceInput({ id: 'thermal:machine_pulverizer'}, 'minecraft:flint', 'kubejs:compressed_alloy_block')
     event.replaceInput({ mod: 'framedblocks' }, '#minecraft:planks', 'botania:livingwood_planks')
     event.replaceInput({ mod: 'easy_mob_farm', input: 'easy_mob_farm:iron_mob_farm_template' }, 'easy_mob_farm:iron_mob_farm_template', 'easy_mob_farm:steel_mob_farm_template')
     event.replaceInput({ output: 'ae2:formation_plane' }, 'minecraft:iron_ingot', 'botania:terrasteel_nugget')

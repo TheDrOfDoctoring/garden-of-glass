@@ -3530,11 +3530,6 @@ ServerEvents.recipes(event => {
             },
             {
                 "item": {
-                    "item": "kubejs:compressed_alloy_block"
-                }
-            },
-            {
-                "item": {
                     "item": "kubejs:pure_fire_essence"
                 }
             },
@@ -3547,7 +3542,7 @@ ServerEvents.recipes(event => {
         ],
         "reagent": [
             {
-                "item": "thermal:machine_frame"
+                "item": "kubejs:compressed_alloy_block"
             }
         ],
         "sourceCost": 2500
