@@ -204,6 +204,8 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'minecraft:blasting', output: 'thermal:tin_ingot' })
     event.remove({ id: 'ae2:transform/fluix_crystal' })
     event.remove({ id: 'supplementaries:cog_block' })
+    event.remove({ id: 'create:deploying/large_cogwheel'})
+    event.remove({ id: 'create:deploying/cogwheel'})
     event.remove({ id: 'create:compat/ae2/mixing/fluix_crystal' })
     event.remove({ id: 'thermal:basalz_powder' })
     event.remove({ output: 'thermal:bamboo_block'})

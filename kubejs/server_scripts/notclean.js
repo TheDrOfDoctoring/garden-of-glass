@@ -77,6 +77,38 @@ ServerEvents.recipes(event => {
         }
     })
     event.custom({
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:shaft"
+          },
+          {
+            "item": "botania:livingwood"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:cogwheel"
+          }
+        ]
+    })
+    event.custom({
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:cogwheel"
+          },
+          {
+            "item": "botania:livingwood"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:large_cogwheel"
+          }
+        ]
+    })
+    event.custom({
         "type": "botania:terra_plate",
         "ingredients": [
             {
