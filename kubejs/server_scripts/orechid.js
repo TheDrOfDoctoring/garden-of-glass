@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
   event.remove({id: 'botania:orechid/lapis_ore'})
   event.remove({id: 'botania:orechid/deepslate_lapis_ore'})
-
+  event.remove({id: 'botania:orechid/gold_ore'})
   //dirt gambling
     event.custom({
         "type": "botania:orechid",
@@ -89,6 +89,18 @@ ServerEvents.recipes(event => {
         "block": "thermal:deepslate_nickel_ore"
       },
       "weight": 264
+    })
+    event.custom({
+        "type": "botania:orechid",
+        "input": {
+          "type": "block",
+          "block": "minecraft:stone"
+        },
+        "output": {
+          "type": "block",
+          "block": "minecraft:gold_ore"
+        },
+        "weight": 4125
     })
     event.custom({
       "type": "botania:orechid",

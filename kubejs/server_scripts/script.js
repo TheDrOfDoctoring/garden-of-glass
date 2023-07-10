@@ -605,7 +605,7 @@ ServerEvents.recipes(event => {
                 "item": "kubejs:mana_gem",
                 "count": 4
             },
-            "mana": 5000
+            "mana": 3500
         })
         event.custom({
             "type": "create:crushing",
@@ -875,8 +875,7 @@ ServerEvents.recipes(event => {
         Item.of('minecraft:kelp', 1),
         [
             'botania:rune_water',
-            'minecraft:vine',
-            'ars_nouveau:manipulation_essence'
+            'minecraft:vine'
         ]
     )
 

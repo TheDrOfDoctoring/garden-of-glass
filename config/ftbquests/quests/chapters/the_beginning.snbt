@@ -42,6 +42,11 @@
 			hide_dependency_lines: false
 			icon: "ars_nouveau:novice_spell_book"
 			id: "464CF515B7EE98B8"
+			rewards: [{
+				id: "775553FDC79413D9"
+				type: "xp"
+				xp: 50
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "1919A12A2393FCD7"
@@ -386,7 +391,7 @@
 			]
 			id: "51AE61E1CA89D07E"
 			rewards: [{
-				count: 4
+				count: 10
 				id: "63866C72648D1317"
 				item: "minecraft:gold_ore"
 				type: "item"
@@ -517,12 +522,19 @@
 			dependencies: ["295ADAC4384BB2C6"]
 			description: ["The &6Runic Altar &fwill allow you to make Botania &6Runes, &fwhich will become important for a number of useful tools, such as &6Rods, &fwhich for example can give you access to dirt with the &6Rod of the Lands&f. "]
 			id: "7E85A520CBD001AC"
-			rewards: [{
-				count: 4
-				id: "1F7E101DB66F7C08"
-				item: "botania:mana_powder"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "1F7E101DB66F7C08"
+					item: "botania:mana_powder"
+					type: "item"
+				}
+				{
+					id: "140D8474BA5318BB"
+					type: "xp"
+					xp: 250
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "652B7F325E4717CA"
@@ -563,6 +575,7 @@
 			]
 			id: "4D095543CB1E0F6F"
 			rewards: [{
+				count: 3
 				id: "709FBE2600AD6E88"
 				item: "botania:black_lotus"
 				type: "item"
@@ -769,6 +782,11 @@
 			]
 			icon: "minecraft:book"
 			id: "1F08FBB6E0250720"
+			rewards: [{
+				id: "24393CE0E3FD9017"
+				type: "xp"
+				xp: 50
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "6CA6EE961DBB221E"
