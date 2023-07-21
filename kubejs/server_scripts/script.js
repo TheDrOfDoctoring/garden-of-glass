@@ -259,6 +259,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: 'farmersdelight:basket' }, 'minecraft:bamboo', 'botania:livingwood_twig')
     event.replaceInput({ id: 'ae2:network/blocks/energy_energy_cell' }, 'ae2:quartz_glass', 'botania:mana_tablet')
     event.replaceInput({ id: 'botania:lava_pendant' }, 'botania:manasteel_ingot', 'ars_nouveau:fire_essence')
+    event.replaceInput({ id: 'botania:crafty_crate'}, 'botania:dreamwood_planks', 'ars_nouveau:archwood_planks')
     event.replaceInput({ id: 'ae2:materials/basiccard' }, 'minecraft:gold_ingot', 'kubejs:manaelectrum_ingot')
     event.replaceInput({ id: 'ae2:materials/basiccard' }, 'minecraft:redstone', 'ae2:silicon')
     event.replaceInput({ id: 'ae2:materials/advancedcard' }, 'minecraft:redstone', 'ae2:silicon')

@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
             {
               "type": "drop_item",
               "item": "minecraft:slime_ball",
-              "count": 1
+              "count": 3
             }
           ]
     })

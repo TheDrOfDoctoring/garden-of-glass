@@ -2,6 +2,7 @@ ServerEvents.recipes(event => {
   event.remove({id: 'botania:orechid/lapis_ore'})
   event.remove({id: 'botania:orechid/deepslate_lapis_ore'})
   event.remove({id: 'botania:orechid/gold_ore'})
+  event.remove({id: 'botania:orechid/diamond_ore'})
   //dirt gambling
     event.custom({
         "type": "botania:orechid",
@@ -240,5 +241,18 @@ ServerEvents.recipes(event => {
         "block": "minecraft:cobbled_deepslate"
       },
       "weight": 205
+    })
+
+    event.custom({
+        "type": "botania:orechid",
+        "input": {
+          "type": "block",
+          "block": "minecraft:stone"
+        },
+        "output": {
+          "type": "block",
+          "block": "minecraft:diamond_ore"
+        },
+        "weight": 1201
     })
 })

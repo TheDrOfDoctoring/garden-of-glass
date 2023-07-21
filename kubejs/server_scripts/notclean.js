@@ -4053,7 +4053,7 @@ ServerEvents.recipes(event => {
         "type": "ars_nouveau:enchanting_apparatus",
         "keepNbtOfReagent": true,
         "output": {
-            "count": 1,
+            "count": 2,
             "item": "minecraft:blaze_rod"
         },
         "pedestalItems": [
@@ -4083,7 +4083,7 @@ ServerEvents.recipes(event => {
                 "item": "botania:livingwood_twig"
             }
         ],
-        "sourceCost": 2500
+        "sourceCost": 500
     })
     event.custom({
         "type": "ars_nouveau:enchanting_apparatus",

@@ -76,44 +76,5 @@
       "type": "url",
       "value": "https://spark.lucko.me/EPCjQtDjls"
     }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "TheDrOfDoctoring",
-      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
-    },
-    "time": 1683462720330,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/D9yfUAH1iT"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "TheDrOfDoctoring",
-      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
-    },
-    "time": 1683378120582,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/HBuQzxGY5J"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "TheDrOfDoctoring",
-      "uniqueId": "5186f17f-a073-481c-8e63-95d1e8a06f24"
-    },
-    "time": 1683353479253,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/qpEZTG8SxA"
-    }
   }
 ]
