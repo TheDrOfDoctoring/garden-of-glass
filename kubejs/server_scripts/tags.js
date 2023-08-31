@@ -82,6 +82,7 @@ ServerEvents.tags('block', event => {
     event.get('ars_nouveau:harvest/fellable').add('quark:azalea_log')
     event.get('ars_nouveau:harvest/fellable').add('quark:ancient_log')
     event.get('ars_nouveau:harvest/fellable').add('botanicadds:elvenwood_log')
+    event.get('snad:valid_plant').add('moreminecarts:glass_cactus')
 })
 ServerEvents.tags('entity_type', event => {
     event.get('botania:coocon/rare').add('minecraft:bee')
