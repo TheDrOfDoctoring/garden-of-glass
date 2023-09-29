@@ -2370,6 +2370,27 @@ ServerEvents.recipes(event => {
         ],
         "source": 500
     })
+        event.custom({
+        "type": "ars_nouveau:imbuement",
+        "count": 1,
+        "input": {
+            "item": "minecraft:carrot"
+        },
+        "output": "farmersdelight:onion",
+        "pedestalItems": [
+            {
+                "item": {
+                    "item": "ars_nouveau:earth_essence"
+                }
+            },
+            {
+                "item": {
+                    "item": "ars_nouveau:water_essence"
+                }
+            }
+        ],
+        "source": 500
+    })
     event.custom({
         "type": "ars_nouveau:imbuement",
         "count": 1,
