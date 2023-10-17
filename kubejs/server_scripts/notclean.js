@@ -52,6 +52,16 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'thermal:compat/create/pulverizer_create_veridium_recycle' })
     event.remove({ id: 'thermal:earth_charge/ender_pearl_dust_from_ender_pearl' })
     event.remove({ id: 'thermal:machines/pulverizer/pulverizer_ender_pearl' })
+    event.remove({ id: 'thermal:compat/create/centrifuge_create_crushed_zinc_ore' })
+    event.remove({ id: 'thermal:compat/create/centrifuge_create_crushed_tin_ore' })
+    event.remove({ id: 'thermal:compat/create/centrifuge_create_crushed_copper_ore' })
+    event.remove({ id: 'thermal:compat/create/centrifuge_create_crushed_nickel_ore' })
+    event.remove({ id: 'thermal:compat/create/centrifuge_create_crushed_iron_ore' })
+    event.remove({ id: 'thermal:compat/create/centrifuge_create_crushed_gold_ore' })
+    event.remove({ id: 'create:crushing/tuff'})
+    event.remove({ id: 'create:crushing/tuff_recycling'})
+    event.remove({ id: 'create:crushing/veridium_recycling'})
+    event.remove({ id: 'create:crushing/veridium'})
     event.custom({
         "type": "botania:terra_plate",
         "ingredients": [

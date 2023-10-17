@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'ars_nouveau:purple_archwood_sapling' })
     event.remove({ output: 'ars_nouveau:red_archwood_sapling' })
     event.remove({ output: 'ars_nouveau:green_archwood_sapling' })
+    event.remove({ output: 'create:copper_nugget'})
     event.remove({ id: 'ars_nouveau:novice_spell_book' })
     event.remove({ output: 'create:mechanical_saw'})
     event.remove({ output: 'create:mechanical_drill'})
