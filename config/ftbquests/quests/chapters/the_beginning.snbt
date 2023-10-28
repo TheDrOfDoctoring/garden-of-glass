@@ -776,9 +776,8 @@
 		{
 			dependencies: ["3163288C39ADAC3B"]
 			description: [
-				"As this pack is new, I'm open to feedback on a lot of things, you can give suggestions on my discord at &n&chttps://discord.gg/T9s4PgtUuB&r&f."
 				""
-				"There's also a &6Tips and Hints &fchapter in the quest book, which you may want to check after every new unlock in the progression."
+				"Remember to check the &6Tips and Hints &fchapter in the quest book, which you may want to check after every new unlock in the progression."
 			]
 			icon: "minecraft:book"
 			id: "1F08FBB6E0250720"
