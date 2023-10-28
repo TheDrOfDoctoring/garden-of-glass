@@ -1258,7 +1258,7 @@
 				"In this pack, &6Create &fhas been quite heavily changed."
 				""
 				"&6Water Wheels&f, &6Wind Mills &fand &6Steam Engines &fhave been removed."
-				"Instead, to automatically create &6RPM &fyou need to use a &6Mana Motor &fand &6Spinerettes&f. These are bound to the &6Mana Motor &fusing a &6Wand of The Forest&f."
+				"Instead, to automatically create &6RPM &fyou need to use a &6Mana Motor &fand &6Spinerettes&f. These are bound to the &6Mana Motor &fusing a &6Wand of The Forest&f and must be within &62 &fblocks of the &6Mana Motor&f."
 				""
 				"The way this works is that the soil the flower is placed on determines the &6RPM &f(Where the &6RPM &fproduced by the &6Mana Motor &fis all of the flowers combined), however more flowers means less &6Stress Units &fto work with. In order from most to least productive soils, in ascending order of productivity they are:"
 				"&71 - Any Block Not Mentioned, 2 - Rooted Dirt, 3 - Rich Soil, 4 - Imbued Dirt and 5 - Enchanted Soil&f."
