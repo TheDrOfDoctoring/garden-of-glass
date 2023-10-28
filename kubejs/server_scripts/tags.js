@@ -51,7 +51,7 @@ ServerEvents.tags('item', event => {
     event.remove('forge:ores/lead', 'thermal:lead_ore')
 
     event.remove('forge:nuggets/copper', 'create:copper_nugget')
-
+    event.remove('forge:nuggets/copper', 'material_elements:copper_nugget')
 
 
     event.remove('ars_nouveau:robe', ['ars_nouveau:apprentice_robes', 'ars_nouveau:novice_robes'])
