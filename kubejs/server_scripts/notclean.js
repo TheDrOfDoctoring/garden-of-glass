@@ -1235,9 +1235,6 @@ ServerEvents.recipes(event => {
             },
             {
                 "item": "botania:rune_air"
-            },
-            {
-                "item": "botania:redstone_root"
             }
         ],
         "output": {
