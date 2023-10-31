@@ -2360,7 +2360,7 @@ ServerEvents.recipes(event => {
         "type": "ars_nouveau:imbuement",
         "count": 1,
         "input": {
-            "tag": "forge:seeds"
+            "tag": "kubejs:seeds_not_rice"
         },
         "output": "farmersdelight:rice",
         "pedestalItems": [
