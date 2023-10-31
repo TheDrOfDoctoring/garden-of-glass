@@ -43,7 +43,7 @@
 	#Defines the sound which is played when a loot drop is performed.
 	desertFarmDropSound = "minecraft:block.sand.hit"
 	#Supported Mobs for the dessert farm.
-	desertFarmMobs = ["minecraft:skeleton", "minecraft:enderman", "minecraft:witch", "minecraft:spider", "minecraft:zombie", "minecraft:creeper", "minecraft:zombie_villager", "minecraft:husk", "minecraft:rabbit"]
+	desertFarmMobs = ["minecraft:skeleton", "minecraft:witch", "minecraft:pig", "minecraft:sheep", "minecraft:parrot", "minecraft:cow", "minecraft:enderman", "minecraft:chicken", "minecraft:spider", "minecraft:zombie", "minecraft:creeper", "minecraft:panda", "minecraft:zombie_villager", "minecraft:slime"]
 
 ["Jungle Farm"]
 	#Defines after how many seconds a drop is performed.
@@ -61,7 +61,7 @@
 	#Defines the sound which is played when a loot drop is performed.
 	monsterPlainsCaveFarmDropSound = "minecraft:block.cave_vines.fall"
 	#Supported Mobs for the monster plains cave farm.
-	monsterPlainsCaveFarmMobs = ["minecraft:cave_spider", "minecraft:skeleton", "minecraft:enderman", "minecraft:witch", "minecraft:zombie", "minecraft:creeper", "minecraft:zombie_villager", "minecraft:slime"]
+	monsterPlainsCaveFarmMobs = ["minecraft:skeleton", "minecraft:witch", "minecraft:pig", "minecraft:sheep", "minecraft:parrot", "minecraft:cow", "minecraft:enderman", "minecraft:chicken", "minecraft:spider", "minecraft:zombie", "minecraft:creeper", "minecraft:panda", "minecraft:zombie_villager", "minecraft:slime"]
 
 ["Nether Fortress Farm"]
 	#Defines after how many seconds a loot drop is performed.
@@ -88,7 +88,7 @@
 	#Defines the sound which is played when a loot drop is performed.
 	swampFarmDropSound = "minecraft:entity.slime.squish"
 	#Supported Mobs for the swamp farm.
-	swampFarmMobs = ["minecraft:cow", "minecraft:witch", "minecraft:chicken", "minecraft:spider", "minecraft:zombie", "minecraft:pig", "minecraft:zombie_villager", "minecraft:sheep", "minecraft:slime"]
+	swampFarmMobs = ["minecraft:skeleton", "minecraft:witch", "minecraft:pig", "minecraft:sheep", "minecraft:parrot", "minecraft:cow", "minecraft:enderman", "minecraft:chicken", "minecraft:spider", "minecraft:zombie", "minecraft:creeper", "minecraft:panda", "minecraft:zombie_villager", "minecraft:slime"]
 
 ["Catch Cage (Mob Catching Item)"]
 	#Defines the luck of capturing the mob e.g. luck of 3 means a change of 1 to 3 to capture a mob. Higher numbers requires more luck. 0 = disable luck.
@@ -137,7 +137,7 @@
 	#Range: 0 ~ 100
 	urnSmallMobCatchingLuck = 3
 	#Catchable mobs with the urn small.
-	urnSmallMobs = ["minecraft:cave_spider", "minecraft:creeper", "minecraft:spider", "minecraft:skeleton", "minecraft:husk", "minecraft:zombie", "minecraft:zombie_villager"]
+	urnSmallMobs = ["minecraft:cave_spider", "minecraft:creeper", "minecraft:spider", "minecraft:skeleton", "minecraft:husk", "minecraft:zombie", "minecraft:zombie_villager", "minecraft:blaze", "minecraft:magma_cube"]
 
 ["Witch Bottle (Mob Catching Item)"]
 	#Defines the luck of capturing the mob e.g. luck of 3 means a change of 1 to 3 to capture a mob. Higher numbers requires more luck. 0 = disable luck.
