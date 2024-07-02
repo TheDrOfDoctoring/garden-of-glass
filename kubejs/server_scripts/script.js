@@ -1961,7 +1961,7 @@ ServerEvents.recipes(event => {
         ' M ',
         ' D '
     ], {
-        M: 'create:iron_sheet',
+        M: '#forge:plates/iron',
         C: 'create:polished_rose_quartz',
         D: 'ae2:silicon'
 

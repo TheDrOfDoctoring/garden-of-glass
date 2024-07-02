@@ -60,6 +60,8 @@ ServerEvents.tags('item', event => {
     event.remove('ars_nouveau:hood', ['ars_nouveau:apprentice_hood', 'ars_nouveau:novice_hood'])
 
     event.get('kubejs:seeds_not_rice').add(['farmersdelight:cabbage_seeds', 'farmersdelight:tomato_seeds', 'ars_nouveau:magebloom_crop', 'minecraft:beetroot_seeds', 'minecraft:melon_seeds', 'minecraft:pumpkin_seeds', 'minecraft:wheat_seeds', 'supplementaries:flax_seeds'])
+
+    event.get('thermal:crafting/dies').add('kubejs:press_wire_die')
 })
 
 //automate logs don't veinmine 
